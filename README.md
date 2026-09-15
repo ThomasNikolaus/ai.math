@@ -49,6 +49,8 @@ Die Vorschau steht dann unter `http://127.0.0.1:4173/`. `PREVIEW_BASE=/ai.math/ 
 
 Die bisherige Einstellung bleibt passend: **Settings → Pages → Deploy from a branch → main → / (root)**. Die fertigen Dateien liegen bereits im Repository-Hauptverzeichnis; GitHub muss keinen eigenen Build ausführen.
 
+Die öffentliche Domain ist `https://ai.math.ms/`. Die Datei `CNAME` im Repository ordnet sie diesem GitHub-Pages-Projekt zu; der DNS-Eintrag `ai.math.ms → thomasnikolaus.github.io` wird außerhalb von GitHub verwaltet. In den Pages-Einstellungen sollte nach Bereitstellung des Zertifikats **Enforce HTTPS** aktiviert sein.
+
 Nach einer Änderung zuerst `pnpm build` und `pnpm test` ausführen. Anschließend Quelldateien **und** erzeugte Dateien gemeinsam committen und pushen:
 
 ```sh
@@ -61,7 +63,7 @@ git push
 
 Die bestehende Angabe `noindex,nofollow` wurde unverändert übernommen. Padlet wird weiterhin erst nach Klick auf „Diskussionsboard öffnen“ geladen. Beim Wechsel der Sprache bleiben geöffnete Antworten und ein bereits geöffnetes Board erhalten.
 
-## Seiteninformationen und spätere Domain
+## Seiteninformationen und Domain
 
 Der Build erzeugt Beschreibungen, Canonical- und vollständige hreflang-Adressen, Open-Graph- und Twitter-Vorschauen, Website-Strukturdaten auf der Einstiegsseite, Icons, `sitemap.xml` und `robots.txt`. Das schaltet die Website **nicht** für Suchmaschinen frei: Alle HTML-Seiten tragen weiterhin `noindex,nofollow`. `robots.txt` erlaubt das Abrufen, damit Suchmaschinen diese Sperre lesen können. Die Sitemap wird nicht automatisch bei Suchmaschinen eingereicht; Search Console ist nicht eingerichtet.
 
@@ -71,8 +73,8 @@ Die öffentliche Basisadresse wird beim Bauen in dieser Reihenfolge bestimmt:
 2. Die Domain aus einer vorhandenen `CNAME`-Datei.
 3. `https://thomasnikolaus.github.io/ai.math/`.
 
-Wenn `ai.math.ms` in den GitHub-Pages-Einstellungen hinterlegt wird, erstellt GitHub eine `CNAME`-Datei. Diesen Commit zuerst mit `git pull --ff-only` übernehmen, anschließend neu bauen, prüfen und die erzeugten Dateien mit veröffentlichen. Damit werden Canonical-Adressen, Sprachverknüpfungen, Vorschaugrafik-Adressen, Sitemap und Fehlerseite auf die neue Domain umgestellt. Die Suchmaschinen-Sperre bleibt dabei erhalten. Dieser Build ändert weder die DNS-Einstellungen noch die Pages-Einstellungen.
+`CNAME` enthält bereits `ai.math.ms`. Ein normaler Build verwendet diese Adresse für Canonical-Angaben, Sprachverknüpfungen, Vorschaugrafiken, Sitemap und Fehlerseite. Die Suchmaschinen-Sperre bleibt dabei erhalten. Wird die Domain später über die GitHub-Pages-Einstellungen geändert, den dort erzeugten Commit zuerst mit `git pull --ff-only` übernehmen, anschließend neu bauen, prüfen und die erzeugten Dateien mit veröffentlichen. Der Build selbst ändert weder die DNS-Einstellungen noch die Pages-Einstellungen.
 
-Unter der bisherigen GitHub-Projektadresse gilt eine `robots.txt` nur am Host-Stamm, nicht im Unterverzeichnis `/ai.math/`. Die mitgelieferte Datei wird nach dem Umzug an die Wurzel von `ai.math.ms` wirksam; die Sperre durch HTML-Metatags gilt bereits jetzt.
+Unter der bisherigen GitHub-Projektadresse gilt eine `robots.txt` nur am Host-Stamm, nicht im Unterverzeichnis `/ai.math/`. Auf `ai.math.ms` liegt die mitgelieferte Datei an der richtigen Stelle. Die Sperre durch HTML-Metatags bleibt bestehen.
 
 Die Datenschutzhinweise beruhen auf der aktuellen Einbindung und den verlinkten Angaben von GitHub und Padlet (Stand 15. September 2026). Änderungen an Hosting, Boards, Analysefunktionen oder Speicherverfahren erfordern eine erneute Prüfung des Textes.
