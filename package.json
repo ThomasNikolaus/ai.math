@@ -1,0 +1,27 @@
+{
+  "name": "ai-mathematics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@base-ui/react": "1.7.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "1.31.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwind-merge": "3.6.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.27.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

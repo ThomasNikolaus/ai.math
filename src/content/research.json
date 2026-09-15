@@ -1,0 +1,92 @@
+{
+  "de": {
+    "title": "KI in der mathematischen Forschung",
+    "preamble": [
+      "Der Wert der Mathematik liegt wesentlich in der menschlichen Auseinandersetzung mit ihr: im Verstehen, Erklären, gemeinsamen Denken und Weitergeben von Erkenntnissen. Mathematik zielt nicht allein auf die Produktion korrekter Resultate, sondern auf menschliche Einsicht und Erkenntnis sowie die Einordnung und Vermittlung von Ergebnissen in einer gemeinsamen mathematischen Kultur.",
+      "KI ist bereits Teil der mathematischen Forschung, und ihre Bedeutung wird aufgrund ihrer Leistungsfähigkeit und Verfügbarkeit weiter wachsen. Pauschale Verbote werden diese Entwicklung nicht dauerhaft aufhalten und bergen die Gefahr, ihren Einsatz in intransparente Räume oder andere Forschungsgemeinschaften zu verlagern. Wir müssen diesen Wandel daher aktiv und gemeinschaftlich gestalten und die dafür notwendigen Kompetenzen und Rahmenbedingungen entwickeln. So kann KI neue Möglichkeiten für mathematisches Entdecken, Verstehen und gemeinsames Forschen eröffnen."
+    ],
+    "principles": [
+      {
+        "title": "Die Freiheit von Forschung und Lehre muss gewahrt bleiben.",
+        "body": "Die Entscheidung darüber, welche mathematischen Probleme als untersuchenswert gelten und welche Bedeutung Resultate erlangen, muss Gegenstand menschlichen Urteils und wissenschaftlichen Austauschs bleiben. Dies gilt besonders für Grundlagenforschung, deren Wert sich häufig erst im Nachhinein zeigt. Ob sich ein Problem zur Evaluation oder Vermarktung von KI-Systemen eignet, darf nicht zum maßgeblichen Kriterium für seine wissenschaftliche Bedeutung werden. Die Verantwortung für diese Bewertung bleibt bei der mathematischen Gemeinschaft."
+      },
+      {
+        "title": "Anforderungen an Korrektheit und Überprüfbarkeit gelten unabhängig vom verwendeten Werkzeug.",
+        "body": "Ein inhaltlich oder methodisch relevanter Einsatz von KI muss transparent gemacht werden. KI-gestützte Resultate müssen nachvollziehbar dargestellt und unabhängig überprüfbar sein. Relevante Vorarbeiten sind sorgfältig zu prüfen und angemessen zu würdigen. Der mit Darstellung und Überprüfung verbundene Aufwand darf nicht einseitig auf die wissenschaftliche Gemeinschaft verlagert werden."
+      },
+      {
+        "title": "Autorschaft und wissenschaftliche Anerkennung müssen neu gedacht werden.",
+        "body": "KI kann die Gewinnung und Veröffentlichung eines korrekten Resultats vom Verständnis und vom Beitrag der als Autorinnen und Autoren ausgewiesenen Personen entkoppeln. Ein veröffentlichtes Resultat allein bietet daher keine hinreichende Grundlage für die Begründung von Autorschaft oder die Bewertung wissenschaftlicher Kompetenz. Menschliche Beiträge und Verantwortlichkeiten müssen so transparent wie möglich gemacht und angemessen berücksichtigt werden. Dies gilt auch für kollektive Forschungsleistungen, deren Beiträge sich nicht eindeutig einzelnen Personen zuordnen lassen. Die Kriterien für Autorschaft und wissenschaftliche Anerkennung müssen im Lichte der sich wandelnden Forschungspraxis fortlaufend überprüft werden."
+      },
+      {
+        "title": "Nicht alles darf delegiert werden.",
+        "body": "Die Arbeit mit KI erlaubt es, wichtige Teile mathematischer Forschungsprozesse an automatisierte Prozesse zu delegieren. Wir müssen bestimmen, welche mathematischen Fähigkeiten und Verantwortlichkeiten nicht delegierbar sind. Dazu gehören insbesondere kritisches Urteilsvermögen, auch im Sinne von Kants Begriff der Mündigkeit, sowie die menschliche Verantwortung für die Korrektheit veröffentlichter Resultate. KI kann die Urteilsbildung unterstützen, ohne diese Verantwortung zu übernehmen."
+      },
+      {
+        "title": "Unveröffentlichte Forschung muss standardmäßig geschützt sein.",
+        "body": "Da die Tragweite mathematischer Ideen im Voraus häufig nicht absehbar ist, können Forschende nicht zuverlässig entscheiden, welche Gespräche oder Materialien schutzbedürftig sind. Institutionelle KI-Zugänge müssen sicherstellen, dass Eingaben, Dokumente, Ausgaben und daraus abgeleitete Informationen ausschließlich für die angeforderte Leistung verwendet werden. Jede weitere Nutzung, insbesondere für Training, Modellverbesserung, Evaluation oder eigene Forschung, erfordert eine ausdrückliche und informierte Zustimmung. Datenspeicherung und Zugriffe sind auf das Erforderliche zu beschränken und überprüfbar zu regeln. Besonders schutzbedürftige Forschung kann technisch und institutionell kontrollierte Umgebungen erfordern. Freiwilliges Teilen und gemeinschaftliche Forschung werden dadurch nicht ausgeschlossen; sie setzen eine selbstbestimmte Entscheidung über Zugang und Nutzung voraus."
+      },
+      {
+        "title": "Privilegierter Zugang zu fremden Forschungsinformationen darf nicht ausgenutzt werden.",
+        "body": "Der Zugang zu nicht öffentlichen Ideen oder Forschungsdaten anderer darf nicht genutzt werden, um sich gegenüber den ursprünglichen Forschenden einen Prioritätsvorteil zu verschaffen. Dies gilt für Forschende, Gutachtende, Anbieter und Institutionen gleichermaßen. Wie bei der Begutachtung von Artikeln oder Anträgen muss die Vertraulichkeit solcher Informationen gewahrt bleiben. Dafür braucht es nicht nur individuelle Verantwortung, sondern auch verbindliche und überprüfbare Regeln. In Analogie zum Schutz vor Front-Running im Finanzbereich müssen insbesondere bei Anbietern und Institutionen wirksame technische, organisatorische und vertragliche Informationsbarrieren verhindern, dass solche Informationen unautorisiert in eigene Forschungs- und Verwertungsaktivitäten einfließen. Dies gilt unabhängig vom technischen Verarbeitungsweg. Zugriffe und Datenflüsse müssen nachvollziehbar und unabhängig überprüfbar sein."
+      },
+      {
+        "title": "Besonders betroffene Gruppen müssen geschützt und beteiligt werden.",
+        "body": "Promovierende, Postdocs und Forschende ohne feste Stellen tragen viele der unmittelbaren Risiken dieser Entwicklung. Personen in gesicherten Positionen und Leitungsfunktionen haben eine besondere Verantwortung, die Perspektiven dieser Gruppen einzubeziehen, faire Rahmenbedingungen zu schaffen und ihnen eine echte Beteiligung an den anstehenden Entscheidungen zu ermöglichen. Das erhebliche Machtgefälle zwischen international tätigen Technologieunternehmen und einzelnen, häufig abhängig beschäftigten Forschenden muss dabei ausdrücklich berücksichtigt werden."
+      },
+      {
+        "title": "Der Zugang zu KI darf bestehende Ungleichheiten nicht verschärfen.",
+        "body": "Der Zugang zu geeigneten Werkzeugen und Infrastrukturen sowie zu Fachwissen und Weiterbildung muss fair, international inklusiv und am öffentlichen Interesse ausgerichtet sein. Internationale mathematische Teilhabe darf nicht vom Zugang zu kostenpflichtigen KI-Systemen abhängen. Kritische KI-Infrastruktur für die Forschung darf nicht allein von den Interessen einzelner Unternehmen bestimmt werden und bedarf einer wirksamen öffentlichen Kontrolle. Forschende dürfen zugleich nicht allein deshalb benachteiligt werden, weil sie bestimmte, insbesondere kommerzielle, KI-Systeme nicht nutzen möchten."
+      },
+      {
+        "title": "Die Regeln müssen gemeinschaftlich und lernfähig sein.",
+        "body": "Der Umgang mit KI erfordert einen fortlaufenden und transparenten Prozess, in dem die mathematische Gemeinschaft ihre Regeln aufgrund neuer Erfahrungen überprüft und weiterentwickelt. Diese Grundsätze sind angesichts der Ungewissheit über die weitere Entwicklung ein vorläufiger Beitrag zu diesem Prozess. Mit dieser Initiative laden wir dazu ein, sie gemeinsam zu diskutieren und weiterzuentwickeln."
+      }
+    ]
+  },
+  "en": {
+    "title": "AI in Mathematical Research",
+    "preamble": [
+      "The value of mathematics lies substantially in human engagement with it: in understanding, explaining, thinking together and passing on insights. Mathematics aims not only at producing correct results, but at human insight and understanding, as well as interpreting and communicating results within a shared mathematical culture.",
+      "AI is already part of mathematical research, and its importance will continue to grow because of its capabilities and availability. Blanket bans will not permanently halt this development and risk shifting its use into opaque settings or other research communities. We must therefore actively and collectively shape this transition and develop the necessary competencies and conditions. In this way, AI can open up new possibilities for mathematical discovery, understanding and collaborative research."
+    ],
+    "principles": [
+      {
+        "title": "The freedom of research and teaching must be preserved.",
+        "body": "Decisions about which mathematical problems are worth studying and what significance results acquire must remain matters of human judgement and scientific exchange. This is particularly true of basic research, whose value often becomes apparent only in retrospect. Whether a problem is suitable for evaluating or marketing AI systems must not become the determining criterion for its scientific significance. Responsibility for this assessment remains with the mathematical community."
+      },
+      {
+        "title": "Requirements for correctness and verifiability apply regardless of the tool used.",
+        "body": "Any substantively or methodologically relevant use of AI must be disclosed. AI-assisted results must be presented intelligibly and be independently verifiable. Relevant prior work must be carefully checked and appropriately acknowledged. The effort involved in presentation and verification must not be shifted unilaterally onto the scientific community."
+      },
+      {
+        "title": "Authorship and scientific recognition must be rethought.",
+        "body": "AI can decouple the production and publication of a correct result from the understanding and contribution of the people named as authors. A published result alone therefore does not provide a sufficient basis for establishing authorship or assessing scientific competence. Human contributions and responsibilities must be made as transparent as possible and appropriately taken into account. This also applies to collective research achievements whose contributions cannot be clearly attributed to individuals. Criteria for authorship and scientific recognition must be continually reviewed in light of changing research practices."
+      },
+      {
+        "title": "Not everything may be delegated.",
+        "body": "Working with AI makes it possible to delegate important parts of mathematical research to automated processes. We must determine which mathematical abilities and responsibilities cannot be delegated. These include, in particular, critical judgement, also in the sense of Kant’s concept of intellectual maturity, and human responsibility for the correctness of published results. AI can support the formation of judgements without assuming this responsibility."
+      },
+      {
+        "title": "Unpublished research must be protected by default.",
+        "body": "Because the significance of mathematical ideas often cannot be anticipated, researchers cannot reliably decide which conversations or materials require protection. Institutional AI access must ensure that inputs, documents, outputs and information derived from them are used exclusively to provide the requested service. Any further use, in particular for training, model improvement, evaluation or independent research, requires explicit and informed consent. Data storage and access must be limited to what is necessary and governed by verifiable rules. Research requiring particular protection may need technically and institutionally controlled environments. This does not preclude voluntary sharing and collaborative research; they require a self-determined decision about access and use."
+      },
+      {
+        "title": "Privileged access to others’ research information must not be exploited.",
+        "body": "Access to others’ non-public ideas or research data must not be used to gain a priority advantage over the original researchers. This applies equally to researchers, reviewers, providers and institutions. As in the review of articles or proposals, the confidentiality of such information must be preserved. This requires not only individual responsibility but also binding and verifiable rules. By analogy with safeguards against front-running in finance, effective technical, organisational and contractual information barriers must prevent such information from entering providers’ or institutions’ own research and commercial activities without authorisation. This applies regardless of the technical processing pathway. Access and data flows must be traceable and independently auditable."
+      },
+      {
+        "title": "Particularly affected groups must be protected and involved.",
+        "body": "Doctoral researchers, postdocs and researchers without permanent positions bear many of the immediate risks of this development. Those in secure positions and leadership roles have a particular responsibility to include these groups’ perspectives, create fair conditions and enable their genuine participation in the decisions ahead. The substantial power imbalance between internationally operating technology companies and individual researchers, often in dependent employment, must be explicitly taken into account."
+      },
+      {
+        "title": "Access to AI must not exacerbate existing inequalities.",
+        "body": "Access to suitable tools and infrastructure, as well as expertise and training, must be fair, internationally inclusive and oriented towards the public interest. International participation in mathematics must not depend on access to paid AI systems. Critical AI infrastructure for research must not be determined solely by the interests of individual companies and requires effective public oversight. Researchers must not be disadvantaged solely because they do not wish to use particular AI systems, especially commercial ones."
+      },
+      {
+        "title": "The rules must be collective and open to learning.",
+        "body": "The use of AI requires an ongoing and transparent process in which the mathematical community reviews and develops its rules in light of new experiences. Given the uncertainty about future developments, these principles are a provisional contribution to that process. Through this initiative, we invite the community to discuss and further develop them together."
+      }
+    ]
+  }
+}

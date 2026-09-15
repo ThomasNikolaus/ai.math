@@ -1,0 +1,92 @@
+{
+  "de": {
+    "title": "KI im Mathematikstudium",
+    "preamble": [
+      "Mathematische Ausbildung soll Verständnis und die Fähigkeit zur eigenständigen und gemeinsamen Problemlösung entwickeln. Die Verfügbarkeit von KI verändert die Voraussetzungen dafür vom Studienbeginn bis zur Promotion. Wir müssen klären, welche Fähigkeiten künftig benötigt werden und wie sie erworben und nachgewiesen werden können. Dieses Papier formuliert dafür Grundsätze als Grundlage gemeinsamer Diskussion und Erprobung.",
+      "Wir verstehen dieses Positionspapier als einen Entwurf, der zur Diskussion über dieses komplexe Thema anregen soll und behalten uns vor, Positionen im Laufe der Diskussion und Erprobung in der Praxis substantiell anzupassen."
+    ],
+    "principles": [
+      [
+        "Persönliche Entwicklung ist ein eigenständiges Bildungsziel.",
+        "Mathematische Bildung soll persönliche Entwicklung, Vorstellungskraft, selbstbestimmtes Handeln und gesellschaftliche Urteilskraft fördern. Sie hilft Menschen, eigene Ziele zu entwickeln, sich als Teil einer Gemeinschaft zu verstehen und die Folgen ihres Handelns zu beurteilen. Die persönliche Entwicklung hat einen eigenständigen Wert und muss die Gestaltung des Studiums mitbestimmen."
+      ],
+      [
+        "Die angestrebte Qualifikation bestimmt die Studienziele.",
+        "Ausgangspunkt sind die Tätigkeiten in Gesellschaft und Forschung, zu denen das Studium befähigen soll. Dazu gehört verantwortliche Problemlösung mit KI: Probleme präzisieren, Werkzeuge auswählen und Ergebnisse prüfen, einordnen und nutzbar machen. Hierfür müssen die nicht delegierbaren Kompetenzen bestimmt werden. Begriffsverständnis, die Beurteilung von Argumenten und der Umgang mit Beispielen und Gegenbeispielen sind Ausgangspunkte für ein noch zu entwickelndes Kompetenzprofil. Der erforderliche Umfang hängt von Studienrichtung und Qualifikationsstufe ab. Ein wichtiges Ziel der Promotion ist die Entwicklung der Fähigkeit, den Erfolg von Forschungsansätzen einschätzen zu können."
+      ],
+      [
+        "Kommunikation der eigenen Fähigkeiten und Ergebnisse ist zentral",
+        "Die mathematische Ausbildung soll Studierende und Promovierende befähigen, Lösungen und Ergebnisse zu kommunizieren. Schreiben, Vortragen und Erklären gehören zu den Kernkompetenzen. KI-Nutzung in diesem Prozess ist transparent offenzulegen."
+      ],
+      [
+        "Die Ausbildung muss zur kritischen Beurteilung von KI befähigen.",
+        "Zum verantwortlichen Umgang mit KI gehört die Auseinandersetzung mit Verzerrungen, der Herkunft von Trainingsdaten, Fragen geistigen Eigentums sowie sozialen und ökologischen Folgen. Studierende sollen diese Bedingungen beurteilen und begründete Entscheidungen über den Einsatz von KI treffen können. Unterschiedliche, auch ablehnende Haltungen sind dabei ernst zu nehmen."
+      ],
+      [
+        "Lernwege müssen den Aufbau eigener Fähigkeiten sichern.",
+        "Dass eine Tätigkeit später an eine KI delegiert werden kann, entscheidet noch nicht darüber, ob ihre eigene Ausübung für das Lernen erforderlich ist. Zugleich kann KI auch beim Erwerb nicht delegierbarer Kompetenzen helfen, etwa durch Erklärungen, Rückfragen und Rückmeldung. Maßgeblich ist, ob dadurch eigenes Verständnis und selbstständige Urteilskraft entstehen. Gerade eine Promotion ist ein Lern- und Entwicklungsprozess, in dem eigenständiges Fragen, Scheitern und Urteilsbildung zentral bleiben."
+      ],
+      [
+        "Menschliche Beziehungen und gemeinsames Arbeiten bleiben ein zentraler Bestandteil der Ausbildung.",
+        "Persönliche Ermutigung, fachliche Vorbilder und Zugehörigkeit sind wichtige Grundlagen studentischer Motivation. Gemeinsame Problemarbeit schult zugleich das Erklären und Zuhören, den Umgang mit Kritik und die Übernahme geteilter Verantwortung. Für beides braucht das Studium verlässliche Begegnungen mit Lehrenden und Mitstudierenden."
+      ],
+      [
+        "Prüfungen müssen persönliche Kompetenz und verantwortete Werkzeugnutzung sichtbar machen.",
+        "Korrekte Ergebnisse belegen unter KI-Bedingungen weder automatisch Verständnis noch individuelle Beiträge. Prüfungen müssen daher transparent machen, was Studierende selbst beherrschen und was sie mit Werkzeugen leisten können. Dies gilt auch für Abschlussarbeiten und Promotionen; die Promotion muss die Befähigung zu eigenständiger Forschung nachweisen. Die Verantwortung für Ergebnisse bleibt beim Menschen."
+      ],
+      [
+        "Faire Bedingungen und nachvollziehbare Regeln sind institutionell zu sichern.",
+        "Lernzielbezogene Regeln und die Offenlegung relevanter KI-Nutzung müssen für Studierende wie Lehrende gelten. Geforderte Werkzeuge müssen unabhängig von privaten Mitteln und barrierearm zugänglich sein. Lern- und Forschungsdaten sind zu schützen; Bewertungen und Entscheidungen müssen nachvollziehbar sein."
+      ],
+      [
+        "Die Reform muss gemeinsam erprobt und weiterentwickelt werden.",
+        "Studierende, Promovierende und Lehrende müssen die Reform gemeinsam gestalten und aufgrund neuer Erfahrungen überprüfen. Neue Lernformen brauchen Zeit, qualifizierte Betreuung und Fortbildung. Ihr Aufwand ist mit dem gesamten Curriculum abzustimmen; neue Anforderungen dürfen nicht einfach auf das bestehende Pensum aufgeschlagen werden."
+      ]
+    ]
+  },
+  "en": {
+    "title": "AI in Mathematics Degree Programmes",
+    "preamble": [
+      "Mathematical education should develop understanding and the ability to solve problems independently and collaboratively. The availability of AI changes the conditions for this from the start of university studies through to the doctorate. We must clarify which abilities will be needed and how they can be acquired and demonstrated. This paper sets out principles as a basis for shared discussion and experimentation.",
+      "We regard this position paper as a draft intended to encourage discussion of this complex topic, and reserve the right to substantially revise our positions as discussion and practical experimentation proceed."
+    ],
+    "principles": [
+      [
+        "Personal development is an educational goal in its own right.",
+        "Mathematical education should foster personal development, imagination, self-determined action and judgement on societal matters. It helps people develop their own goals, see themselves as part of a community and assess the consequences of their actions. Personal development has value in its own right and must help shape degree programmes."
+      ],
+      [
+        "The intended qualification determines the learning objectives.",
+        "The starting point is the work in society and research for which a degree programme should prepare students. This includes responsible problem-solving with AI: refining problems, selecting tools, and checking, interpreting and making use of results. The competencies that cannot be delegated must be identified. Conceptual understanding, evaluating arguments, and working with examples and counterexamples are starting points for a competency profile that remains to be developed. The required scope depends on the field of study and level of qualification. An important aim of doctoral study is to develop the ability to assess the prospects of success of research approaches."
+      ],
+      [
+        "Communicating one’s own abilities and results is central",
+        "Mathematical education should enable students and doctoral researchers to communicate solutions and results. Writing, presenting and explaining are core competencies. AI use in this process must be transparently disclosed."
+      ],
+      [
+        "Education must enable critical assessment of AI.",
+        "Responsible engagement with AI includes examining biases, the provenance of training data, questions of intellectual property, and social and ecological consequences. Students should be able to assess these conditions and make reasoned decisions about the use of AI. Different positions, including rejection of AI, must be taken seriously."
+      ],
+      [
+        "Learning pathways must ensure the development of students’ own abilities.",
+        "The fact that an activity can later be delegated to AI does not determine whether practising it oneself is necessary for learning. At the same time, AI can help students acquire competencies that cannot be delegated, for example through explanations, follow-up questions and feedback. What matters is whether this develops their own understanding and independent judgement. Doctoral study in particular is a process of learning and development in which independent questioning, failure and the formation of judgement remain central."
+      ],
+      [
+        "Human relationships and collaborative work remain a central part of education.",
+        "Personal encouragement, academic role models and a sense of belonging are important foundations of student motivation. Working together on problems also develops the ability to explain and listen, engage with criticism and take shared responsibility. Both require reliable opportunities to interact with teachers and fellow students throughout a degree programme."
+      ],
+      [
+        "Assessment must make personal competence and responsible tool use visible.",
+        "When AI is available, correct results do not automatically demonstrate either understanding or individual contributions. Assessments must therefore make clear what students can do themselves and what they can achieve with tools. This also applies to final theses and doctorates; a doctorate must demonstrate the ability to conduct independent research. Responsibility for results remains with humans."
+      ],
+      [
+        "Institutions must ensure fair conditions and clear rules.",
+        "Rules tied to learning objectives and disclosure of relevant AI use must apply to students and teachers alike. Required tools must be accessible irrespective of personal financial resources and with as few accessibility barriers as possible. Learning and research data must be protected; assessments and decisions must be transparent and understandable."
+      ],
+      [
+        "Reform must be tried out and developed collaboratively.",
+        "Students, doctoral researchers and teachers must shape reform together and review it in light of new experiences. New forms of learning require time, qualified supervision and professional development. Their demands must be coordinated with the curriculum as a whole; new requirements must not simply be added to the existing workload."
+      ]
+    ]
+  }
+}

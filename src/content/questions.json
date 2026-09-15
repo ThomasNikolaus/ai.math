@@ -1,0 +1,284 @@
+[
+  {
+    "id": "theme-1",
+    "title": {
+      "de": "Ziele, Fortschritt und Verständnis",
+      "en": "Goals, progress and understanding"
+    },
+    "questions": [
+      {
+        "id": 1,
+        "text": {
+          "de": "Was ist das Ziel der Mathematik, wenn KI immer mehr Sätze beweist?",
+          "en": "What is the purpose of mathematics when AI proves more and more theorems?"
+        }
+      },
+      {
+        "id": 2,
+        "text": {
+          "de": "Welchen Fortschritt wollen wir: möglichst schnelle Resultate oder Fortschritt unter selbstbestimmten Bedingungen?",
+          "en": "What kind of progress do we want: results as quickly as possible, or progress on our own terms?"
+        }
+      },
+      {
+        "id": 3,
+        "text": {
+          "de": "Bleibt menschliche Forschung wichtig, oder sollten wir eine neue Arbeitsteilung abwarten?",
+          "en": "Does human research remain important, or should we wait for a new division of labour?"
+        }
+      },
+      {
+        "id": 4,
+        "text": {
+          "de": "Was heißt mathematisches Verständnis, und wie viel davon müssen Autor:innen selbst besitzen?",
+          "en": "What does mathematical understanding mean, and how much of it must authors possess themselves?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-2",
+    "title": {
+      "de": "Autorschaft, Transparenz und Anreize",
+      "en": "Authorship, transparency and incentives"
+    },
+    "questions": [
+      {
+        "id": 5,
+        "text": {
+          "de": "Wer darf ein weitgehend KI-erzeugtes Ergebnis als eigene Publikation beanspruchen?",
+          "en": "Who may claim a largely AI-generated result as their own publication?"
+        }
+      },
+      {
+        "id": 6,
+        "text": {
+          "de": "Wie würdigen wir Vorarbeiten und die kollektive Arbeit hinter einem Resultat?",
+          "en": "How do we acknowledge prior work and the collective effort behind a result?"
+        }
+      },
+      {
+        "id": 7,
+        "text": {
+          "de": "Welche KI-Nutzung muss in einer Publikation offengelegt werden?",
+          "en": "Which uses of AI must be disclosed in a publication?"
+        }
+      },
+      {
+        "id": 8,
+        "text": {
+          "de": "Wie ermöglichen wir ehrliche Offenlegung, wenn KI-Nutzung oder KI-Verzicht berufliche Nachteile auslösen können?",
+          "en": "How can we enable honest disclosure when using or foregoing AI can lead to career disadvantages?"
+        }
+      },
+      {
+        "id": 9,
+        "text": {
+          "de": "Müssen Prompts, Denkprotokolle und Rechenaufwand zugänglich sein?",
+          "en": "Must prompts, reasoning traces and computational costs be accessible?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-3",
+    "title": {
+      "de": "Korrektheit, Begutachtung und Vermittlung",
+      "en": "Correctness, reviewing and communication"
+    },
+    "questions": [
+      {
+        "id": 10,
+        "text": {
+          "de": "Wie sichern wir Korrektheit, und was leistet ein formaler Beweis?",
+          "en": "How do we ensure correctness, and what does a formal proof establish?"
+        }
+      },
+      {
+        "id": 11,
+        "text": {
+          "de": "Wer bewältigt die Flut von Beweisen und trägt die Prüfungslast?",
+          "en": "Who handles the flood of proofs and bears the burden of reviewing?"
+        }
+      },
+      {
+        "id": 12,
+        "text": {
+          "de": "Soll KI selbst Gutachten und wissenschaftliche Werturteile verfassen?",
+          "en": "Should AI itself write reviews and make judgements of scientific value?"
+        }
+      },
+      {
+        "id": 13,
+        "text": {
+          "de": "Wie werden KI-erzeugte Resultate verständlich und für weitere mathematische Arbeit nutzbar?",
+          "en": "How do AI-generated results become understandable and useful for further mathematical work?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-4",
+    "title": {
+      "de": "Leistungsbewertung und Forschungsorientierung",
+      "en": "Assessing capabilities and guiding research"
+    },
+    "questions": [
+      {
+        "id": 14,
+        "text": {
+          "de": "Wie beurteilen wir KI-Fähigkeiten jenseits von Erfolgsankündigungen?",
+          "en": "How do we assess AI capabilities beyond announcements of success?"
+        }
+      },
+      {
+        "id": 15,
+        "text": {
+          "de": "Wie erhalten wir die „difficulty landscape“: gemeinsames Wissen darüber, welche Probleme noch schwierig sind?",
+          "en": "How do we preserve the “difficulty landscape”: shared knowledge of which problems remain difficult?"
+        }
+      },
+      {
+        "id": 16,
+        "text": {
+          "de": "Wie kann KI neue Forschungsfragen erschließen, ohne die wissenschaftliche Agenda zu bestimmen?",
+          "en": "How can AI open up new research questions without determining the scientific agenda?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-5",
+    "title": {
+      "de": "Studium, Promotion und Lernformen",
+      "en": "Degree programmes, doctoral study and approaches to learning"
+    },
+    "questions": [
+      {
+        "id": 17,
+        "text": {
+          "de": "Welche Kompetenzen sollen Studiengänge künftig vermitteln?",
+          "en": "Which competencies should degree programmes teach in the future?"
+        }
+      },
+      {
+        "id": 18,
+        "text": {
+          "de": "Wie können Lehrformate Eigenkompetenz und verantwortliche KI-Nutzung verbinden?",
+          "en": "How can teaching formats combine independent competence and responsible AI use?"
+        }
+      },
+      {
+        "id": 19,
+        "text": {
+          "de": "Wie lernen Studierende mit KI, ohne das eigene Denken auszulagern?",
+          "en": "How do students learn with AI without outsourcing their own thinking?"
+        }
+      },
+      {
+        "id": 20,
+        "text": {
+          "de": "Wie prüfen wir Verständnis in Prüfungen, Abschlussarbeiten und Promotionen?",
+          "en": "How do we assess understanding in examinations, final theses and doctorates?"
+        }
+      },
+      {
+        "id": 21,
+        "text": {
+          "de": "Welche Ressourcen braucht eine Reform der Mathematiklehre, und wie lässt sie sich realistisch einführen?",
+          "en": "What resources does reforming mathematics education require, and how can it realistically be introduced?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-6",
+    "title": {
+      "de": "Anerkennung und Nachwuchs",
+      "en": "Recognition and early-career researchers"
+    },
+    "questions": [
+      {
+        "id": 22,
+        "text": {
+          "de": "Woran sollen Einstellungen und wissenschaftliche Anerkennung gemessen werden?",
+          "en": "What should hiring decisions and scientific recognition be based on?"
+        }
+      },
+      {
+        "id": 23,
+        "text": {
+          "de": "Wie erhalten Nachwuchsforschende sinnvolle Arbeit und Entwicklungsmöglichkeiten?",
+          "en": "How can early-career researchers retain meaningful work and opportunities to develop?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-7",
+    "title": {
+      "de": "Infrastruktur, Zugang und Forschungsschutz",
+      "en": "Infrastructure, access and research protection"
+    },
+    "questions": [
+      {
+        "id": 24,
+        "text": {
+          "de": "Brauchen wir öffentliche KI-Infrastruktur statt Abhängigkeit von wenigen Firmen?",
+          "en": "Do we need public AI infrastructure rather than dependence on a few companies?"
+        }
+      },
+      {
+        "id": 25,
+        "text": {
+          "de": "Wie verhindern wir, dass finanzschwache Forschende und Länder abgehängt werden?",
+          "en": "How do we prevent researchers and countries with limited financial resources from being left behind?"
+        }
+      },
+      {
+        "id": 26,
+        "text": {
+          "de": "Wie schützen wir unveröffentlichte Forschung vor Nutzung durch KI-Anbieter?",
+          "en": "How do we protect unpublished research from use by AI providers?"
+        }
+      },
+      {
+        "id": 27,
+        "text": {
+          "de": "Wie verhindern wir Prioritätsvorteile aus privilegiertem Zugang zu unveröffentlichter Forschung?",
+          "en": "How do we prevent priority advantages arising from privileged access to unpublished research?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theme-8",
+    "title": {
+      "de": "Zusammenarbeit und gesellschaftliche Verantwortung",
+      "en": "Collaboration and societal responsibility"
+    },
+    "questions": [
+      {
+        "id": 28,
+        "text": {
+          "de": "Wie gehen wir mit entschiedener KI-Ablehnung innerhalb der Mathematik um?",
+          "en": "How do we engage with firm opposition to AI within mathematics?"
+        }
+      },
+      {
+        "id": 29,
+        "text": {
+          "de": "Unter welchen Bedingungen sollte die Gemeinschaft mit KI-Firmen zusammenarbeiten?",
+          "en": "Under what conditions should the community collaborate with AI companies?"
+        }
+      },
+      {
+        "id": 30,
+        "text": {
+          "de": "Wie berücksichtigen wir gesellschaftliche und ökologische Folgen und organisieren gemeinsames Handeln?",
+          "en": "How do we account for social and ecological consequences and organise collective action?"
+        }
+      }
+    ]
+  }
+]

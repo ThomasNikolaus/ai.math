@@ -1,0 +1,3095 @@
+{
+  "asOf": "2026-09-12",
+  "questions": {
+    "1": {
+      "title": "Was ist das Ziel der Mathematik, wenn KI immer mehr Sätze beweist?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Scholze et al.",
+            "en": "Scholze et al."
+          },
+          "body": {
+            "de": "Begriffe und menschliches Verständnis entwickeln. Problemlösungen sollen durch sorgfältige Ausarbeitung, Vereinfachung, Gespräche und Lehre in die mathematische Kultur eingehen.",
+            "en": "Develop concepts and human understanding. Solutions should enter mathematical culture through careful exposition, simplification, conversation and teaching."
+          },
+          "references": [
+            {
+              "id": 6,
+              "location": "Haupttext"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Bessis",
+            "en": "Bessis"
+          },
+          "body": {
+            "de": "Anerkennung für das erstmalige Beweisen eines Satzes war ein unvollkommener Ersatzmaßstab für Verständnis. Anerkennung und öffentliche Darstellung sollten sich stärker an Begriffen, Einsicht und Klärung orientieren.",
+            "en": "Credit for being the first to prove a theorem was an imperfect proxy for understanding. Recognition and public presentation should focus more on concepts, insight and clarification."
+          },
+          "references": [
+            {
+              "id": 9,
+              "location": "„Coming clean“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Kunnawalkam Elayavalli",
+            "en": "Kunnawalkam Elayavalli"
+          },
+          "body": {
+            "de": "Persönliche und geteilte Momente des Verstehens, mathematischen Geschmack und kulturelle Erfahrung pflegen. KI daran messen, ob sie diese Erfahrung bereichert; die Überlegenheit einer Maschine entscheidet für ihn nicht über den Wert menschlicher Mathematik.",
+            "en": "Cultivate personal and shared moments of understanding, mathematical taste and cultural experience. Judge AI by whether it enriches that experience; a machine’s superiority does not, for him, determine the value of human mathematics."
+          },
+          "references": [
+            {
+              "id": 28,
+              "location": "Haupttext"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Wegner: andere Wertbegründung",
+            "en": "Wegner: a different account of value"
+          },
+          "body": {
+            "de": "Den Kernwert der Mathematik in Anwendungen sehen, auch über lange Ketten abstrakter Theorien. Wegner setzt verlässliche formale Prüfung voraus. Solange Menschen Forschungsrichtungen bestimmen und Ergebnisse beurteilen müssen, soll KI bisher unrealistische Aufgaben erschließen und mathematische Werkzeuge mit wissenschaftlichem Bedarf verbinden.",
+            "en": "Locate mathematics’ core value in applications, including through long chains of abstract theories. Wegner assumes reliable formal verification. As long as humans must set research directions and assess results, AI should open up previously unrealistic tasks and connect mathematical tools to scientific needs."
+          },
+          "references": [
+            {
+              "id": 68,
+              "location": "Annahme A1; Szenario S1; These T2"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Andrew Ng (Bonn)",
+            "en": "Andrew Ng (Bonn)"
+          },
+          "body": {
+            "de": "Menschliches Verständnis auch als Schutz wissenschaftlicher Unabhängigkeit bewahren. Seine positive Vorstellung KI-gestützter Erklärung setzt ethisch und ökologisch vertretbare Bedingungen voraus. Die gegenwärtigen Bedingungen bewertet Ng als unvertretbar und lehnt deshalb generative Sprachmodelle ab.",
+            "en": "Preserve human understanding also as a safeguard for scientific independence. His positive vision of AI-assisted explanation assumes ethically and ecologically acceptable conditions. Ng regards present conditions as unacceptable and therefore rejects generative language models."
+          },
+          "references": [
+            {
+              "id": 44,
+              "location": "„Why is human understanding important?“; „Back to reality...“"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Welchen Fortschritt wollen wir: möglichst schnelle Resultate oder Fortschritt unter selbstbestimmten Bedingungen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Tao",
+            "en": "Tao"
+          },
+          "body": {
+            "de": "Leistungsprognosen und Wertentscheidungen trennen. Selbst unter der Annahme sehr leistungsfähiger KI bleiben Erkenntnis, Theoriebildung, Ausbildung und die Zukunft der Gemeinschaft eigenständige Ziele.",
+            "en": "Separate predictions about capabilities from value judgements. Even assuming highly capable AI, insight, theory-building, education and the future of the community remain goals in their own right."
+          },
+          "references": [
+            {
+              "id": 59,
+              "location": "§§4–5"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Barak",
+            "en": "Barak"
+          },
+          "body": {
+            "de": "Ein vollständiger KI-Verzicht erscheint ihm für anwendungsbezogene akademische Mathematik nicht tragfähig. Zugleich verteidigt er menschliche Neugier und verständliche Wissenschaft als selbständige Werte; Anwendungen der Grundlagenforschung lassen sich nicht kurzfristig messen.",
+            "en": "He does not regard complete abstention from AI as viable for application-oriented academic mathematics. At the same time, he defends human curiosity and intelligible science as values in their own right; the applications of fundamental research cannot be measured over the short term."
+          },
+          "references": [
+            {
+              "id": 7,
+              "location": "„Impact of AI on Math“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Chu",
+            "en": "Chu"
+          },
+          "body": {
+            "de": "Auch um den Preis langsameren Fortschritts die sozialen und ethischen Bedingungen menschlicher Mathematik schützen. Chu fordert einen Boykott der Zusammenarbeit mit KI-Firmen und den Verzicht auf LLMs zur Erzeugung neuer Beweise; einen weltweiten vollständigen Verzicht hält sie allerdings für schwer durchsetzbar.",
+            "en": "Protect the social and ethical conditions of human mathematics, even at the cost of slower progress. Chu calls for a boycott of collaboration with AI companies and for not using LLMs to generate new proofs, although she considers complete worldwide abstention difficult to enforce."
+          },
+          "references": [
+            {
+              "id": 14,
+              "location": "„Rebuttals...“; „Some radical proposals“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Stankyavichyus",
+            "en": "Stankyavichyus"
+          },
+          "body": {
+            "de": "Forschung nach dem Nutzen für andere bewerten, einschließlich nachgelagerter Wissenschaften. Wer verfügbare Werkzeuge ablehnt und vor allem Bildung als Nutzen nennt, sollte aus seiner Sicht als Lehrender statt für Forschung finanziert werden.",
+            "en": "Assess research by its benefit to others, including downstream sciences. In his view, those who reject available tools and primarily cite education as their contribution should be funded as teachers rather than as researchers."
+          },
+          "references": [
+            {
+              "id": 54,
+              "location": "„AI talking points“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Nigam",
+            "en": "Nigam"
+          },
+          "body": {
+            "de": "Technischer Fortschritt begründet kein Gebot maximaler Beschleunigung. Nutzen und Übergangsschäden gemeinsam bewerten, Betroffene anhören und Forschende das Tempo mitbestimmen lassen. Analogien ersetzen diese Abwägung nicht; ein fertiges Übergangsprogramm bietet sie nicht.",
+            "en": "Technical progress does not create an obligation to accelerate as much as possible. Assess benefits alongside harms during the transition, listen to affected people and give researchers a say in the pace. Analogies cannot replace that assessment; she does not offer a complete transition programme."
+          },
+          "references": [
+            {
+              "id": 45,
+              "location": "„My concerns“; „In closing“"
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Bleibt menschliche Forschung wichtig, oder sollten wir eine neue Arbeitsteilung abwarten?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Litt",
+            "en": "Litt"
+          },
+          "body": {
+            "de": "Verstehen, Theoriebildung und Konsolidierung bleiben Aufgaben. Unterschiedliche Interessen und jeweilige Stärken könnten eine Arbeitsteilung zwischen Menschen und KI ermöglichen. Einen dauerhaften menschlichen Leistungsvorsprung garantiert Litt nicht.",
+            "en": "Understanding, theory-building and consolidation remain tasks. Different interests and respective strengths could enable a division of labour between humans and AI. Litt does not guarantee a lasting human performance advantage."
+          },
+          "references": [
+            {
+              "id": 34,
+              "location": "„Creativity“; „The library“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Narayanan",
+            "en": "Narayanan"
+          },
+          "body": {
+            "de": "Die Fähigkeiten von KI-Modellen, tatsächlich nutzbare Produkte und organisatorischer Wandel sind verschiedene Dinge. Fachwissen, Urteil und Verantwortung stärken; schnelle technische Fortschritte entscheiden nicht allein darüber, wie sich Berufe verändern.",
+            "en": "AI models’ capabilities, genuinely usable products and organisational change are different things. Strengthen expertise, judgement and responsibility; rapid technical progress alone does not determine how professions change."
+          },
+          "references": [
+            {
+              "id": 43,
+              "location": "Vortragstranskript"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Bessis",
+            "en": "Bessis"
+          },
+          "body": {
+            "de": "Jetzt die Ziele und Bewertung mathematischer Arbeit neu ausrichten. Seine Erwartung einer späteren Neuordnung enthält weder einen Zeitplan noch eine sichere Übergangsstrategie.",
+            "en": "Reorient the goals and evaluation of mathematical work now. His expectation of a later reorganisation includes neither a timetable nor a secure transition strategy."
+          },
+          "references": [
+            {
+              "id": 9,
+              "location": "„Coming clean“; „The future of mathematics“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Castillo-Ramirez",
+            "en": "Castillo-Ramirez"
+          },
+          "body": {
+            "de": "Wichtige Fragen auswählen, Ergebnisse prüfen, ordnen und verbinden; in der Lehre Begeisterung, Vertrauen und Ausdauer vermitteln. Sein erwarteter Rollenwandel ist keine Garantie dauerhafter menschlicher Überlegenheit in diesen Aufgaben.",
+            "en": "Select important questions, check results, organise them and make connections; in teaching, convey enthusiasm, trust and perseverance. His anticipated change of roles does not guarantee lasting human superiority in these tasks."
+          },
+          "references": [
+            {
+              "id": 12,
+              "location": "„The End of Handcrafted Mathematics“; „Teaching Will Remain Human“"
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "title": "Was heißt mathematisches Verständnis, und wie viel davon müssen Autor:innen selbst besitzen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thurston",
+            "en": "Thurston"
+          },
+          "body": {
+            "de": "Verstehen umfasst verschiedene mentale Zugänge: Bilder, Sprache, Intuition, logische Struktur und Verfahren. Maßgeblich ist, ob andere klarer denken können; die Kenntnis des Wahrheitswerts oder einer formalen Ableitung erschöpft dies nicht.",
+            "en": "Understanding encompasses different mental approaches: images, language, intuition, logical structure and procedures. What matters is whether others can think more clearly; knowing a truth value or a formal derivation does not exhaust this."
+          },
+          "references": [
+            {
+              "id": 65,
+              "location": "§§1–3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao",
+            "en": "Tao"
+          },
+          "body": {
+            "de": "Tao schlägt als Publikationsschwelle vor, dass die Autorenschaft die Ergebnisse korrekt, sachkundig, verständlich und mit angemessener Zuschreibung vortragen kann. Das ist ein Befähigungskriterium, keine allgemeine Pflicht zur Einreichung eines Vortrags.",
+            "en": "Tao proposes a publication threshold: the authors should be capable of presenting their results correctly, knowledgeably, intelligibly and with appropriate attribution. This is a capability criterion, not a general requirement to submit a talk."
+          },
+          "references": [
+            {
+              "id": 59,
+              "location": "§8"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao zur Arbeitsteilung",
+            "en": "Tao on the division of labour"
+          },
+          "body": {
+            "de": "Formale Beweisassistenten erlauben, Teilaufgaben eines Formalisierungsprojekts getrennt zu prüfen. Tao hält eine entsprechende Arbeitsteilung auch bei neuen Resultaten für möglich: Einzelne könnten spezialisierte Beiträge leisten, ohne das Gesamtprojekt vollständig zu verstehen. Dafür müsste die Formalisierung noch effizienter werden.",
+            "en": "Formal proof assistants allow subtasks of a formalisation project to be checked separately. Tao considers a similar division of labour possible for new results: individuals could make specialised contributions without fully understanding the entire project. Formalisation would need to become more efficient for this."
+          },
+          "references": [
+            {
+              "id": 58,
+              "location": "§1, S.4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Stankyavichyus: Gegenposition",
+            "en": "Stankyavichyus: a contrasting position"
+          },
+          "body": {
+            "de": "Für die Publikationswürdigkeit Neuheit, Korrektheit, Wirkung und Begutachtung genügen lassen; die persönliche Kenntnis bei Einstellungen prüfen. Damit trennt er den Wert eines Textes vom Verständnis seiner Autor:innen.",
+            "en": "Let novelty, correctness, impact and peer review suffice for publication; assess personal knowledge in hiring. He thus separates the value of a text from its authors’ understanding."
+          },
+          "references": [
+            {
+              "id": 54,
+              "location": "„AI talking points“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Shalit",
+            "en": "Shalit"
+          },
+          "body": {
+            "de": "Schon bisher beruhte Forschung auf etablierten fremden Sätzen und arbeitsteiliger Expertise. Alles bis zu den Grundlagen selbst nachzuvollziehen, sei unhaltbar. KI verschärft diese Abhängigkeit; eine allgemeine neue Grenze akzeptablen Vertrauens gibt er nicht an.",
+            "en": "Research has long depended on other people’s established theorems and distributed expertise. Personally tracing everything back to its foundations is untenable. AI intensifies this dependence; he gives no general new boundary for acceptable trust."
+          },
+          "references": [
+            {
+              "id": 51,
+              "location": "„Standing on thin air“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Rivera: strenger Ausbildungsmaßstab",
+            "en": "Rivera: a stricter educational standard"
+          },
+          "body": {
+            "de": "Rivera schreibt seinen Promovierenden die Offenlegung der KI-Nutzung vor und empfiehlt dringend, sie einzuschränken. Verwendete Aussagen sollen unabhängig von ihrer Herkunft vollständig verstanden werden; in Betreuungsgesprächen fragt er bis zu grundlegenden Prinzipien nach. Dies ist seine persönliche Betreuungspolitik.",
+            "en": "Rivera requires his doctoral students to disclose AI use and strongly recommends limiting it. Statements used should be fully understood regardless of their origin; in supervision meetings, he asks questions down to fundamental principles. This is his personal supervision policy."
+          },
+          "references": [
+            {
+              "id": 48,
+              "location": "Absätze über Offenlegung, Nutzungseinschränkung und Verständnis"
+            }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "title": "Wer darf ein weitgehend KI-erzeugtes Ergebnis als eigene Publikation beanspruchen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Etingof",
+            "en": "Etingof"
+          },
+          "body": {
+            "de": "Menschliche Autor:innen können volle Anerkennung erhalten, auch wenn KI Beweise geliefert hat, sofern sie den Inhalt selbst vollständig prüfen, verstehen, erklären und verantworten können sowie die KI-Beiträge benennen.",
+            "en": "Human authors can receive full credit, even when AI supplied proofs, provided they can personally check, understand, explain and take responsibility for the content, and identify the AI contributions."
+          },
+          "references": [
+            {
+              "id": 18,
+              "location": "§1, S.1–2; §7, S.8"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Weinreich",
+            "en": "Weinreich"
+          },
+          "body": {
+            "de": "Eine nachträglich erweiterbare Mitinhaberschaft an mathematischen Ideen als Anerkennungsmodell erproben: Auch später kann hinzukommen, wer Verständnis auf Autorenniveau nachweist; Zeitschriften sollen den Nachweis organisieren.",
+            "en": "Try a model of recognition in which co-ownership of mathematical ideas can be extended later: anyone who subsequently demonstrates author-level understanding can join; journals should organise this demonstration."
+          },
+          "references": [
+            {
+              "id": 70,
+              "location": "§2: „For journals“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Lazić",
+            "en": "Lazić"
+          },
+          "body": {
+            "de": "Ein bloßer Prompt begründet keine Autorschaft. Eigene Theoriebildung oder Beweisarbeit ist für ihn konstitutiv für mathematische Forschung.",
+            "en": "A prompt alone does not establish authorship. For him, doing one’s own theory-building or proof work is constitutive of mathematical research."
+          },
+          "references": [
+            {
+              "id": 30,
+              "location": "Grundsatz 6"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Ein korrektes KI-Resultat kann veröffentlichungswürdig sein, ohne menschliche Entdeckung oder Verständnis zu belegen. Nicht zuordenbare Anerkennung soll nicht automatisch an den Modellbetreiber gehen. Auch bei geklärtem Datenschutz hält Thom das bisherige System persönlicher Priorität für kaum tragfähig: Publikationen belegen nicht mehr zuverlässig den Beitrag und die Fähigkeiten ihrer Autor:innen.",
+            "en": "A correct AI result can merit publication without demonstrating human discovery or understanding. Credit that cannot be attributed should not automatically go to the model operator. Even with data protection settled, Thom considers the existing system of personal priority barely sustainable: publications no longer reliably demonstrate their authors’ contributions and abilities."
+          },
+          "references": [
+            {
+              "id": 63,
+              "location": "Schlussteil"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Das Spektrum vom bloßen Prompt bis zu entscheidender mathematischer Mitarbeit berücksichtigen. Wie dieser Anteil verlässlich geprüft und zugeschrieben werden kann, bleibt eine offene Frage.",
+            "en": "Account for the spectrum from a mere prompt to decisive mathematical collaboration. How that contribution can be reliably checked and attributed remains an open question."
+          },
+          "references": [
+            {
+              "id": 64,
+              "location": "Punkt 1"
+            }
+          ]
+        }
+      ]
+    },
+    "6": {
+      "title": "Wie würdigen wir Vorarbeiten und die kollektive Arbeit hinter einem Resultat?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Leiden-Erklärung",
+            "en": "Leiden Declaration"
+          },
+          "body": {
+            "de": "Bei KI-erzeugten Ergebnissen die zugrunde liegenden menschlichen Arbeiten ermitteln und würdigen. Falls deren Zuschreibung trotz Bemühungen unzureichend bleibt, dies ausdrücklich offenlegen.",
+            "en": "Identify and acknowledge the underlying human work behind AI-generated results. If attribution remains inadequate despite efforts, explicitly disclose this."
+          },
+          "references": [
+            {
+              "id": 33,
+              "location": "„Put effort into proper attribution“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Ochigame",
+            "en": "Ochigame"
+          },
+          "body": {
+            "de": "Anerkennung von der Erstveröffentlichung auf schrittweise kollektive Arbeit verlagern, einschließlich Programmierung, Datenarbeit, Formalisierung und Erklärung; Beiträge gerechter vergüten.",
+            "en": "Shift recognition from first publication towards incremental collective work, including programming, data work, formalisation and explanation; reward contributions more fairly."
+          },
+          "references": [
+            {
+              "id": 46,
+              "location": "§5"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Avigad",
+            "en": "Avigad"
+          },
+          "body": {
+            "de": "Am Beispiel der Formalisierung des Kugelpackungssatzes fordert Avigad, menschliche Vorarbeit angemessen anzuerkennen und KI-erzeugten Code gemeinsam mit dem Projektteam auf dessen Standards zu bringen.",
+            "en": "Using the formalisation of the sphere-packing theorem as an example, Avigad calls for appropriate recognition of prior human work and for bringing AI-generated code up to the project’s standards together with its team."
+          },
+          "references": [
+            {
+              "id": 4,
+              "location": "§2"
+            }
+          ]
+        }
+      ]
+    },
+    "7": {
+      "title": "Welche KI-Nutzung muss in einer Publikation offengelegt werden?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Hairer",
+            "en": "Hairer"
+          },
+          "body": {
+            "de": "Offenlegen, welche wesentlichen mathematischen Ideen oder Beweise von KI stammen. Routinemäßige Sprachkorrektur und Literatursuche müssen nach Hairers Vorschlag nicht angegeben werden.",
+            "en": "Disclose which substantial mathematical ideas or proofs came from AI. Under Hairer’s proposal, routine language correction and literature searches need not be declared."
+          },
+          "references": [
+            {
+              "id": 22,
+              "location": "„Disclosure“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "LMS",
+            "en": "LMS"
+          },
+          "body": {
+            "de": "Für ihre Zeitschriften verlangt die London Mathematical Society die Erklärung sämtlicher KI-Nutzungen, einschließlich Sprachhilfe. Menschliche Autor:innen tragen die volle Verantwortung; generative KI darf nicht als Autor:in aufgeführt werden.",
+            "en": "For its journals, the London Mathematical Society requires disclosure of all AI use, including language assistance. Human authors bear full responsibility; generative AI may not be listed as an author."
+          },
+          "references": [
+            {
+              "id": 36,
+              "location": "§§2.1.5, 2.5"
+            }
+          ]
+        }
+      ]
+    },
+    "8": {
+      "title": "Wie ermöglichen wir ehrliche Offenlegung, wenn KI-Nutzung oder KI-Verzicht berufliche Nachteile auslösen können?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Klowden und Tao",
+            "en": "Klowden and Tao"
+          },
+          "body": {
+            "de": "Verantwortliche Nutzung kann sowohl durch rücksichtslosen Wettbewerb als auch durch pauschale Ausgrenzung verdrängt werden. Gute Praxis, Ausbildung und gezielte Regulierung sollen hilfreiche Nutzung fördern und schädliche oder verdeckte Nutzung begrenzen.",
+            "en": "Responsible use can be driven out both by reckless competition and by blanket exclusion. Good practice, education and targeted regulation should encourage helpful use and limit harmful or concealed use."
+          },
+          "references": [
+            {
+              "id": 27,
+              "location": "§5.4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Stankyavichyus",
+            "en": "Stankyavichyus"
+          },
+          "body": {
+            "de": "Beschämung und Sanktionen allein wegen KI-Nutzung zurückweisen. Normen, die dauerhaft Beschäftigte setzen, können besonders hohe berufliche Kosten für ihre Studierenden und prekär Beschäftigte haben.",
+            "en": "Reject shaming and sanctions solely for using AI. Norms set by permanently employed researchers can impose particularly high career costs on their students and precariously employed colleagues."
+          },
+          "references": [
+            {
+              "id": 54,
+              "location": "„On dangers of dehumanizing colleagues“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Ruodu Wang",
+            "en": "Ruodu Wang"
+          },
+          "body": {
+            "de": "Wenn vor allem die erste Lösung Anerkennung erhält und ungeprüfte KI-Übernahmen nicht erkennbar sind, geraten sorgfältig prüfende Autor:innen nach Wangs Gedankenmodell ins Hintertreffen. Geringere Prioritätsprämien lösen dies nicht, solange spätere Arbeiten leer ausgehen. Einen geeigneten Ersatzmaßstab gerade für Nachwuchsforschende lässt er offen.",
+            "en": "In Wang’s thought experiment, if the first solution receives most of the credit and unchecked adoption of AI output is undetectable, authors who check carefully are disadvantaged. Reducing priority rewards does not solve this while later work receives nothing. He leaves open a suitable replacement metric, especially for early-career researchers."
+          },
+          "references": [
+            {
+              "id": 67,
+              "location": "Annahmen i–iii; Schlussabsätze"
+            }
+          ]
+        }
+      ]
+    },
+    "9": {
+      "title": "Müssen Prompts, Denkprotokolle und Rechenaufwand zugänglich sein?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Boldt",
+            "en": "Boldt"
+          },
+          "body": {
+            "de": "Exakte Modellversion, Prompts und Steuerungssoftware offenlegen; auch nichtdeterministische Experimente bleiben wissenschaftlich nachvollziehbar und untersuchbar.",
+            "en": "Disclose the exact model version, prompts and orchestration software; even nondeterministic experiments remain open to scientific scrutiny and investigation."
+          },
+          "references": [
+            {
+              "id": 10,
+              "location": "§5"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Hairer",
+            "en": "Hairer"
+          },
+          "body": {
+            "de": "Verfügbare Denkprotokolle können helfen; allgemeine Pflichten für Prompts und Verbrauchsdaten hält er wegen Verfügbarkeit und fehlender Reproduzierbarkeit für unpraktisch.",
+            "en": "Available reasoning traces can help; he considers general requirements to provide prompts and consumption data impractical because of availability and lack of reproducibility."
+          },
+          "references": [
+            {
+              "id": 22,
+              "location": "„Disclosure“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Gonen Cohen",
+            "en": "Gonen Cohen"
+          },
+          "body": {
+            "de": "Als Diskussionsoptionen nennt Gonen Cohen öffentliche Zugänge, Zugang auf Anfrage oder für vertrauenswürdige Prüfer:innen. Prompt- und Werkzeugverläufe könnten einen Kompromiss bilden; Denkprotokolle spiegeln die tatsächliche Entstehung einer Antwort nicht notwendig zuverlässig wider.",
+            "en": "Gonen Cohen discusses public access, access on request or access for trusted reviewers as possible options. Prompt and tool histories might offer a compromise; reasoning traces do not necessarily reliably reflect how an answer was actually produced."
+          },
+          "references": [
+            {
+              "id": 20,
+              "location": "„In what format...“; „What next?“"
+            }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "title": "Wie sichern wir Korrektheit, und was leistet ein formaler Beweis?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Ringer",
+            "en": "Ringer"
+          },
+          "body": {
+            "de": "Erzeugung und Prüfung trennen: Ein kleiner Prüfkern kontrolliert das formale Beweisobjekt unabhängig von der Zuverlässigkeit des erzeugenden Systems.",
+            "en": "Separate generation from checking: a small kernel checks the formal proof object independently of the reliability of the system that generated it."
+          },
+          "references": [
+            {
+              "id": 47,
+              "location": "„Proof Assistants“, S.2; „Choosing a Proof Assistant“, S.3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Etingof und Sutherland",
+            "en": "Etingof and Sutherland"
+          },
+          "body": {
+            "de": "Argumente selbst prüfen, verstehen und erklären. Bei Formalisierung zusätzlich kontrollieren, ob der kodierte Satz der beabsichtigten Aussage entspricht; mehrere zustimmende Modelle ersetzen keinen Beweis.",
+            "en": "Personally check, understand and explain arguments. For formalisation, also verify that the encoded theorem matches the intended statement; agreement among several models is not a proof."
+          },
+          "references": [
+            {
+              "id": 18,
+              "location": "§1; §4.4; §4.6 (Andrew Sutherland)"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Boldt",
+            "en": "Boldt"
+          },
+          "body": {
+            "de": "Wer durch Sprachmodelle gewonnene mathematische Ergebnisse veröffentlicht, soll eine maschinenprüfbare Formalisierung bereitstellen. Das ist Boldts Normvorschlag, keine allgemein geltende Regel.",
+            "en": "Those publishing mathematical results obtained through language models should provide a machine-checkable formalisation. This is Boldt’s proposed norm, not a generally applicable rule."
+          },
+          "references": [
+            {
+              "id": 10,
+              "location": "§4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Klowden und Tao",
+            "en": "Klowden and Tao"
+          },
+          "body": {
+            "de": "Eine Formalisierung kontrolliert nicht automatisch, ob die kodierte Aussage die beabsichtigte ist. Motivation, Heuristik und Übertragbarkeit bleiben zusätzliche Erkenntnisleistungen.",
+            "en": "Formalisation does not automatically check whether the encoded statement is the intended one. Motivation, heuristics and transferability remain additional contributions to knowledge."
+          },
+          "references": [
+            {
+              "id": 27,
+              "location": "§4.4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Weinberger",
+            "en": "Weinberger"
+          },
+          "body": {
+            "de": "Überzeugende Gespräche nicht mit Zuverlässigkeit verwechseln. An kritischem Austausch mit Kolleg:innen festhalten und einen formalen Beleg oder detailliertes unabhängiges Verständnis verlangen; sprachliche Überzeugungskraft kann das eigene Urteil unbemerkt verschieben.",
+            "en": "Do not confuse convincing conversation with reliability. Maintain critical exchanges with colleagues and require formal evidence or detailed independent understanding; linguistic persuasiveness can shift one’s judgement unnoticed."
+          },
+          "references": [
+            {
+              "id": 69,
+              "location": "Haupttext"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Lee",
+            "en": "Lee"
+          },
+          "body": {
+            "de": "Drei Ebenen unterscheiden: Beweis des formalen Satzes aus den verwendeten Axiomen, richtige Übersetzung der beabsichtigten Aussage und Übereinstimmung mit der ursprünglichen informellen Beweisführung. Ein formal korrekter anderer Beweis bestätigt nicht automatisch die ursprüngliche Argumentation.",
+            "en": "Distinguish three levels: proving the formal theorem from the axioms used, correctly translating the intended statement, and agreement with the original informal proof. A formally correct different proof does not automatically confirm the original argument."
+          },
+          "references": [
+            {
+              "id": 32,
+              "location": "„Do you want to (auto)formalize a theorem or a proof?“"
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "title": "Wer bewältigt die Flut von Beweisen und trägt die Prüfungslast?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Leiden-Erklärung",
+            "en": "Leiden Declaration"
+          },
+          "body": {
+            "de": "Autor:innen sollen Prüfung durch präzise Referenzen und geeignete formale Beweise erleichtern; Fachorganisationen könnten zusätzliche menschliche Darstellungen oder externe Vorprüfung verlangen.",
+            "en": "Authors should facilitate checking through precise references and appropriate formal proofs; professional organisations could require additional human exposition or external pre-screening."
+          },
+          "references": [
+            {
+              "id": 33,
+              "location": "„Support the needs of reviewing“; „Maintain standards of rigor“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Litt",
+            "en": "Litt"
+          },
+          "body": {
+            "de": "KI-Vorprüfung erwägen, aber Fehlentscheidungen berücksichtigen. Kautionen oder Zugang nur für vertraute Autor:innen diskutiert er als problematische, nicht als wünschenswerte Schranken.",
+            "en": "Consider AI pre-screening, while accounting for erroneous decisions. He discusses deposits or restricting access to trusted authors as problematic barriers, not desirable ones."
+          },
+          "references": [
+            {
+              "id": 34,
+              "location": "„Truth-seeking“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "First Proof",
+            "en": "First Proof"
+          },
+          "body": {
+            "de": "Beim KI-Testprojekt First Proof beurteilen unabhängige Fachgutachter:innen die Lösungen. Nach dem Bericht finanzieren ungebundene Unternehmensspenden unter anderem Forschungszuwendungen für die Gutachter:innen; Herausgebergremium und Vorstand werden daraus nicht vergütet.",
+            "en": "In the AI evaluation project First Proof, independent expert reviewers assess the solutions. According to the report, unrestricted corporate donations fund, among other things, research grants for reviewers; the editorial panel and board are not remunerated from these funds."
+          },
+          "references": [
+            {
+              "id": 1,
+              "location": "§§2.3–2.4, S.10–11"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Mangioni",
+            "en": "Mangioni"
+          },
+          "body": {
+            "de": "Als mögliches Modell erwägt er KI-gestützte Erzeugung bei menschlicher Prüfung und Aneignung der Mathematik. Begutachtung könnte eine reguläre Arbeitsaufgabe mit reservierter Zeit werden. Für KI-Anwendungen insgesamt fordert er klare Grenzen und schnell anpassbare Korrekturmechanismen.",
+            "en": "He considers a possible model of AI-assisted generation with human checking and assimilation of the mathematics. Reviewing could become a regular work duty with allocated time. For AI applications overall, he calls for clear limits and rapidly adaptable corrective mechanisms."
+          },
+          "references": [
+            {
+              "id": 39,
+              "location": "„The social context lens“; „The ethical lens“"
+            }
+          ]
+        }
+      ]
+    },
+    "12": {
+      "title": "Soll KI selbst Gutachten und wissenschaftliche Werturteile verfassen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Narayanan",
+            "en": "Narayanan"
+          },
+          "body": {
+            "de": "Routineaufgaben automatisieren, wertende Entscheidungen bei Menschen belassen. Sonst verlieren Forschende Einfluss auf die Entwicklung ihres Fachs.",
+            "en": "Automate routine tasks while leaving evaluative decisions to people. Otherwise, researchers lose influence over the development of their field."
+          },
+          "references": [
+            {
+              "id": 43,
+              "location": "Schlussteil"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "LMS",
+            "en": "LMS"
+          },
+          "body": {
+            "de": "Für ihre Zeitschriften untersagt die London Mathematical Society KI-Begutachtung und ManuskriptUploads in KI-Systeme. Gutachtende dürfen einen selbst verfassten Bericht sprachlich verbessern lassen, müssen dies offenlegen und dürfen nur den Berichtstext übermitteln.",
+            "en": "For its journals, the London Mathematical Society prohibits AI reviewing and uploading manuscripts to AI systems. Reviewers may have a report they wrote themselves linguistically improved, but must disclose this and may transmit only the report text."
+          },
+          "references": [
+            {
+              "id": 36,
+              "location": "§§3.5, 4.6"
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "title": "Wie werden KI-erzeugte Resultate verständlich und für weitere mathematische Arbeit nutzbar?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Etingof (nach einem Kommentar von Paul Seidel)",
+            "en": "Etingof (following a comment by Paul Seidel)"
+          },
+          "body": {
+            "de": "Veröffentlichende müssen Ideen durch Erklärungen, Gespräche und Vorträge in gemeinsames Wissen überführen; ein arXiv-Upload allein genügt nicht.",
+            "en": "Those publishing must turn ideas into shared knowledge through explanations, conversations and talks; an arXiv upload alone is not enough."
+          },
+          "references": [
+            {
+              "id": 18,
+              "location": "Bemerkung 5.1, S.8"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Macbeth",
+            "en": "Macbeth"
+          },
+          "body": {
+            "de": "Formale Texte als eigenes mathematisches Medium gestalten: wiederkehrende Argumente durch geeignete Begriffe und allgemeine Hilfssätze organisieren, Berechnung und Abstraktion verbinden.",
+            "en": "Develop formal texts as a mathematical medium in their own right: organise recurring arguments using appropriate concepts and general auxiliary lemmas, and connect computation with abstraction."
+          },
+          "references": [
+            {
+              "id": 38,
+              "location": "§§2–4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Donoho",
+            "en": "Donoho"
+          },
+          "body": {
+            "de": "Für datenbasierte Wissenschaft Daten, Programme und mit geringem Aufwand reproduzierbare Berechnungen offen bereitstellen und gemeinsame Vergleichsverfahren nutzen. Der Aufbau fehlender Datensätze und Vergleichsaufgaben kann selbst ein bedeutender Forschungsbeitrag sein.",
+            "en": "For data-based science, openly provide data, programs and computations that can be reproduced with little effort, and use shared benchmarking procedures. Creating missing datasets and benchmark tasks can itself be a significant research contribution."
+          },
+          "references": [
+            {
+              "id": 16,
+              "location": "§10.1"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao",
+            "en": "Tao"
+          },
+          "body": {
+            "de": "Formalisierung kann überflüssige Voraussetzungen und einfachere Wege sichtbar machen und eine wiederverwendbare Bibliothek erweitern; bloße Zertifizierung ist nur ein möglicher Zweck.",
+            "en": "Formalisation can reveal unnecessary assumptions and simpler approaches and expand a reusable library; certification alone is only one possible purpose."
+          },
+          "references": [
+            {
+              "id": 58,
+              "location": "§1, S.3–4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Cheung",
+            "en": "Cheung"
+          },
+          "body": {
+            "de": "Außenstehenden erklären, warum ein Problem und seine Lösung interessieren. Öffentlichkeitsarbeit kann gesellschaftliche Unterstützung, eigenes Verständnis und bessere fachliche Darstellung fördern; Korrektheit allein vermittelt die Bedeutung noch nicht.",
+            "en": "Explain to outsiders why a problem and its solution are interesting. Public communication can foster social support, one’s own understanding and better mathematical exposition; correctness alone does not convey significance."
+          },
+          "references": [
+            {
+              "id": 13,
+              "location": "„Lessons for academia?“; „A plea...“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Ein formaler Beweis bestätigt ein mathematisches Resultat; dessen Bedeutung, Erklärung und Einordnung verlangen weitere Arbeit. Diese Aneignung ist für Thom selbst Forschung.",
+            "en": "A formal proof confirms a mathematical result; its significance, explanation and contextualisation require further work. For Thom, this process of making the mathematics one’s own is itself research."
+          },
+          "references": [
+            {
+              "id": 63,
+              "location": "Schlussabsätze"
+            }
+          ]
+        }
+      ]
+    },
+    "14": {
+      "title": "Wie beurteilen wir KI-Fähigkeiten jenseits von Erfolgsankündigungen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "First Proof",
+            "en": "First Proof"
+          },
+          "body": {
+            "de": "First Proof testet KI an Forschungsaufgaben, deren menschliche Lösungen bereits vorliegen, aber noch unveröffentlicht sind. Lösungen, Protokolle, Kosten und Steuerungscode werden offengelegt; zwei bis drei Fachgutachter:innen beurteilen anonymisiert. Begriffsentwicklung und das Finden interessanter Vermutungen erfasst dieser Test nicht.",
+            "en": "First Proof tests AI on research tasks whose human solutions already exist but remain unpublished. Solutions, logs, costs and orchestration code are disclosed; two to three expert reviewers assess them anonymously. This test does not capture concept development or finding interesting conjectures."
+          },
+          "references": [
+            {
+              "id": 1,
+              "location": "§§1.1–1.3, 2.1–2.4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Narayanan",
+            "en": "Narayanan"
+          },
+          "body": {
+            "de": "Neben Erfolgsquoten prüfen, ob die KI wiederholt zuverlässig arbeitet, auf kleine Änderungen robust reagiert, eigene Fehler richtig einschätzt und ob Fehler beherrschbare Folgen haben.",
+            "en": "Beyond success rates, assess whether AI works reliably on repeated attempts, is robust to small changes, correctly estimates its own errors and produces errors with manageable consequences."
+          },
+          "references": [
+            {
+              "id": 43,
+              "location": "Absätze zur Verlässlichkeit"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Bessis",
+            "en": "Bessis"
+          },
+          "body": {
+            "de": "Eine breitere Automatisierungsskala entwickeln, die auch Vereinfachung, Fragestellung, Begriffs- und Theoriebildung erfasst.",
+            "en": "Develop a broader scale of automation that also covers simplification, formulating questions, and developing concepts and theories."
+          },
+          "references": [
+            {
+              "id": 9,
+              "location": "„Coming clean“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Lan",
+            "en": "Lan"
+          },
+          "body": {
+            "de": "Öffentlich verfügbare Modelle systematisch an offenen Problemen prüfen, Ausgaben unabhängig kontrollieren und Nutzung offenlegen. Die Gemeinschaft soll Bedeutung und Leistung selbst beurteilen; seine weitergehenden Vermutungen über Firmenmotive sind keine Nachweise.",
+            "en": "Systematically test publicly available models on open problems, independently check outputs and disclose use. The community should assess significance and performance itself; his further conjectures about companies’ motives are not evidence."
+          },
+          "references": [
+            {
+              "id": 29,
+              "location": "Absätze zu öffentlichen Tests und Begutachtung"
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "title": "Wie erhalten wir die „difficulty landscape“: gemeinsames Wissen darüber, welche Probleme noch schwierig sind?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Tao: Diagnose",
+            "en": "Tao: diagnosis"
+          },
+          "body": {
+            "de": "Schwierigkeit ist relativ zu bekannten Methoden: Was ist leicht, mit Aufwand oder noch nicht erreichbar? Tao sieht die Orientierung durch raschen KI-Fortschritt und fehlende Offenlegung erfolgloser Versuche und Lösungsprozesse durch KI-Firmen gefährdet. Der Wettbewerb um aussichtsreiche Probleme könne Forschende zur Geheimhaltung bewegen.",
+            "en": "Difficulty is relative to known methods: what is easy, achievable with effort or still out of reach? Tao sees this orientation threatened by rapid AI progress and AI companies’ failure to disclose unsuccessful attempts and solution processes. Competition for promising problems could encourage researchers to become secretive."
+          },
+          "references": [
+            {
+              "id": 61,
+              "location": "Teile 2–3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao: Vorschlag",
+            "en": "Tao: proposal"
+          },
+          "body": {
+            "de": "Für viele Problemklassen gemeinsame Standards entwickeln: Eine Lösung soll auch Einsichten aus ihrem Entstehungsprozess und das Verständnis verwandter Schwierigkeiten erschließen. Ein Ergebnis ohne diese Analyse kann für die weitere Forschungsorientierung wenig oder sogar negativen Wert haben.",
+            "en": "Develop shared standards for many classes of problems: a solution should also provide insights from the process that produced it and understanding of related difficulties. Without this analysis, a result may have little or even negative value for further research orientation."
+          },
+          "references": [
+            {
+              "id": 61,
+              "location": "Teil 4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Gonen Cohen",
+            "en": "Gonen Cohen"
+          },
+          "body": {
+            "de": "Zur Diskussion stellen, ob erfolglose Läufe und ihre Kosten ebenfalls offenzulegen sind, in welchem Umfang und gegenüber wem. Er legt sich auf keine allgemeine Veröffentlichungspflicht fest; nur erfolgreiche Protokolle können den Gesamtaufwand verdecken.",
+            "en": "Discuss whether unsuccessful runs and their costs should also be disclosed, to what extent and to whom. He does not commit to a general publication requirement; reporting only successful traces can conceal the total effort."
+          },
+          "references": [
+            {
+              "id": 20,
+              "location": "„What next?“"
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "title": "Wie kann KI neue Forschungsfragen erschließen, ohne die wissenschaftliche Agenda zu bestimmen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Tao",
+            "en": "Tao"
+          },
+          "body": {
+            "de": "Tao beschreibt ein Zusammenspiel von maschineller Mustererkennung, menschlicher Vermutungsbildung, Gegenprüfung und Beweisarbeit. Eine Fallstudie aus der Knotentheorie zeigt, wie daraus neue Einsichten entstehen können; sie begründet keine allgemeine Leistungsprognose.",
+            "en": "Tao describes an interplay of machine pattern recognition, human conjecture formation, cross-checking and proof work. A case study in knot theory shows how this can produce new insights; it does not establish a general performance forecast."
+          },
+          "references": [
+            {
+              "id": 58,
+              "location": "§2, S.5–6"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Guanyang Wang",
+            "en": "Guanyang Wang"
+          },
+          "body": {
+            "de": "Als mögliche Arbeitsteilung schlägt Wang vor: Menschen geben einen Beweisplan mit offenen Zwischenschritten vor, KI hilft bei diesen Schritten. Zudem berichtet er erfolgreiche und gescheiterte Läufe zweier Prompts. Der nach Kenntnis des Beweises entworfene Promptvergleich erlaubt keine allgemeine Erfolgsprognose.",
+            "en": "Wang proposes a possible division of labour: humans supply a proof plan with open intermediate steps, and AI helps with those steps. He also reports successful and failed runs of two prompts. The prompt comparison, devised with knowledge of the proof, does not allow a general prediction of success."
+          },
+          "references": [
+            {
+              "id": 66,
+              "location": "„The Right Prompt“; „A Hypothetical Example“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Hartstein",
+            "en": "Hartstein"
+          },
+          "body": {
+            "de": "Automatisches Beweisen breiter als Sprachmodelle erforschen, auch mit symbolischen und kombinierten Verfahren. Seine Ziele sind überprüfbare Korrektheit, das grundsätzliche Auffinden jedes im gewählten formalen System existierenden Beweises und effiziente Suche. Eine allgemeine praktische Erreichbarkeit aller Ziele weist er nicht nach.",
+            "en": "Research automated proving more broadly than language models, including symbolic and hybrid approaches. His goals are verifiable correctness, the ability in principle to find any proof that exists in the chosen formal system, and efficient search. He does not demonstrate that all these goals are generally achievable in practice."
+          },
+          "references": [
+            {
+              "id": 23,
+              "location": "„The Actual Goal“; „The Gödel Objection“; „The Future“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Avigad",
+            "en": "Avigad"
+          },
+          "body": {
+            "de": "Formale Bibliotheken, symbolische Verfahren, Experimente und neue Formen der Interaktion mitentwickeln und als Forschung anerkennen. Wenn Mathematik anderen Wissenschaften nur die Nutzung fertiger KI empfiehlt, drohe ihr Bedeutungsverlust. Sie soll eigene Methoden und Anwendungen beitragen.",
+            "en": "Help develop formal libraries, symbolic methods, experiments and new forms of interaction, and recognise this as research. If mathematics merely recommends that other sciences use ready-made AI, it risks losing relevance. It should contribute its own methods and applications."
+          },
+          "references": [
+            {
+              "id": 5,
+              "location": "„What is AI for mathematics?“; „The challenges“; „The future“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Zhang",
+            "en": "Zhang"
+          },
+          "body": {
+            "de": "In seinem Bericht über eine gruppentheoretische Konstruktion beschreibt Zhang, wie das Team teure Rechenwege stoppte, Koordinaten und Strategie wechselte und KI für Programmierung und Analyse nutzte. Die Ergebnisse wurden unabhängig mit mathematischer Software überprüft. Mehr Rechenleistung allein hätte den Strategiewechsel nicht ersetzt.",
+            "en": "In his account of a group-theoretic construction, Zhang describes how the team stopped costly computational approaches, changed coordinates and strategy, and used AI for programming and analysis. The results were independently checked with mathematical software. More computing power alone would not have replaced the change of strategy."
+          },
+          "references": [
+            {
+              "id": 72,
+              "location": "„When more precision was the wrong answer“; „What I learned“"
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "title": "Welche Kompetenzen sollen Studiengänge künftig vermitteln?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Studiengänge bis zur Promotion von den Anforderungen des Arbeitsmarkts einschließlich wissenschaftlicher Karrieren her gestalten. Problemlösung in Zusammenarbeit mit KI und die Nutzbarmachung KI-erzeugter Resultate sollen im Vordergrund stehen.",
+            "en": "Design programmes up to the doctorate around the requirements of the labour market, including academic careers. Problem-solving in collaboration with AI and making AI-generated results useful should be central."
+          },
+          "references": [
+            {
+              "id": 64,
+              "location": "Punkt 2"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Avigad; Commelin et al.",
+            "en": "Avigad; Commelin et al."
+          },
+          "body": {
+            "de": "Avigad fordert beruflich relevante Problemlösung mit KI bei Erhalt mathematischer Intuition. Commelin und Mitautor:innen empfehlen, Problemformulierung, Kommunikation und kritische Prüfung von Argumenten im Curriculum zu stärken und Studierende an der Gestaltung zu beteiligen.",
+            "en": "Avigad calls for professionally relevant problem-solving with AI while preserving mathematical intuition. Commelin and co-authors recommend strengthening problem formulation, communication and critical scrutiny of arguments in the curriculum, and involving students in its design."
+          },
+          "references": [
+            {
+              "id": 4,
+              "location": "§§3–4"
+            },
+            {
+              "id": 15,
+              "location": "S.3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Su",
+            "en": "Su"
+          },
+          "body": {
+            "de": "Mathematische Bildung auch an Ausdauer, Kreativität, Perspektivwechsel und Verantwortung ausrichten. Ihr Wert reicht über verwertbare Problemlösungen hinaus.",
+            "en": "Orient mathematical education also towards perseverance, creativity, changes of perspective and responsibility. Its value extends beyond practically useful solutions."
+          },
+          "references": [
+            {
+              "id": 55,
+              "location": "„What a math education is really for“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom (Lehrkonzept)",
+            "en": "Thom (teaching concept)"
+          },
+          "body": {
+            "de": "Lehr- und Prüfungsformen aus den Zielkompetenzen für Forschung und Beruf entwickeln: präzise Begriffsverwendung, Beweiskontrolle, Beispiele und Gegenbeispiele, Strukturerkennung und mathematische Verantwortung.",
+            "en": "Develop teaching and assessment from the target competencies for research and employment: precise use of concepts, checking proofs, examples and counterexamples, recognising structures and mathematical responsibility."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "S.1"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "MIT-Bericht",
+            "en": "MIT report"
+          },
+          "body": {
+            "de": "Von Lernzielen ausgehen und danach KI erlauben, verlangen oder begrenzen. Effektiven, verantwortlichen und ethischen Einsatz in Studium und Promotion vermitteln.",
+            "en": "Start from learning goals and then permit, require or limit AI accordingly. Teach effective, responsible and ethical use in degree programmes and doctoral education."
+          },
+          "references": [
+            {
+              "id": 42,
+              "location": "§§2.5–2.7, 3.2.4"
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "title": "Wie können Lehrformate Eigenkompetenz und verantwortliche KI-Nutzung verbinden?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom (Lehrkonzept)",
+            "en": "Thom (teaching concept)"
+          },
+          "body": {
+            "de": "Vier Elemente verzahnen: Die Vorlesung vermittelt Leitideen und Zusammenhänge; ein kursbezogener KI-Tutor unterstützt das Selbststudium; die Grundübung trainiert eigenes mathematisches Denken in Präsenz weitgehend ohne KI; das Labor übt kontrollierten Einsatz von KI, Programmierung und weiteren Werkzeugen.",
+            "en": "Connect four elements: the lecture conveys guiding ideas and connections; a course-specific AI tutor supports self-study; the foundational exercise class trains independent mathematical thinking in person, largely without AI; the laboratory practises controlled use of AI, programming and other tools."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "§§1.1–1.4, S.2–3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom (Rollen und Umfang)",
+            "en": "Thom (roles and workload)"
+          },
+          "body": {
+            "de": "Das Skript bleibt maßgeblicher Referenztext; KI-Erklärungen sind daran und an eigenen Überlegungen zu prüfen. Beispielhafte Umverteilung: je 2 Semesterwochenstunden (SWS) Vorlesung, Grundübung und Labor statt 4 SWS Vorlesung plus 2 SWS Übung; der KI-Tutor unterstützt außerhalb der Präsenzzeit.",
+            "en": "The lecture notes remain the authoritative reference; AI explanations should be checked against them and against one’s own reasoning. An illustrative redistribution is two weekly semester hours each for lecture, foundational exercise class and laboratory instead of four for lectures plus two for exercises; the AI tutor supports learning outside contact hours."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "§1 und §1.2, S.2"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom (Studienverlauf)",
+            "en": "Thom (programme structure)"
+          },
+          "body": {
+            "de": "Zunächst gemeinsame Grundlagen sichern, später nach Studienrichtung gewichten: theoretisch etwa Beweis- und Literaturseminare sowie formale Verifikation; anwendungsbezogen Modellierung, Datenanalyse und Simulation. Eigenkompetenz bleibt in allen Pfaden nötig.",
+            "en": "First secure shared foundations, then adjust emphasis by study pathway: for theory, for example, proof and literature seminars and formal verification; for applications, modelling, data analysis and simulation. Independent competence remains necessary in every pathway."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "§2, S.3–4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Jaye und Livshyts",
+            "en": "Jaye and Livshyts"
+          },
+          "body": {
+            "de": "Aufgaben zur Beweisprüfung, zur Auswahl und Begründung interessanter Fragen, zum verständlichen Schreiben und zu Kurzvorträgen erproben. Diese lassen sich verbinden: eigene Fragen gegebenenfalls mit KI bearbeiten, einen verständlichen Bericht schreiben und die Ergebnisse im Kurs verteidigen.",
+            "en": "Try tasks on checking proofs, selecting and justifying interesting questions, writing intelligibly and giving short talks. These can be combined: work on one’s own questions, with AI where appropriate, write an understandable report and defend the results in class."
+          },
+          "references": [
+            {
+              "id": 25,
+              "location": "nummerierte Aufgabenfolge"
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "title": "Wie lernen Studierende mit KI, ohne das eigene Denken auszulagern?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Etingof",
+            "en": "Etingof"
+          },
+          "body": {
+            "de": "Zunächst eigene Versuche unternehmen, Hinweise statt fertiger Lösungen erfragen und Übungsaufgaben selbst bearbeiten. KI soll Lernen verstärken.",
+            "en": "Attempt problems independently first, ask for hints rather than complete solutions and work through exercises oneself. AI should enhance learning."
+          },
+          "references": [
+            {
+              "id": 18,
+              "location": "§§3, 4.5"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Karamanis",
+            "en": "Karamanis"
+          },
+          "body": {
+            "de": "Schwierigkeiten und Fehlersuche gehören zur Ausbildung des Urteils, das später KI beaufsichtigen soll. Methoden und Entscheidungen müssen selbst erklärbar bleiben.",
+            "en": "Difficulties and debugging are part of developing the judgement that will later supervise AI. One must remain able to explain methods and decisions oneself."
+          },
+          "references": [
+            {
+              "id": 26,
+              "location": "Absätze zur wissenschaftlichen Betreuung"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Siktar",
+            "en": "Siktar"
+          },
+          "body": {
+            "de": "Verwendete KI-Argumente sorgfältig auf Papier durcharbeiten. Studierende sollen bei Codekorrekturen Fehlerursache, Wirkung und geeignete Tests selbst erklären können. Gemeinsames Prompten mit der Betreuung schlägt er als von ihm selbst noch nicht erprobte Lehrmethode vor.",
+            "en": "Carefully work through any AI arguments used on paper. When correcting code, students should explain the cause of the error, the effect of the correction and suitable tests. He proposes joint prompting with supervisors as a teaching method he has not yet tried himself."
+          },
+          "references": [
+            {
+              "id": 52,
+              "location": "„Be efficient...“; „Don’t autopilot debugging“; „Tag-team...“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao",
+            "en": "Tao"
+          },
+          "body": {
+            "de": "Lästige Rechenarbeit kann delegiert werden, sofern ihre Ergebnisse kontrolliert werden können. Begriffliche Schwierigkeiten sind oft selbst Lerngegenstand; auch KI-Erklärungen können diese Lernchance nehmen. Begleitete Nutzung, eigene Fehlversuche und gemeinsames Prüfen von KI-Ausgaben vorsehen.",
+            "en": "Tedious calculation can be delegated if its results can be checked. Conceptual difficulties are often themselves the object of learning; even AI explanations can take away this learning opportunity. Provide supervised use, independent failed attempts and joint checking of AI outputs."
+          },
+          "references": [
+            {
+              "id": 56,
+              "location": "S.19–25"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Srivathsan",
+            "en": "Srivathsan"
+          },
+          "body": {
+            "de": "Ein Tutor soll am eigenen Versuch ansetzen: Verständnisfragen stellen, bei Bedarf Hinweise geben, Voraussetzungen klären und kleine Beispiele oder einfachere Teilprobleme anbieten. Produktive Fehlversuche erhalten, statt sofort die Lösung zu liefern.",
+            "en": "A tutor should build on the learner’s own attempt: ask questions to test understanding, give hints as needed, clarify prerequisites and offer small examples or simpler subproblems. Preserve productive failed attempts instead of immediately supplying the solution."
+          },
+          "references": [
+            {
+              "id": 53,
+              "location": "Haupttext"
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "title": "Wie prüfen wir Verständnis in Prüfungen, Abschlussarbeiten und Promotionen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "MIT-Bericht",
+            "en": "MIT report"
+          },
+          "body": {
+            "de": "Für das MIT empfiehlt der Bericht mündliche Prüfungen, Semesterportfolios und schriftliche Arbeiten mit anschließenden Gesprächen sowie die Erprobung kompetenzbezogener Bewertung. Jede Abschlussarbeit soll eine Erklärung zur KI-Nutzung enthalten. Auf KI-Detektoren solle man sich nicht verlassen.",
+            "en": "For MIT, the report recommends oral examinations, semester portfolios, written work followed by discussions and trials of competency-based assessment. Every thesis should include an AI-use statement. AI detectors should not be relied upon."
+          },
+          "references": [
+            {
+              "id": 42,
+              "location": "§§3.1.2, 3.1.6, 3.1.9, 3.2.6"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom (Vorschlag für Studienmodule)",
+            "en": "Thom (proposal for course modules)"
+          },
+          "body": {
+            "de": "Eigenkompetenz ohne KI durch Präsenztests, mündliche Kurzprüfungen, Fehleranalysen und kleine Beweis- oder Gegenbeispielaufgaben prüfen. Werkzeugkompetenz durch dokumentierte Laborprojekte und mündliche Verteidigungen beurteilen; Annahmen, Beweisstatus und unabhängige Kontrolle der Ergebnisse zählen mit.",
+            "en": "Assess independent competence without AI through in-person tests, short oral examinations, error analyses and small proof or counterexample tasks. Assess tool competence through documented laboratory projects and oral defences; assumptions, proof status and independent checking of results should also count."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "§1.4, S.3; §3, S.4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Su",
+            "en": "Su"
+          },
+          "body": {
+            "de": "Gute Fragen, begründete Strategien und Ausdauer auch dann bewerten, wenn noch kein vollständiger Beweis vorliegt.",
+            "en": "Assess good questions, justified strategies and perseverance even when no complete proof is available yet."
+          },
+          "references": [
+            {
+              "id": 55,
+              "location": "„What this means for us“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Etingof",
+            "en": "Etingof"
+          },
+          "body": {
+            "de": "Als praktische Verständnisanforderung: Den verwendeten Gedankengang spontan und im Detail erklären können.",
+            "en": "A practical requirement for understanding: be able to explain the reasoning used spontaneously and in detail."
+          },
+          "references": [
+            {
+              "id": 18,
+              "location": "§1, S.1"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao",
+            "en": "Tao"
+          },
+          "body": {
+            "de": "Den Lösungs- und Prüfprozess bewerten, bei geeigneten Aufgaben auch Prompts und unabhängige Kontrolle verlangen. Iterative Projekte dürfen mit fehlerhaften eigenen Versuchen beginnen; kreative KI-Nutzung nur dosiert einsetzen.",
+            "en": "Assess the solution and checking process; for suitable tasks, also require prompts and independent verification. Iterative projects may begin with the student’s own flawed attempts; use creative AI work only in moderation."
+          },
+          "references": [
+            {
+              "id": 56,
+              "location": "S.24–26"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Serraille",
+            "en": "Serraille"
+          },
+          "body": {
+            "de": "Verständnis mit eigenen Beispielen, ungewohnten Aufgaben und Präsenzarbeit prüfen. In Bachelorund Masterarbeiten auf Sprachmodelle verzichten, allenfalls nachträgliche Sprachkorrektur und Bildgenerierung ausnehmen: Eigenständiges Lesen, Scheitern und Nachfragen sind für ihn zentrale Lernziele.",
+            "en": "Assess understanding through students’ own examples, unfamiliar tasks and in-person work. Avoid language models in bachelor’s and master’s theses, with possible exceptions for subsequent language correction and image generation: independent reading, failure and asking questions are central learning goals for him."
+          },
+          "references": [
+            {
+              "id": 50,
+              "location": "§§1, 2.1–2.2"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Sarkar",
+            "en": "Sarkar"
+          },
+          "body": {
+            "de": "Sarkar berichtet aus einem Kurs zur Mathematikgeschichte: Präsenztexte mit Hausarbeiten vergleichen und im Gespräch nach dem eigenen Gedankengang fragen; mit fremder Hilfe geschriebene Passagen in eigenen Worten erklären lassen. Dies dient dem Lernen und ist kein validierter KI-Detektor.",
+            "en": "Sarkar reports from a history of mathematics course: compare in-class writing with take-home essays, ask students about their own reasoning in conversation and have them explain passages written with outside help in their own words. This serves learning; it is not a validated AI detector."
+          },
+          "references": [
+            {
+              "id": 49,
+              "location": "„Superintelligence“"
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "title": "Welche Ressourcen braucht eine Reform der Mathematiklehre, und wie lässt sie sich realistisch einführen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom (Lehrkonzept)",
+            "en": "Thom (teaching concept)"
+          },
+          "body": {
+            "de": "Für Thoms Modell aus Vorlesung, KI-Tutor, Grundübung und Labor zusätzliche Vorbereitung, Abstimmung und Betreuung einplanen: kleinere Arbeitsgruppen, geschulte Tutor:innen, technische Infrastruktur und Aufgaben zur mathematischen Kontrolle. Die Umverteilung der Präsenzstunden macht das Modell vermutlich nicht kostenneutral.",
+            "en": "Allow for additional preparation, coordination and supervision in Thom’s model of lectures, AI tutoring, foundational exercises and laboratories: smaller working groups, trained tutors, technical infrastructure and tasks focused on mathematical checking. Redistributing contact hours probably does not make the model cost-neutral."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "§4, S.4–5"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom (Einführung des Lehrkonzepts)",
+            "en": "Thom (introducing the teaching concept)"
+          },
+          "body": {
+            "de": "Stofffülle, Rechenroutine und rein reproduktive Formate reduzieren, statt neue Anforderungen nur hinzuzufügen. Einzelne Module schrittweise erproben und Betreuung sowie Prüfungsformen evaluieren. Mehr Aufwand ist nur gerechtfertigt, wenn Eigenkompetenz und verantwortliche Werkzeugnutzung sichtbar gestärkt werden.",
+            "en": "Reduce content overload, routine calculation and purely reproductive formats instead of merely adding new demands. Trial individual modules gradually and evaluate supervision and assessment. Additional effort is justified only if independent competence and responsible tool use are demonstrably strengthened."
+          },
+          "references": [
+            {
+              "id": 62,
+              "location": "§4, S.5"
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "title": "Woran sollen Einstellungen und wissenschaftliche Anerkennung gemessen werden?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Anerkennen, wer erklärt, warum ein Argument funktioniert, Kernideen von Technik trennt, Verbindungen und fruchtbare Fragen findet, Methoden lehrt und andere befähigt. Beiträge erfolgen auch in Vorträgen, Gesprächen, Lehre und Zusammenarbeit, nicht nur in Artikeln.",
+            "en": "Recognise those who explain why an argument works, separate core ideas from technical details, find connections and fruitful questions, teach methods and enable others. Contributions also happen in talks, conversations, teaching and collaboration, not only in articles."
+          },
+          "references": [
+            {
+              "id": 63,
+              "location": "Schlussteil"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Weinreich (Vorschlag für Zeitschriften)",
+            "en": "Weinreich (proposal for journals)"
+          },
+          "body": {
+            "de": "Wissenschaftliche Anerkennung für Ideen auch nach deren Veröffentlichung mit Personen teilen, die das Argument eigenständig beherrschen. Zeitschriften könnten dieses Verständnis durch ausführliche Erklärung vor einem sachkundigen, kritischen Publikum prüfen, gegebenenfalls im Umfang einer Graduiertenveranstaltung. Weinreich nennt dies „co-ownership“.",
+            "en": "Share scientific credit for ideas, even after publication, with people who independently master the argument. Journals could assess this understanding through detailed explanation before a knowledgeable, critical audience, potentially on the scale of a graduate course. Weinreich calls this co-ownership."
+          },
+          "references": [
+            {
+              "id": 70,
+              "location": "§2: „For journals“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao; Mathematical Discourse",
+            "en": "Tao; Mathematical Discourse"
+          },
+          "body": {
+            "de": "Erklärung, Begutachtung und Einordnung stärker anerkennen. Das Videojournal Mathematical Discourse ist ein konkretes Beispiel: Es begutachtet Klarheit, Neuheit und mathematisches Interesse von Vorträgen. Es ersetzt die Prüfung der schriftlichen Beweise ausdrücklich nicht.",
+            "en": "Give greater recognition to explanation, reviewing and contextualisation. The video journal Mathematical Discourse is a concrete example: it reviews talks for clarity, novelty and mathematical interest. It explicitly does not replace checking the written proofs."
+          },
+          "references": [
+            {
+              "id": 59,
+              "location": "§8; Anhang A"
+            },
+            {
+              "id": 41,
+              "location": "„Aims and Scope“; „Review Process“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Guo (Bewertungsvorschlag)",
+            "en": "Guo (evaluation proposal)"
+          },
+          "body": {
+            "de": "Mathematischen Resultatwert und persönlichen Beitrag trennen. Anteile, die festgelegte KI-Systeme mit festgelegtem Rechenbudget reproduzieren, vom menschlichen Beitrag abziehen, auch bei rein menschlicher Arbeit. Gescheiterte Reproduktion beweist dabei keine Originalität. Einen empirischen Nachweis der Eignung für Personalentscheidungen liefert der Text nicht.",
+            "en": "Separate the mathematical value of a result from the personal contribution. Deduct from the human contribution whatever specified AI systems can reproduce with a specified computing budget, even for entirely human work. Failure to reproduce does not prove originality. The text offers no empirical evidence that this is suitable for personnel decisions."
+          },
+          "references": [
+            {
+              "id": 21,
+              "location": "„A stable AI-residual evaluation system“; „A practical transition“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Beiträge zur Integration KI-erzeugter Resultate in die mathematische Kultur bei Einstellungen stärker gewichten; dieselbe Entkopplung von Produkt und Kompetenz betrifft Abschlussarbeiten. Wie solche Beiträge vergleichbar gemessen werden, bleibt derzeit offen.",
+            "en": "Give greater weight in hiring to contributions that integrate AI-generated results into mathematical culture; the same decoupling of product and competence affects theses. How such contributions can be measured comparably remains open at present."
+          },
+          "references": [
+            {
+              "id": 64,
+              "location": "Punkt 5"
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "title": "Wie erhalten Nachwuchsforschende sinnvolle Arbeit und Entwicklungsmöglichkeiten?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "MIT-Bericht",
+            "en": "MIT report"
+          },
+          "body": {
+            "de": "Forschungspraktika und betreute Mitarbeit ausbauen. Werden Studierende aus Effizienzgründen durch KI-Agenten ersetzt, könnten ihnen Lerngelegenheiten und der Zugang zu Forschungsgemeinschaften verloren gehen. Der Bericht fordert deshalb, Mentoring und persönliche Zusammenarbeit gezielt zu erhalten.",
+            "en": "Expand research internships and supervised participation. If students are replaced by AI agents for reasons of efficiency, they may lose learning opportunities and access to research communities. The report therefore calls for deliberately preserving mentoring and personal collaboration."
+          },
+          "references": [
+            {
+              "id": 42,
+              "location": "§§2.3, 3.1.5"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Duminil-Copin",
+            "en": "Duminil-Copin"
+          },
+          "body": {
+            "de": "Offene Probleme können Zusammenarbeit, Methoden und Nachwuchsausbildung tragen. Ihre schnelle Erledigung kann diese Entwicklung unterbrechen, auch bei einem kurzen und eleganten Beweis. Er erkennt den Nutzen beschleunigter Lösungen in anwendungsnahen Bereichen an; eine allgemeine Grenzregel nennt er nicht.",
+            "en": "Open problems can sustain collaboration, methods and early-career training. Rapidly resolving them can interrupt this development, even with a short and elegant proof. He acknowledges the benefit of faster solutions in application-oriented fields; he gives no general boundary rule."
+          },
+          "references": [
+            {
+              "id": 17,
+              "location": "„A profound misalignment...“; „What should we do?“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Mathathon-Organisatoren",
+            "en": "Mathathon organisers"
+          },
+          "body": {
+            "de": "Für den geplanten KI-Mathematikwettbewerb Mathathon eine Bildungssparte mit Skripten, Erklärvideos und eleganteren Beweisen bekannter Sätze vorsehen. Erklärung, Motivation und Methoden sollen neben Ergebnissen belohnt werden.",
+            "en": "Provide an educational track for the planned AI mathematics competition Mathathon, with notes, explanatory videos and more elegant proofs of known theorems. Explanation, motivation and methods should be rewarded alongside results."
+          },
+          "references": [
+            {
+              "id": 2,
+              "location": "„Who are we...“; „Against the Slopification...“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Hayward",
+            "en": "Hayward"
+          },
+          "body": {
+            "de": "Anspruchsvolle Ausbildung und Solidarität mit Kolleg:innen erhalten, die Nutzungsdruck widerstehen. Er warnt vor einer Verlagerung von Personalbudgets zu Abonnements und einer Arbeit, die sich auf Outputkontrolle reduziert; dies sind Befürchtungen, keine gesicherten Prognosen.",
+            "en": "Preserve demanding education and solidarity with colleagues resisting pressure to use AI. He warns of personnel budgets shifting to subscriptions and work being reduced to checking output; these are concerns, not established predictions."
+          },
+          "references": [
+            {
+              "id": 24,
+              "location": "„The Likely Trajectory“; „Why Even be Human?“; „Academics and Solidarity“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Lozano-Robledo",
+            "en": "Lozano-Robledo"
+          },
+          "body": {
+            "de": "Gezielt in Menschen investieren und Betreuung, Vorbilder sowie begeisternde Erklärungen würdigen. Gemeinschaft entsteht durch Menschen, die Resultate verstehen, verbessern und anderen zugänglich machen. Eine konkrete Finanzierungsformel enthält der Appell nicht.",
+            "en": "Invest deliberately in people and value supervision, role models and inspiring explanations. Community is built by people who understand results, improve them and make them accessible to others. The appeal contains no specific funding formula."
+          },
+          "references": [
+            {
+              "id": 37,
+              "location": "Haupttext, Schlussabsätze"
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "title": "Brauchen wir öffentliche KI-Infrastruktur statt Abhängigkeit von wenigen Firmen?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Fortgeschrittene KI als gesellschaftliche Grundversorgung wie Wasser oder Strom behandeln: zuverlässig, breit verfügbar, mit öffentlichen Pflichten, starkem Datenschutz, unabhängiger Aufsicht und Schutz vor diskriminierender oder eigennütziger Nutzung. Das betrifft auch Bildung, Verwaltung, Wirtschaft und Alltag.",
+            "en": "Treat advanced AI as a basic public service like water or electricity: reliable, widely available, with public obligations, strong data protection, independent oversight and safeguards against discriminatory or self-serving use. This also concerns education, public administration, the economy and everyday life."
+          },
+          "references": [
+            {
+              "id": 63,
+              "location": "letzte zwei Absätze"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Leiden-Erklärung",
+            "en": "Leiden Declaration"
+          },
+          "body": {
+            "de": "Öffentliche Recheninfrastruktur auf Hochschul-, nationaler und internationaler Ebene sowie administrativ und finanziell industrieunabhängige Forschungslabore fördern.",
+            "en": "Support public computing infrastructure at university, national and international levels, and research laboratories that are administratively and financially independent of industry."
+          },
+          "references": [
+            {
+              "id": 33,
+              "location": "„Support public research laboratories“; „Invest in public computational infrastructure“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Commelin et al.",
+            "en": "Commelin et al."
+          },
+          "body": {
+            "de": "Offene akademische Infrastruktur mit transparenten Entscheidungen und Gemeinschaftskontrolle aufbauen; Abhängigkeit von einzelnen Unternehmen vermindern.",
+            "en": "Build open academic infrastructure with transparent decision-making and community oversight; reduce dependence on individual companies."
+          },
+          "references": [
+            {
+              "id": 15,
+              "location": "S.3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Klowden und Tao",
+            "en": "Klowden and Tao"
+          },
+          "body": {
+            "de": "Gemeinschaftlich gepflegte kleinere Modelle und eine nationale oder multinationale, öffentlich finanzierte und zugängliche KI-Ressource fördern. Die Autoren warnen zudem: Wenn Hochschulen Forschende an einen Anbieter binden, können je nach Fach unterschiedlich leistungsfähige Modelle neue Ungleichheiten schaffen.",
+            "en": "Support community-maintained smaller models and a nationally or multinationally funded, publicly accessible AI resource. The authors also warn that when universities tie researchers to one provider, differences in models’ capabilities across disciplines can create new inequalities."
+          },
+          "references": [
+            {
+              "id": 27,
+              "location": "§5.3"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Eine nationale oder europaweite KI-Infrastruktur wie eine grundlegende Versorgung organisieren: in öffentlicher Hand oder unter starker Kontrolle. Intelligenz als allgemein verfügbare Ressource behandeln, deren Nutzung und Bereitstellung nicht missbräuchlich gestaltet werden dürfen.",
+            "en": "Organise national or Europe-wide AI infrastructure as a basic service: publicly owned or strongly regulated. Treat intelligence as a generally available resource whose use and provision must not be designed abusively."
+          },
+          "references": [
+            {
+              "id": 64,
+              "location": "Punkt 3"
+            }
+          ]
+        }
+      ]
+    },
+    "25": {
+      "title": "Wie verhindern wir, dass finanzschwache Forschende und Länder abgehängt werden?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Kolleg:innen in finanziell schwachen Ländern berücksichtigen, die kommerzielle KI-Angebote nicht bezahlen können. Thom verbindet diese Sorge mit der Forderung nach gleichem Zugang zu KI als öffentlicher oder streng kontrollierter Grundversorgung. Wie der internationale Zugang finanziert werden soll, ist derzeit offen.",
+            "en": "Consider colleagues in countries with limited financial resources who cannot afford commercial AI offerings. Thom connects this concern with equal access to AI as a public or strictly regulated basic service. How international access should be financed is currently an open question."
+          },
+          "references": [
+            {
+              "id": 64,
+              "location": "Punkte 3–4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "MIT-Bericht",
+            "en": "MIT report"
+          },
+          "body": {
+            "de": "Institutionell finanzierten, anbieterübergreifenden Zugang bereitstellen und bei höherem Lehrbedarf erweitern; auch Rechenressourcen für eigene Modelle berücksichtigen.",
+            "en": "Provide institutionally funded access across providers and expand it where teaching needs are greater; also consider computing resources for running one’s own models."
+          },
+          "references": [
+            {
+              "id": 42,
+              "location": "§§3.3.7–3.3.8"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Mathathon-Organisatoren; offener Brief",
+            "en": "Mathathon organisers; open letter"
+          },
+          "body": {
+            "de": "Die Organisatoren wollen mit Rechenguthaben für ihren KI-Mathematikwettbewerb besonders jungen Forschenden besseren Zugang eröffnen. Der offene Brief bezweifelt hingegen, dass ein Forschungsmodell mit 20.000 US-Dollar Rechenguthaben pro Ergebnis allgemein finanzierbar wäre.",
+            "en": "The organisers aim to use computing credits for their AI mathematics competition to improve access, particularly for young researchers. The open letter, in contrast, questions whether a research model requiring US$20,000 of computing credits per result could be broadly affordable."
+          },
+          "references": [
+            {
+              "id": 2,
+              "location": "„Care for Young Mathematicians“"
+            },
+            {
+              "id": 11,
+              "location": "Haupttext"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Redaktionelle Einordnung",
+            "en": "Editorial context"
+          },
+          "body": {
+            "de": "Öffentliche Infrastruktur und institutioneller KI-Zugang sind Ansätze gegen finanzielle Ungleichheit. Die hier zitierten Beiträge enthalten jedoch kein ausgearbeitetes weltweites Finanzierungs- oder Verteilungsmodell.",
+            "en": "Public infrastructure and institutional AI access are approaches to financial inequality. However, the contributions cited here contain no fully developed global funding or allocation model."
+          },
+          "references": [
+            {
+              "id": 33,
+              "location": "öffentliche Infrastruktur"
+            },
+            {
+              "id": 15,
+              "location": "S.3–4"
+            },
+            {
+              "id": 42,
+              "location": "§3.3.7"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao im Interview",
+            "en": "Tao in interview"
+          },
+          "body": {
+            "de": "Öffentliche und philanthropische Förderung stärker auf offene, lokal betreibbare und günstigere Modelle sowie die Übertragung leistungsfähiger Verfahren auf sparsamere Modelle ausrichten. Dies ist ein Zugangsvorschlag, keine Garantie gleicher Möglichkeiten.",
+            "en": "Direct more public and philanthropic support towards open, locally runnable and less expensive models, and towards transferring powerful methods to more economical models. This is an access proposal, not a guarantee of equal opportunities."
+          },
+          "references": [
+            {
+              "id": 57,
+              "location": "Frage 3b"
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "title": "Wie schützen wir unveröffentlichte Forschung vor Nutzung durch KI-Anbieter?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Bei Zusicherungen zu unveröffentlichten Forschungschats zwischen Trainingsnutzung und direktem Zugriff unterscheiden; ihre Grundlage in Einstellungen, Datensätzen und Modellständen offenlegen. Anonymisierung beseitigt nicht den geistigen Inhalt.",
+            "en": "When assurances are made about unpublished research chats, distinguish use for training from direct access; disclose the basis of those assurances in settings, datasets and model versions. Anonymisation does not remove intellectual content."
+          },
+          "references": [
+            {
+              "id": 63,
+              "location": "Absätze zur Datennutzung"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Leiden-Erklärung",
+            "en": "Leiden Declaration"
+          },
+          "body": {
+            "de": "Zustimmung zu Trainingsnutzung und Ausstiegsmöglichkeiten in Publikationsverträgen sichern; Autor:innenrechte stärken.",
+            "en": "Secure consent to training use and opt-out possibilities in publication contracts; strengthen authors’ rights."
+          },
+          "references": [
+            {
+              "id": 33,
+              "location": "„Protect the rights of authors“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Bereitgestellter Positionspapierentwurf",
+            "en": "Supplied position paper draft"
+          },
+          "body": {
+            "de": "Institutionelle Zugänge standardmäßig auf die angeforderte Dienstleistung beschränken; weitere Nutzung von Eingaben, Ausgaben und abgeleiteten Informationen nur mit informierter Zustimmung. Speicherung und Zugriff begrenzen und überprüfbar machen.",
+            "en": "Limit institutional access by default to the requested service; any further use of inputs, outputs and derived information should require informed consent. Limit storage and access and make them auditable."
+          },
+          "references": [
+            {
+              "id": 8,
+              "location": "G3, S.1"
+            }
+          ]
+        }
+      ]
+    },
+    "27": {
+      "title": "Wie verhindern wir Prioritätsvorteile aus privilegiertem Zugang zu unveröffentlichter Forschung?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Bereitgestellter Positionspapierentwurf",
+            "en": "Supplied position paper draft"
+          },
+          "body": {
+            "de": "Technische, organisatorische und vertragliche Informationsbarrieren verlangen. Nichtöffentliche Forschungsinformationen müssen von eigenen Forschungs- und Verwertungsaktivitäten des Anbieters oder der Institution getrennt sein; Zugriffe und Datenflüsse sollen unabhängig überprüfbar bleiben.",
+            "en": "Require technical, organisational and contractual information barriers. Non-public research information must be separated from providers’ or institutions’ own research and commercialisation activities; access and data flows should remain independently auditable."
+          },
+          "references": [
+            {
+              "id": 8,
+              "location": "G4, S.2"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Redaktionelle Einordnung",
+            "en": "Editorial context"
+          },
+          "body": {
+            "de": "Die im Entwurf geforderte Trennung vertraulicher Forschungsdaten von eigenen Forschungsaktivitäten der Anbieter ist eine institutionelle Schutzregel. Sie belegt weder einen konkreten Missbrauch noch die bereits wirksame Umsetzung solcher Informationsbarrieren.",
+            "en": "The draft’s required separation of confidential research data from providers’ own research activities is an institutional safeguard. It proves neither a specific instance of misuse nor that such information barriers are already effective in practice."
+          },
+          "references": [
+            {
+              "id": 8,
+              "location": "G3–4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "KI-Anbieter dürfen den Wissensvorsprung über die Nutzung fremder Ideen nicht gegen die Personen einsetzen, die ihnen diese Ideen anvertraut haben.",
+            "en": "AI providers must not use their informational advantage about the use of others’ ideas against the people who entrusted those ideas to them."
+          },
+          "references": [
+            {
+              "id": 63,
+              "location": "letzter Absatz"
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "title": "Wie gehen wir mit entschiedener KI-Ablehnung innerhalb der Mathematik um?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Hairer; Leiden-Erklärung",
+            "en": "Hairer; Leiden Declaration"
+          },
+          "body": {
+            "de": "Redliche Gründe für Nutzung und Verzicht anerkennen. Die Entscheidung, ob und welche Werkzeuge eingesetzt werden, bleibt eine verantwortliche Wahl.",
+            "en": "Recognise sincere reasons for using or abstaining from AI. Whether to use tools, and which ones, remains a responsible choice."
+          },
+          "references": [
+            {
+              "id": 22,
+              "location": "„Conclusion and disclaimer“"
+            },
+            {
+              "id": 33,
+              "location": "Präambel"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Lazić",
+            "en": "Lazić"
+          },
+          "body": {
+            "de": "Für die eigene Forschung auf KI verzichten. Keine maschinenverfassten Artikel begutachten und nicht bei Zeitschriften einreichen, die maschinelle Gutachten zulassen. Keine Betreuung von Promovierenden oder Postdocs und keine Unterstützung bei Einstellungen, wenn KI die eigene Arbeit ersetzt.",
+            "en": "Abstain from AI in one’s own research. Do not review machine-written articles or submit to journals that permit machine-generated reviews. Do not supervise doctoral students or postdocs, or support hiring, when AI replaces their own work."
+          },
+          "references": [
+            {
+              "id": 30,
+              "location": "Grundsätze 1, 2 und 4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Weinreich",
+            "en": "Weinreich"
+          },
+          "body": {
+            "de": "Verzicht institutionell schützen: dafür reservierte Stellen und stärkere Anerkennung KI-freier Arbeit bei Beförderungen vorsehen.",
+            "en": "Protect abstention institutionally through reserved positions and greater recognition of AI-free work in promotions."
+          },
+          "references": [
+            {
+              "id": 70,
+              "location": "§2: „For departments“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Karamanis (zur wissenschaftlichen Ausbildung)",
+            "en": "Karamanis (on research training)"
+          },
+          "body": {
+            "de": "Am Beispiel der Astrophysik pauschale KI-Verbote und unbeschränkte Delegation gleichermaßen zurückweisen. Ausbildung soll selbstständiges Denken und die Fähigkeit aufbauen, wissenschaftliche Arbeit kompetent zu betreuen und zu kontrollieren.",
+            "en": "Using astrophysics as an example, reject both blanket AI bans and unrestricted delegation. Education should develop independent thinking and the ability to supervise and check scientific work competently."
+          },
+          "references": [
+            {
+              "id": 26,
+              "location": "Schlussteil"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao im Interview",
+            "en": "Tao in interview"
+          },
+          "body": {
+            "de": "Die Debatte breit öffnen, besonders für die jüngere Generation. Regeln für verständliche mathematische Darstellung gemeinsam entwickeln und alternative Bewertungsrahmen zulassen; einzelne prominente Stimmen sollen nicht für das ganze Fach sprechen.",
+            "en": "Open up the debate broadly, especially to the younger generation. Develop shared rules for intelligible mathematical exposition and allow alternative evaluation frameworks; individual prominent voices should not speak for the whole field."
+          },
+          "references": [
+            {
+              "id": 57,
+              "location": "Fragen 1 und 6"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Wildon",
+            "en": "Wildon"
+          },
+          "body": {
+            "de": "KI für Zusammenarbeit und Lernen einsetzen; vielfältige Beiträge und gute Lehre würdigen. Nachwuchsforschende dürfen auf KI verzichten. Eigene Abhängigkeit beobachten, Vorarbeiten würdigen und Forschende mit verwandten Projekten frühzeitig informieren. Wildon formuliert diese Empfehlungen unter der Annahme, dass aktuelle KI-Fähigkeiten nahe einem vorläufigen Plateau liegen.",
+            "en": "Use AI for collaboration and learning; value varied contributions and good teaching. Early-career researchers may abstain from AI. Monitor one’s own dependence, acknowledge prior work and inform researchers with related projects early. Wildon makes these recommendations on the assumption that current AI capabilities are close to a temporary plateau."
+          },
+          "references": [
+            {
+              "id": 71,
+              "location": "„Advice“; „Where will it end?“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Thom",
+            "en": "Thom"
+          },
+          "body": {
+            "de": "Thom hält die entschiedene KI-Ablehnung Einzelner oder ganzer Gruppen inhaltlich für aussichtslos, hält aber anhaltende Konflikte für möglich. Der Umgang damit ist derzeit offen.",
+            "en": "Thom considers firm opposition to AI by individuals or whole groups substantively futile, but regards continuing conflicts as possible. How to address them is currently an open question."
+          },
+          "references": [
+            {
+              "id": 64,
+              "location": "Punkt 6"
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "title": "Unter welchen Bedingungen sollte die Gemeinschaft mit KI-Firmen zusammenarbeiten?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Mathathon-Brief",
+            "en": "Mathathon letter"
+          },
+          "body": {
+            "de": "Den geplanten KI-Mathematikwettbewerb Mathathon aussetzen beziehungsweise aufgeben. Der Brief befürchtet kommerzielle Vereinnahmung, übereilte und unzureichend verstandene Resultate sowie auf andere abgewälzte Prüfarbeit. Seine Kritik bezieht sich auf die Ankündigung vor der Antwort der Organisatoren.",
+            "en": "Pause or abandon the planned AI mathematics competition Mathathon. The letter fears commercial appropriation, rushed and inadequately understood results, and review work shifted onto others. Its criticism addresses the announcement before the organisers’ response."
+          },
+          "references": [
+            {
+              "id": 11,
+              "location": "Haupttext"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Mathathon-Organisatoren",
+            "en": "Mathathon organisers"
+          },
+          "body": {
+            "de": "Mathathon als verändertes Experiment fortführen. Für ausgewählte Teams planen die Organisatoren eine sechsmonatige zweite Runde mit arXiv-Preprint, Video und automatisierter Formalisierung. Skeptische Stimmen sollen einbezogen werden; die Organisatoren versprechen keine durchgängig ausreichende Qualität.",
+            "en": "Continue Mathathon as a modified experiment. For selected teams, the organisers plan a six-month second round with an arXiv preprint, video and automated formalisation. Sceptical voices should be included; the organisers do not promise consistently sufficient quality."
+          },
+          "references": [
+            {
+              "id": 2,
+              "location": "„Who are we...“; „Receiving Feedback“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "First Proof",
+            "en": "First Proof"
+          },
+          "body": {
+            "de": "First Proof verbindet die Bewertung mathematischer KI-Leistungen mit getrennter wissenschaftlicher Aufsicht und Stiftungsleitung. Laut eigener Ethikerklärung dürfen Gremienmitglieder während ihrer Amtszeit keine bezahlten KI-Firmentätigkeiten übernehmen; Finanzen einschließlich Unternehmensgeldern werden jährlich offengelegt.",
+            "en": "First Proof combines evaluation of mathematical AI performance with separate scientific oversight and foundation governance. According to its ethics statement, governing-body members may not take paid roles at AI companies during their terms; finances, including corporate funding, are disclosed annually."
+          },
+          "references": [
+            {
+              "id": 19,
+              "location": "Ethics Statement"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Tao, September-Stellungnahme",
+            "en": "Tao, September statement"
+          },
+          "body": {
+            "de": "Verantwortliche Zusammenarbeit bleibt sein Ziel. Er beschreibt jedoch eine zunehmende Abweichung zwischen Unternehmenszielen und mathematischer Kultur und fordert die Gemeinschaft auf, nicht nachhaltige Nutzungen zurückzuweisen. Seine Kontakte und begünstigten Zugänge legt er offen; rückblickend hätte er der werblichen Verkürzung eines OpenAI-Interviews stärker widersprechen sollen.",
+            "en": "Responsible collaboration remains his goal. However, he describes growing divergence between corporate goals and mathematical culture and calls on the community to reject unsustainable uses. He discloses his contacts and preferential access; in retrospect, he should have objected more strongly to the promotional abridgement of an OpenAI interview."
+          },
+          "references": [
+            {
+              "id": 60,
+              "location": "Kommentar vom 09.09.2026"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Livshyts",
+            "en": "Livshyts"
+          },
+          "body": {
+            "de": "Den Mathathon als einmaligen KI-Mathematikwettbewerb mit Zugang zu großer Rechenleistung zulassen. Teilnahme verpflichtet für Livshyts nicht dazu, konventionelle Forschung aufzugeben. Ihr Nachtrag betont, dass die Veranstaltung traditionelle Forschung nicht ersetzt; daraus folgt für sie aber kein Grund, den einzelnen Versuch abzulehnen.",
+            "en": "Allow Mathathon as a one-off AI mathematics competition with access to substantial computing power. For Livshyts, participation does not commit anyone to abandoning conventional research. Her addendum stresses that the event does not replace traditional research, but she does not consider that a reason to reject the individual experiment."
+          },
+          "references": [
+            {
+              "id": 35,
+              "location": "Schlussabsatz; Nachtrag vom 12.09.2026"
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "title": "Wie berücksichtigen wir gesellschaftliche und ökologische Folgen und organisieren gemeinsames Handeln?",
+      "perspectives": [
+        {
+          "label": {
+            "de": "Leiden-Erklärung",
+            "en": "Leiden Declaration"
+          },
+          "body": {
+            "de": "Stärkere öffentliche Aufsicht verlangen; schädliche Kooperationen verlassen und kleinere, sparsamere oder offene Werkzeuge erwägen. Fachorganisationen sollen gemeinsame Regeln entwickeln.",
+            "en": "Demand stronger public oversight; leave harmful collaborations and consider smaller, more economical or open tools. Professional organisations should develop shared rules."
+          },
+          "references": [
+            {
+              "id": 33,
+              "location": "Empfehlungen an Individuen, Organisationen und Politik"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "MIT-Bericht",
+            "en": "MIT report"
+          },
+          "body": {
+            "de": "Finanzielle und ökologische Nutzungskosten sichtbar machen, den eigenen Fußabdruck prüfen und sparsamere Verfahren fördern; ein dauerhaftes Gremium soll Erfahrungen auswerten.",
+            "en": "Make financial and environmental usage costs visible, examine one’s own footprint and encourage more economical methods; a standing body should evaluate experience."
+          },
+          "references": [
+            {
+              "id": 42,
+              "location": "§§3.3.1, 3.3.10"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Association for Human Mathematics",
+            "en": "Association for Human Mathematics"
+          },
+          "body": {
+            "de": "Arbeitsgruppen für Bildungs- und Publikationspolitik organisieren und gemeinsam auf institutionelle Unabhängigkeit von Firmeninteressen hinwirken.",
+            "en": "Organise working groups on education and publication policy and work collectively towards institutional independence from corporate interests."
+          },
+          "references": [
+            {
+              "id": 3,
+              "location": "Arbeitsprogramm"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Klowden und Tao",
+            "en": "Klowden and Tao"
+          },
+          "body": {
+            "de": "Soziale Verdrängung, ungleiche Chancen sowie Energie- und Wasserverbrauch in die Nutzenbewertung einbeziehen. Konzentrierter Gewinn rechtfertigt nicht beliebige Schäden für andere.",
+            "en": "Include social displacement, unequal opportunities, and energy and water consumption in benefit assessments. Concentrated gains do not justify unlimited harm to others."
+          },
+          "references": [
+            {
+              "id": 27,
+              "location": "§§5.1–5.4"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Lebovici",
+            "en": "Lebovici"
+          },
+          "body": {
+            "de": "Insbesondere Forschende mit festen Stellen sollen Zeit und Expertise auf gesellschaftliche und ökologische Aufgaben richten. Er lehnt zusätzliche generative KI-Nutzung und die Bereitstellung von Unternehmensbenchmarks aus diesen Gründen ab.",
+            "en": "Researchers with permanent positions in particular should devote time and expertise to social and ecological tasks. On these grounds, he rejects additional use of generative AI and the provision of company benchmarks."
+          },
+          "references": [
+            {
+              "id": 31,
+              "location": "„Main result“; „Conclusion“"
+            }
+          ]
+        },
+        {
+          "label": {
+            "de": "Marchand",
+            "en": "Marchand"
+          },
+          "body": {
+            "de": "Ressourcen- und Klimafolgen gemeinsam diskutieren, LLMs öffentlich erklären und deren Vermarktung nicht unterstützen. Solange die gegenwärtige, aus seiner Sicht schädliche Entwicklungsphilosophie fortbesteht, verzichtet Marchand auf LLM-Nutzung, entsprechende Zusammenarbeit und Begutachtung. Er verlangt nicht, dass alle seine persönliche Regel übernehmen.",
+            "en": "Discuss resource and climate impacts collectively, explain LLMs publicly and do not support their marketing. While the current development philosophy, which he regards as harmful, continues, Marchand abstains from LLM use, related collaboration and reviewing. He does not require everyone to adopt his personal rule."
+          },
+          "references": [
+            {
+              "id": 40,
+              "location": "„Acting as a community...“; „Acting as individual...“"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": {
+    "1": {
+      "id": 1,
+      "citation": {
+        "de": "Mohammed Abouzaid, Nikhil Srivastava, Rachel Ward und Lauren Williams. First Proof Second Batch. 10.06.2026.",
+        "en": "Mohammed Abouzaid, Nikhil Srivastava, Rachel Ward and Lauren Williams. First Proof Second Batch. 10.06.2026."
+      },
+      "urls": [
+        "https://1stproof.org/assets/docs/report.pdf"
+      ],
+      "kind": "public"
+    },
+    "2": {
+      "id": 2,
+      "citation": {
+        "de": "Arulandu, Rodrothu, Moreno-Earle, Garg und Zhao. A response from Mathathon. 10.09.2026.",
+        "en": "Arulandu, Rodrothu, Moreno-Earle, Garg and Zhao. A response from Mathathon. 10.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/10/a-response-from-mathathon/"
+      ],
+      "kind": "public"
+    },
+    "3": {
+      "id": 3,
+      "citation": {
+        "de": "Association for Human Mathematics. Selbstverständnis und Arbeitsprogramm. Abruf 12.09.2026.",
+        "en": "Association for Human Mathematics. Selbstverständnis and Arbeitsprogramm. accessed 12.09.2026."
+      },
+      "urls": [
+        "https://www.ahmath.org/"
+      ],
+      "kind": "public"
+    },
+    "4": {
+      "id": 4,
+      "citation": {
+        "de": "Jeremy Avigad. Mathematicians in the Age of AI. März 2026; Fassung 06.04.2026.",
+        "en": "Jeremy Avigad. Mathematicians in the Age of AI. March 2026; version 06.04.2026."
+      },
+      "urls": [
+        "https://arxiv.org/html/2603.03684v3"
+      ],
+      "kind": "public"
+    },
+    "5": {
+      "id": 5,
+      "citation": {
+        "de": "Jeremy Avigad. What is mathematics now, and what should it be? 07.09.2026.",
+        "en": "Jeremy Avigad. What is mathematics now, and what should it be? 07.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/07/what-is-mathematics-now-and-what-should-it-be/"
+      ],
+      "kind": "public"
+    },
+    "6": {
+      "id": 6,
+      "citation": {
+        "de": "Scholze et al. A Severe Misalignment of AI in Mathematics. ohne Datum; Abruf 12.09.2026.",
+        "en": "Scholze et al. A Severe Misalignment of AI in Mathematics. undated; accessed 12.09.2026."
+      },
+      "urls": [
+        "https://mathandai.org/"
+      ],
+      "kind": "public"
+    },
+    "7": {
+      "id": 7,
+      "citation": {
+        "de": "Boaz Barak. Math after AI. 24.08.2026.",
+        "en": "Boaz Barak. Math after AI. 24.08.2026."
+      },
+      "urls": [
+        "https://windowsontheory.org/2026/08/24/math-after-ai/"
+      ],
+      "kind": "public"
+    },
+    "8": {
+      "id": 8,
+      "citation": {
+        "de": "Bereitgestellter Grundsatzentwurf. KI in der mathematischen Forschung. ohne Datum; 3 Seiten.",
+        "en": "Supplied position paper draft. AI in Mathematical Research. Undated; 3 pages."
+      },
+      "urls": [],
+      "kind": "internal"
+    },
+    "9": {
+      "id": 9,
+      "citation": {
+        "de": "David Bessis. The fall of the theorem economy. 21.04.2026.",
+        "en": "David Bessis. The fall of the theorem economy. 21.04.2026."
+      },
+      "urls": [
+        "https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy"
+      ],
+      "kind": "public"
+    },
+    "10": {
+      "id": 10,
+      "citation": {
+        "de": "Axel Boldt. Explanations, Prompts, and Formalizations: Arguments for New Norms in LLM-Enabled Mathematical Research. August 2026.",
+        "en": "Axel Boldt. Explanations, Prompts, and Formalizations: Arguments for New Norms in LLM-Enabled Mathematical Research. August 2026."
+      },
+      "urls": [
+        "https://arxiv.org/html/2608.29401v1"
+      ],
+      "kind": "public"
+    },
+    "11": {
+      "id": 11,
+      "citation": {
+        "de": "Caltech-Mathematiker:innen, aktuell und ehemals. Open Letter about the Mathathon. 10.09.2026.",
+        "en": "Caltech-Mathematiker:innen, aktuell and ehemals. Open Letter about the Mathathon. 10.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/10/open-letter-about-the-mathathon/"
+      ],
+      "kind": "public"
+    },
+    "12": {
+      "id": 12,
+      "citation": {
+        "de": "Alonso Castillo-Ramirez. The end of an era in mathematical research. 12.08.2026.",
+        "en": "Alonso Castillo-Ramirez. The end of an era in mathematical research. 12.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/12/the-end-of-an-era-in-mathematical-research/"
+      ],
+      "kind": "public"
+    },
+    "13": {
+      "id": 13,
+      "citation": {
+        "de": "Trevor Cheung. AI and maths communication. 03.09.2026.",
+        "en": "Trevor Cheung. AI and maths communication. 03.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/03/ai-and-maths-communication/"
+      ],
+      "kind": "public"
+    },
+    "14": {
+      "id": 14,
+      "citation": {
+        "de": "Tasmin Chu. The AI dissenter viewpoint. 09.08.2026.",
+        "en": "Tasmin Chu. The AI dissenter viewpoint. 09.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/09/the-ai-dissenter-viewpoint/"
+      ],
+      "kind": "public"
+    },
+    "15": {
+      "id": 15,
+      "citation": {
+        "de": "Commelin, Jamnik, Ochigame, Taelman und Venkatesh. Shaping the Future of Mathematics in the Age of AI. 26.03.2026.",
+        "en": "Commelin, Jamnik, Ochigame, Taelman and Venkatesh. Shaping the Future of Mathematics in the Age of AI. 26.03.2026."
+      },
+      "urls": [
+        "https://arxiv.org/pdf/2603.24914v1"
+      ],
+      "kind": "public"
+    },
+    "16": {
+      "id": 16,
+      "citation": {
+        "de": "David Donoho. Data Science at the Singularity. 02.10.2023.",
+        "en": "David Donoho. Data Science at the Singularity. 02.10.2023."
+      },
+      "urls": [
+        "https://arxiv.org/html/2310.00865v1"
+      ],
+      "kind": "public"
+    },
+    "17": {
+      "id": 17,
+      "citation": {
+        "de": "Hugo Duminil-Copin. Care for a little more AI? 30.08.2026.",
+        "en": "Hugo Duminil-Copin. Care for a little more AI? 30.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/30/care-for-a-little-more-ai/"
+      ],
+      "kind": "public"
+    },
+    "18": {
+      "id": 18,
+      "citation": {
+        "de": "Pavel Etingof, mit Beiträgen von Andrew Sutherland. Use of AI in mathematical research: A guide for young mathematicians. Mai 2026.",
+        "en": "Pavel Etingof, mit Beiträgen von Andrew Sutherland. Use of AI in mathematical research: A guide for young mathematicians. May 2026."
+      },
+      "urls": [
+        "https://math.mit.edu/~etingof/aiuse.pdf"
+      ],
+      "kind": "public"
+    },
+    "19": {
+      "id": 19,
+      "citation": {
+        "de": "First Proof. Ethics Statement. Abruf 12.09.2026.",
+        "en": "First Proof. Ethics Statement. accessed 12.09.2026."
+      },
+      "urls": [
+        "https://1stproof.org/"
+      ],
+      "kind": "public"
+    },
+    "20": {
+      "id": 20,
+      "citation": {
+        "de": "Segev Gonen Cohen. The question of reasoning traces. 11.08.2026.",
+        "en": "Segev Gonen Cohen. The question of reasoning traces. 11.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/11/the-question-of-reasoning-traces/"
+      ],
+      "kind": "public"
+    },
+    "21": {
+      "id": 21,
+      "citation": {
+        "de": "Qi Guo. Evaluating mathematical merit. 27.08.2026.",
+        "en": "Qi Guo. Evaluating mathematical merit. 27.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/27/the-future-mathematical-system-ai-tools-human-contribution-and-mathematical-evaluation/"
+      ],
+      "kind": "public"
+    },
+    "22": {
+      "id": 22,
+      "citation": {
+        "de": "Martin Hairer. Writing mathematics in the age of AI. 07.08.2026.",
+        "en": "Martin Hairer. Writing mathematics in the age of AI. 07.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/07/writing-mathematics-in-the-age-of-ai/"
+      ],
+      "kind": "public"
+    },
+    "23": {
+      "id": 23,
+      "citation": {
+        "de": "Oren Hartstein. We Need a Stockfish for Math. 11.09.2026.",
+        "en": "Oren Hartstein. We Need a Stockfish for Math. 11.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/11/we-need-a-stockfish-for-math/"
+      ],
+      "kind": "public"
+    },
+    "24": {
+      "id": 24,
+      "citation": {
+        "de": "Simon Hayward. On The Brutal Mathematics of Slop. 13.08.2026.",
+        "en": "Simon Hayward. On The Brutal Mathematics of Slop. 13.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/13/on-the-brutal-mathematics-of-slop/"
+      ],
+      "kind": "public"
+    },
+    "25": {
+      "id": 25,
+      "citation": {
+        "de": "Benjamin Jaye, Galyna V. Livshyts. Changes in the classroom in the AI Era. 19.08.2026.",
+        "en": "Benjamin Jaye, Galyna V. Livshyts. Changes in the classroom in the AI Era. 19.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/19/changes-in-the-classroom-in-the-ai-era/"
+      ],
+      "kind": "public"
+    },
+    "26": {
+      "id": 26,
+      "citation": {
+        "de": "Minas Karamanis. The machines are fine. I’m worried about us. 30.03.2026.",
+        "en": "Minas Karamanis. The machines are fine. I’m worried about us. 30.03.2026."
+      },
+      "urls": [
+        "https://ergosphere.blog/posts/the-machines-are-fine/"
+      ],
+      "kind": "public"
+    },
+    "27": {
+      "id": 27,
+      "citation": {
+        "de": "Tanya Klowden und Terence Tao. Mathematical methods and human thought in the age of AI. 27.03.2026.",
+        "en": "Tanya Klowden and Terence Tao. Mathematical methods and human thought in the age of AI. 27.03.2026."
+      },
+      "urls": [
+        "https://arxiv.org/html/2603.26524v1"
+      ],
+      "kind": "public"
+    },
+    "28": {
+      "id": 28,
+      "citation": {
+        "de": "Srivatsav Kunnawalkam Elayavalli. Why do mathematics in the age of AI. 09.08.2026.",
+        "en": "Srivatsav Kunnawalkam Elayavalli. Why do mathematics in the age of AI. 09.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/09/why-do-mathematics-in-the-age-of-ai/"
+      ],
+      "kind": "public"
+    },
+    "29": {
+      "id": 29,
+      "citation": {
+        "de": "Tian Lan. On protecting mathematics from LLM companies’ monopoly. 18.08.2026.",
+        "en": "Tian Lan. On protecting mathematics from LLM companies’ monopoly. 18.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/18/on-protecting-mathematics-from-llm-companies-monopoly/"
+      ],
+      "kind": "public"
+    },
+    "30": {
+      "id": 30,
+      "citation": {
+        "de": "Vladimir Lazić. Where I stand on AI. ohne Datum; Abruf 12.09.2026.",
+        "en": "Vladimir Lazić. Where I stand on AI. undated; accessed 12.09.2026."
+      },
+      "urls": [
+        "https://www.uni-saarland.de/lehrstuhl/lazic/prof-dr-vladimir-lazic/vladimir-lazic-where-i-stand-on-ai.html"
+      ],
+      "kind": "public"
+    },
+    "31": {
+      "id": 31,
+      "citation": {
+        "de": "Vadim Lebovici. How dare you? 17.08.2026.",
+        "en": "Vadim Lebovici. How dare you? 17.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/17/how-dare-you/"
+      ],
+      "kind": "public"
+    },
+    "32": {
+      "id": 32,
+      "citation": {
+        "de": "Seewoo Lee.(auto)formalization, but why. 08.09.2026.",
+        "en": "Seewoo Lee.(auto)formalization, but why. 08.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/08/autoformalization-but-why/"
+      ],
+      "kind": "public"
+    },
+    "33": {
+      "id": 33,
+      "citation": {
+        "de": "Leiden Declaration working group. Leiden Declaration on Artificial Intelligence and Mathematics. 02.06.2026.",
+        "en": "Leiden Declaration working group. Leiden Declaration on Artificial Intelligence and Mathematics. 02.06.2026."
+      },
+      "urls": [
+        "https://leidendeclaration.ai/"
+      ],
+      "kind": "public"
+    },
+    "34": {
+      "id": 34,
+      "citation": {
+        "de": "Daniel Litt. Mathematics in the Library of Babel. 21.02.2026.",
+        "en": "Daniel Litt. Mathematics in the Library of Babel. 21.02.2026."
+      },
+      "urls": [
+        "https://www.daniellitt.com/blog/2026/2/20/mathematics-in-the-library-of-babel/"
+      ],
+      "kind": "public"
+    },
+    "35": {
+      "id": 35,
+      "citation": {
+        "de": "Galyna V. Livshyts. Protesting the protests. 11.09.2026; Nachtrag 12.09.2026.",
+        "en": "Galyna V. Livshyts. Protesting the protests. 11.09.2026; addendum 12.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/11/protesting-the-protests/"
+      ],
+      "kind": "public"
+    },
+    "36": {
+      "id": 36,
+      "citation": {
+        "de": "London Mathematical Society. Artificial Intelligence. Stand: Juni 2026.",
+        "en": "London Mathematical Society. Artificial Intelligence. as of: June 2026."
+      },
+      "urls": [
+        "https://www.lms.ac.uk/publications/policies/AI"
+      ],
+      "kind": "public"
+    },
+    "37": {
+      "id": 37,
+      "citation": {
+        "de": "Álvaro Lozano-Robledo. Invest in Human Mathematicians! 31.08.2026.",
+        "en": "Álvaro Lozano-Robledo. Invest in Human Mathematicians! 31.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/31/invest-in-human-mathematicians/"
+      ],
+      "kind": "public"
+    },
+    "38": {
+      "id": 38,
+      "citation": {
+        "de": "Heather Macbeth. Algorithm and abstraction in formal mathematics. 07.05.2024.",
+        "en": "Heather Macbeth. Algorithm and abstraction in formal mathematics. 07.05.2024."
+      },
+      "urls": [
+        "https://arxiv.org/html/2405.04699v1"
+      ],
+      "kind": "public"
+    },
+    "39": {
+      "id": 39,
+      "citation": {
+        "de": "Giorgio Mangioni. A viewpoint on “The AI dissenter viewpoint”. 14.08.2026.",
+        "en": "Giorgio Mangioni. A viewpoint on “The AI dissenter viewpoint”. 14.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/14/a-viewpoint-on-the-ai-dissenter-viewpoint/"
+      ],
+      "kind": "public"
+    },
+    "40": {
+      "id": 40,
+      "citation": {
+        "de": "Alexis Marchand. Mathematicians, machines, and the Earth. 14.08.2026.",
+        "en": "Alexis Marchand. Mathematicians, machines, and the Earth. 14.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/14/mathematicians-machines-and-the-earth/"
+      ],
+      "kind": "public"
+    },
+    "41": {
+      "id": 41,
+      "citation": {
+        "de": "Mathematical Discourse. Aims and Scope; Review Process. Abruf 12.09.2026.",
+        "en": "Mathematical Discourse. Aims and Scope; Review Process. accessed 12.09.2026."
+      },
+      "urls": [
+        "https://www.mathematicaldiscourse.org/about"
+      ],
+      "kind": "public"
+    },
+    "42": {
+      "id": 42,
+      "citation": {
+        "de": "MIT Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training. Report on AI Use in Teaching, Learning, and Research Training. 13.08.2026.",
+        "en": "MIT Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training. Report on AI Use in Teaching, Learning, and Research Training. 13.08.2026."
+      },
+      "urls": [
+        "https://aiandeducation.mit.edu/report/"
+      ],
+      "kind": "public"
+    },
+    "43": {
+      "id": 43,
+      "citation": {
+        "de": "Arvind Narayanan. What will be left for us to work on? 13.07.2026.",
+        "en": "Arvind Narayanan. What will be left for us to work on? 13.07.2026."
+      },
+      "urls": [
+        "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work"
+      ],
+      "kind": "public"
+    },
+    "44": {
+      "id": 44,
+      "citation": {
+        "de": "Andrew Ng (Mathematikdoktorand, Bonn). On proof and progress in mathematics in the age of generative LLMs. 04.09.2026.",
+        "en": "Andrew Ng (Mathematikdoktorand, Bonn). On proof and progress in mathematics in the age of generative LLMs. 04.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/04/on-proof-and-progress-in-mathematics-in-the-age-of-generative-llms/"
+      ],
+      "kind": "public"
+    },
+    "45": {
+      "id": 45,
+      "citation": {
+        "de": "Nilima Nigam. On analogies, parallels and thought experiments. 01.09.2026.",
+        "en": "Nilima Nigam. On analogies, parallels and thought experiments. 01.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/01/on-analogies-parallels-and-thought-experiments/"
+      ],
+      "kind": "public"
+    },
+    "46": {
+      "id": 46,
+      "citation": {
+        "de": "Rodrigo Ochigame. Automated Mathematics and the Reconfiguration of Proof and Labor. 2023; Bulletin of the AMS 2024.",
+        "en": "Rodrigo Ochigame. Automated Mathematics and the Reconfiguration of Proof and Labor. 2023; Bulletin of the AMS 2024."
+      },
+      "urls": [
+        "https://arxiv.org/html/2309.11457v1"
+      ],
+      "kind": "public"
+    },
+    "47": {
+      "id": 47,
+      "citation": {
+        "de": "Talia Ringer. Proofs and Conversations. 17.05.2024.",
+        "en": "Talia Ringer. Proofs and Conversations. 17.05.2024."
+      },
+      "urls": [
+        "https://dependenttyp.es/pdf/conversations.pdf"
+      ],
+      "kind": "public"
+    },
+    "48": {
+      "id": 48,
+      "citation": {
+        "de": "Manuel Rivera. Statement on AI usage for PhD students. 26.08.2026.",
+        "en": "Manuel Rivera. Statement on AI usage for PhD students. 26.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/26/statement-on-ai-usage-for-phd-students/"
+      ],
+      "kind": "public"
+    },
+    "49": {
+      "id": 49,
+      "citation": {
+        "de": "Amites Sarkar. Shannon, Orwell, and the Thinking Machine. 24.08.2026.",
+        "en": "Amites Sarkar. Shannon, Orwell, and the Thinking Machine. 24.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/24/shannon-orwell-and-the-thinking-machine/"
+      ],
+      "kind": "public"
+    },
+    "50": {
+      "id": 50,
+      "citation": {
+        "de": "Baptiste Serraille. Rethinking Maths education: A perspective from Olympiad and higher education. 02.09.2026.",
+        "en": "Baptiste Serraille. Rethinking Maths education: A perspective from Olympiad and higher education. 02.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/02/rethinking-maths-education-a-perspective-from-olympiad-and-higher-education/"
+      ],
+      "kind": "public"
+    },
+    "51": {
+      "id": 51,
+      "citation": {
+        "de": "Orr Shalit. What’s not new. 08.09.2026.",
+        "en": "Orr Shalit. What’s not new. 08.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/08/whats-not-new/"
+      ],
+      "kind": "public"
+    },
+    "52": {
+      "id": 52,
+      "citation": {
+        "de": "Joshua Siktar. How to welcome LLM use into student research mentorship. 09.09.2026.",
+        "en": "Joshua Siktar. How to welcome LLM use into student research mentorship. 09.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/09/how-to-welcome-llm-use-into-student-research-mentorship/"
+      ],
+      "kind": "public"
+    },
+    "53": {
+      "id": 53,
+      "citation": {
+        "de": "Amruth Srivathsan. Keeping the learner in the loop. 13.08.2026.",
+        "en": "Amruth Srivathsan. Keeping the learner in the loop. 13.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/13/keeping-the-learner-in-the-loop/"
+      ],
+      "kind": "public"
+    },
+    "54": {
+      "id": 54,
+      "citation": {
+        "de": "Anatoly Vitold Stankyavichyus. Response to “The AI dissenter viewpoint”. 20.08.2026.",
+        "en": "Anatoly Vitold Stankyavichyus. Response to “The AI dissenter viewpoint”. 20.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/20/response-to-the-ai-dissenter-viewpoint/"
+      ],
+      "kind": "public"
+    },
+    "55": {
+      "id": 55,
+      "citation": {
+        "de": "Francis Su. The Enduring Value of Math, in an Age of AI. 20.08.2026.",
+        "en": "Francis Su. The Enduring Value of Math, in an Age of AI. 20.08.2026."
+      },
+      "urls": [
+        "https://francissu.substack.com/p/the-enduring-value-of-math-in-an"
+      ],
+      "kind": "public"
+    },
+    "56": {
+      "id": 56,
+      "citation": {
+        "de": "Terence Tao. How should university students control their AI diet? 10.06.2026.",
+        "en": "Terence Tao. How should university students control their AI diet? 10.06.2026."
+      },
+      "urls": [
+        "https://terrytao.wordpress.com/wp-content/uploads/2026/06/diet.pdf"
+      ],
+      "kind": "public"
+    },
+    "57": {
+      "id": 57,
+      "citation": {
+        "de": "Terence Tao. Interview: Terence Tao on AI. Juli 2026.",
+        "en": "Terence Tao. Interview: Terence Tao on AI. July 2026."
+      },
+      "urls": [
+        "https://teorth.github.io/tao-web/ai-views-interview.html"
+      ],
+      "kind": "public"
+    },
+    "58": {
+      "id": 58,
+      "citation": {
+        "de": "Terence Tao. Machine assisted proof. Manuskript 10.02.2024; Notices AMS, Januar 2025.",
+        "en": "Terence Tao. Machine assisted proof. Manuskript 10.02.2024; Notices AMS, January 2025."
+      },
+      "urls": [
+        "https://terrytao.wordpress.com/wp-content/uploads/2024/03/machine-assisted-proof-notices.pdf"
+      ],
+      "kind": "public"
+    },
+    "59": {
+      "id": 59,
+      "citation": {
+        "de": "Terence Tao. Mathematics in the age of AI. 2026; arXiv:2608.16753v1.",
+        "en": "Terence Tao. Mathematics in the age of AI. 2026; arXiv:2608.16753v1."
+      },
+      "urls": [
+        "https://arxiv.org/html/2608.16753v1"
+      ],
+      "kind": "public"
+    },
+    "60": {
+      "id": 60,
+      "citation": {
+        "de": "Terence Tao. Stellungnahme zu KI und seinen Kontakten zur KI-Industrie. 09.09.2026.",
+        "en": "Terence Tao. Stellungnahme zu KI and seinen Kontakten zur KI-Industrie. 09.09.2026."
+      },
+      "urls": [
+        "https://terrytao.wordpress.com/2026/09/07/finite-time-blowup-with-smooth-forcing-term-for-the-incompressible-porous-medium-boussinesq-and-incompressible-euler-equations/comment-page-1/"
+      ],
+      "kind": "public"
+    },
+    "61": {
+      "id": 61,
+      "citation": {
+        "de": "Terence Tao. Thread zur difficulty landscape. 08.09.2026.",
+        "en": "Terence Tao. Thread zur difficulty landscape. 08.09.2026."
+      },
+      "urls": [
+        "https://mathstodon.xyz/@tao/117237320796901560"
+      ],
+      "kind": "public"
+    },
+    "62": {
+      "id": 62,
+      "citation": {
+        "de": "Andreas Thom. Ein neues Lehrkonzept für das Mathematikstudium: Vorlesung – KI-Tutor – Grundübung – Labor. ohne Datum; 5 Seiten.",
+        "en": "Andreas Thom. A new teaching concept for mathematics programmes: Lecture – AI Tutor – Foundational Exercise Class – Laboratory. Undated; 5 pages."
+      },
+      "urls": [],
+      "kind": "provided"
+    },
+    "63": {
+      "id": 63,
+      "citation": {
+        "de": "Andreas Thom. On the existence of non-sofic groups. 11.09.2026.",
+        "en": "Andreas Thom. On the existence of non-sofic groups. 11.09.2026."
+      },
+      "urls": [
+        "https://terrytao.wordpress.com/2026/09/11/on-the-existence-of-non-sofic-groups/"
+      ],
+      "kind": "public"
+    },
+    "64": {
+      "id": 64,
+      "citation": {
+        "de": "Andreas Thom. Sechs Fragen zu KI, Mathematik und institutioneller Gestaltung. im Gespräch bereitgestellt.",
+        "en": "Andreas Thom. Six questions on AI, mathematics and institutional arrangements. Provided in conversation."
+      },
+      "urls": [],
+      "kind": "provided"
+    },
+    "65": {
+      "id": 65,
+      "citation": {
+        "de": "William P. Thurston. On proof and progress in mathematics. 1994.",
+        "en": "William P. Thurston. On proof and progress in mathematics. 1994."
+      },
+      "urls": [
+        "https://arxiv.org/html/math/9404236"
+      ],
+      "kind": "public"
+    },
+    "66": {
+      "id": 66,
+      "citation": {
+        "de": "Guanyang Wang. Prompting Toward a Conjecture. 12.08.2026.",
+        "en": "Guanyang Wang. Prompting Toward a Conjecture. 12.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/12/prompting-toward-a-conjecture/"
+      ],
+      "kind": "public"
+    },
+    "67": {
+      "id": 67,
+      "citation": {
+        "de": "Ruodu Wang. The AI-assisted mathematician’s dilemma. 28.08.2026.",
+        "en": "Ruodu Wang. The AI-assisted mathematician’s dilemma. 28.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/28/the-ai-assisted-mathematicians-dilemma/"
+      ],
+      "kind": "public"
+    },
+    "68": {
+      "id": 68,
+      "citation": {
+        "de": "Robert Wegner. A somewhat optimistic view of AI in mathematics. 10.09.2026.",
+        "en": "Robert Wegner. A somewhat optimistic view of AI in mathematics. 10.09.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/09/10/a-somewhat-optimistic-view-of-ai-in-mathematics/"
+      ],
+      "kind": "public"
+    },
+    "69": {
+      "id": 69,
+      "citation": {
+        "de": "Shmuel Weinberger. What I feel like when I work with an AI. 11.08.2026.",
+        "en": "Shmuel Weinberger. What I feel like when I work with an AI. 11.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/11/what-i-feel-like-when-i-work-with-an-ai/"
+      ],
+      "kind": "public"
+    },
+    "70": {
+      "id": 70,
+      "citation": {
+        "de": "Max Weinreich. The crisis of AI-generated mathematics. August 2026.",
+        "en": "Max Weinreich. The crisis of AI-generated mathematics. August 2026."
+      },
+      "urls": [
+        "https://arxiv.org/html/2608.02859v1"
+      ],
+      "kind": "public"
+    },
+    "71": {
+      "id": 71,
+      "citation": {
+        "de": "Mark Wildon. The reverse-centaur problem: LLMs and the choices ahead. 25.08.2026.",
+        "en": "Mark Wildon. The reverse-centaur problem: LLMs and the choices ahead. 25.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/25/the-reverse-centaur-problem-llms-and-the-choices-ahead/"
+      ],
+      "kind": "public"
+    },
+    "72": {
+      "id": 72,
+      "citation": {
+        "de": "Shaowu Zhang. Where to Point the Telescope. 21.08.2026.",
+        "en": "Shaowu Zhang. Where to Point the Telescope. 21.08.2026."
+      },
+      "urls": [
+        "https://proofsandprompts.com/2026/08/21/where-to-point-the-telescope/"
+      ],
+      "kind": "public"
+    }
+  }
+}
