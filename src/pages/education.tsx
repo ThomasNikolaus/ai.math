@@ -1,4 +1,4 @@
-import { Printer } from "lucide-react";
+import { MessageSquare, Printer } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { PageHeading } from "../components/PageHeading";
 import { Board } from "../components/Board";
@@ -53,6 +53,10 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
               {title.replace(/\.$/, "")}
             </a>
           ))}
+          <a className="index-discuss" href={link(lang, "teaching", "board")}>
+            <MessageSquare size={15} />
+            {de ? "Papier diskutieren" : "Discuss this paper"}
+          </a>
         </aside>
         <article className="paper-body">
           <section id="preamble">
