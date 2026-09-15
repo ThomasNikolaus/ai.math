@@ -1,4 +1,5 @@
 import { PageHeading } from "../components/PageHeading";
+import { initiators } from "../site";
 import type { Lang } from "../types";
 
 // Provider and editorial responsibility confirmed by Thomas Nikolaus.
@@ -14,6 +15,19 @@ export function Imprint({ lang }: { lang: Lang }) {
         subtitle={de ? "Impressum" : "Legal notice"}
       />
       <div className="imprint-content">
+        <section aria-labelledby="initiative-title">
+          <h2 id="initiative-title">{de ? "Gemeinsame Initiative" : "Joint initiative"}</h2>
+          <p>
+            {initiators.map((person, index) => (
+              <span key={person.name}>
+                {index > 0 && (index === initiators.length - 1 ? (de ? " und " : " and ") : ", ")}
+                <a href={person.homepage} target="_blank" rel="noopener noreferrer">
+                  {person.name}
+                </a>
+              </span>
+            ))}
+          </p>
+        </section>
         <section aria-labelledby="provider-title">
           <h2 id="provider-title">{de ? "Anbieter dieser Website" : "Website provider"}</h2>
           <address>
