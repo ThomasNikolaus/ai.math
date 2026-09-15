@@ -3,6 +3,7 @@ import { Board } from "../components/Board";
 import { siteTitle } from "../site";
 import type { Lang } from "../types";
 import { seminarUrl } from "../site";
+import { MatrixDiscussion } from "../components/MatrixDiscussion";
 
 export function Experiences({ lang }: { lang: Lang }) {
   const de = lang === "de";
@@ -35,6 +36,7 @@ export function Experiences({ lang }: { lang: Lang }) {
             ? "Wir laden dazu ein, Erfahrungen, Hoffnungen und Sorgen im offenen Board zu teilen und die Positionspapiere zu Forschung und Lehre in den jeweiligen Boards zu diskutieren."
             : "We invite you to share experiences, hopes and concerns on the open board and to discuss the position papers on research and education on their respective boards."}
         </p>
+        <MatrixDiscussion lang={lang} />
         <p>
           {de
             ? "Der Austausch kann ebenso in Fachbereichen, Arbeitsgruppen und informellen Gesprächen stattfinden. Das Online-Seminar "

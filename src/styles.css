@@ -20,3 +20,15 @@ html{overflow-x:clip}.view-experiences .embed-wrap iframe{display:block;width:ca
 .site-shell :is(.landing-prose,.discussion-introduction) a{color:#920055;font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.18em;text-decoration-skip-ink:auto}
 .site-shell :is(.landing-prose,.discussion-introduction) a:hover{color:#710041;text-decoration-thickness:2px}
 .site-shell :is(.landing-prose,.discussion-introduction) a:focus-visible{outline:2px solid #920055;outline-offset:4px}
+
+/* Compact Matrix invitation with native, keyboard-accessible join instructions. */
+.site-shell .matrix-discussion{max-width:850px;margin:0 0 24px;color:var(--discussion-text,#3f4a5d);font-size:1.0625rem;line-height:1.8}
+.site-shell .matrix-discussion p{margin:0 0 8px}
+.site-shell .matrix-discussion a{color:#920055;font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.18em;text-decoration-skip-ink:auto}
+.site-shell .matrix-discussion a:hover{color:#710041;text-decoration-thickness:2px}
+.site-shell .matrix-help summary{width:fit-content;max-width:100%;color:#920055;cursor:pointer;font-weight:600;list-style:disclosure-closed}
+.site-shell .matrix-help[open] summary{list-style:disclosure-open}
+.site-shell .matrix-help summary:hover{color:#710041}
+.site-shell .matrix-help ol{list-style:decimal;margin:12px 0;padding-left:1.5em}
+.site-shell .matrix-help li{padding-left:.25em;margin:0 0 8px}
+.site-shell .matrix-discussion :is(a,summary):focus-visible{outline:2px solid #920055;outline-offset:4px}

@@ -40,6 +40,7 @@ export const initiators = [
   { name: "Andreas Thom", homepage: "https://andreasthom.github.io" },
 ];
 export const seminarUrl = "https://www.uni-muenster.de/MathematicsMuenster/ai-math/";
+export const matrixSpaceUrl = "https://matrix.to/#/#mathematik-und-ki:tu-dresden.de";
 export const boards: Record<string, { padletId: string; url: string }> = {
   experiences: {
     padletId: "s023jth93wq743uuwaje",

@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { useLanguageState, useSiteLink } from "./Layout";
 import { boards } from "../site";
 import type { Lang } from "../types";
+import { MatrixDiscussion } from "./MatrixDiscussion";
 
 export function Board({ kind, lang }: { kind: keyof typeof boards; lang: Lang }) {
   const link = useSiteLink();
@@ -50,6 +51,7 @@ export function Board({ kind, lang }: { kind: keyof typeof boards; lang: Lang })
             ? "Ergänzt eine Perspektive, stellt eine Rückfrage oder teilt eine hilfreiche Referenz. Beiträge können auf Deutsch oder Englisch verfasst werden."
             : "Add a perspective, ask a follow-up question or share a useful reference. Contributions can be in German or English."}
       </p>
+      {(kind === "papers" || kind === "teaching") && <MatrixDiscussion lang={lang} />}
       {validId && enabled ? (
         <div className="embed-wrap">
           <iframe

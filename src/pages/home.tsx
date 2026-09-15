@@ -5,6 +5,7 @@ import { siteTitle, initiators } from "../site";
 import type { Lang } from "../types";
 import landingText from "../content/home.json";
 import { seminarUrl } from "../site";
+import { MatrixDiscussion } from "../components/MatrixDiscussion";
 
 export function Landing({ lang }: { lang: Lang }) {
   const link = useSiteLink();
@@ -24,6 +25,7 @@ export function Landing({ lang }: { lang: Lang }) {
         {landingText[lang].map((p, i) => (
           <p key={i}>{p}</p>
         ))}
+        <MatrixDiscussion lang={lang} />
         <p>
           {de
             ? "Weitere Gelegenheit zum Austausch bietet das Online-Seminar "
