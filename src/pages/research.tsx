@@ -33,7 +33,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
       </div>
       <p className="version-date">
         {de ? "Stand: " : "Last updated: "}
-        <time dateTime="2026-09-14">{de ? "14. September 2026" : "14 September 2026"}</time>
+        <time dateTime="2026-09-15">{de ? "15. September 2026" : "15 September 2026"}</time>
       </p>
       <div className="paper-toolbar">
         <Button variant="ghost" onClick={() => window.print()}>
