@@ -16,7 +16,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
       <PageHeading
         eyebrow={de ? "Positionspapier · Forschung" : "Position Paper · Research"}
         title={siteTitle[lang]}
-        subtitle={de ? "Grundsätze für die Forschung" : "Principles for Research"}
+        subtitle={paper.title}
       />
       <div className="paper-byline">
         <span>
