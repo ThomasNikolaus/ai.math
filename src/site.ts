@@ -21,6 +21,7 @@ export const titles: Record<Lang, Record<View, string>> = {
     experiences: "Diskussion",
     resources: "Links & Veranstaltungen",
     imprint: "Impressum",
+    privacy: "Datenschutz",
   },
   en: {
     home: "Home",
@@ -30,6 +31,7 @@ export const titles: Record<Lang, Record<View, string>> = {
     experiences: "Discussion",
     resources: "Links & Events",
     imprint: "Legal notice",
+    privacy: "Privacy",
   },
 };
 export const initiators = [

@@ -10,6 +10,9 @@ const mime = {
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml",
+  ".png": "image/png",
+  ".xml": "application/xml; charset=utf-8",
+  ".txt": "text/plain; charset=utf-8",
 };
 http
   .createServer(async (request, response) => {
@@ -40,8 +43,9 @@ http
       });
       response.end(bytes);
     } catch {
-      response.writeHead(404);
-      response.end("Not found");
+      const notFound = await fs.readFile(path.join(root, "404.html")).catch(() => "Not found");
+      response.writeHead(404, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+      response.end(notFound);
     }
   })
   .listen(port, "127.0.0.1", () => console.log(`Preview: http://127.0.0.1:${port}${mount}`));

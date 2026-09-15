@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
-import { useLanguageState } from "./Layout";
+import { useLanguageState, useSiteLink } from "./Layout";
 import { boards } from "../site";
 import type { Lang } from "../types";
 
 export function Board({ kind, lang }: { kind: keyof typeof boards; lang: Lang }) {
+  const link = useSiteLink();
   const [enabled, setEnabled] = useState(false);
   const transferred = useLanguageState();
   useEffect(() => {
@@ -86,6 +87,10 @@ export function Board({ kind, lang }: { kind: keyof typeof boards; lang: Lang })
             {de
               ? "Beim Laden des Boards wird eine Verbindung zu Padlet hergestellt und es können personenbezogene Daten an Padlet übermittelt werden."
               : "Loading the board establishes a connection to Padlet and may transmit personal data to Padlet."}
+            {" "}
+            <a href={link(lang, "privacy", "padlet")} className="text-link">
+              {de ? "Datenschutzhinweise" : "Privacy information"}
+            </a>
           </p>
           <div
             style={{

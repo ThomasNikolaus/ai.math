@@ -1,4 +1,4 @@
-import{b as r,h as a,j as s,m as i}from"./shared-T6DF7FPK.js";var o={en:`<section>
+import{b as r,h as a,j as s,m as i}from"./shared-Y4EXLYQT.js";var o={en:`<section>
     <h2>Events</h2>
 
     <article class="session">

@@ -9,6 +9,7 @@ export const paths = {
     experiences: "de/diskussion/",
     resources: "de/links/",
     imprint: "de/impressum/",
+    privacy: "de/datenschutz/",
   },
   en: {
     home: "en/",
@@ -18,6 +19,7 @@ export const paths = {
     experiences: "en/discussion/",
     resources: "en/resources/",
     imprint: "en/legal-notice/",
+    privacy: "en/privacy/",
   },
 };
 export const languagePreferenceKey = "ai-mathematics-language";

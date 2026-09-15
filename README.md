@@ -1,6 +1,6 @@
 # KI und Mathematik / AI and Mathematics
 
-Die Website besteht aus sechs Inhaltsseiten und einem Impressum pro Sprache. Texte, Gestaltung und Funktionen entsprechen der bisherigen Ein-Datei-Version. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
+Die Website besteht aus sechs Inhaltsseiten, einem Impressum und Datenschutzhinweisen pro Sprache. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
 
 ## Aufbau
 
@@ -12,10 +12,12 @@ Die Website besteht aus sechs Inhaltsseiten und einem Impressum pro Sprache. Tex
 | Fragen und Perspektiven   | `de/fragen/index.html`     | `en/questions/index.html`  |
 | Diskussion                | `de/diskussion/index.html` | `en/discussion/index.html` |
 | Links und Veranstaltungen | `de/links/index.html`      | `en/resources/index.html`  |
+| Impressum                 | `de/impressum/index.html`  | `en/legal-notice/index.html` |
+| Datenschutz               | `de/datenschutz/index.html` | `en/privacy/index.html` |
 
 Die Startdatei `index.html` führt anhand der gespeicherten Sprachwahl bzw. Browsersprache zur Startseite. Alte Links wie `#/de/papers/principle-1` führen weiterhin zum passenden Abschnitt. Die relativen Pfade funktionieren sowohl unter `thomasnikolaus.github.io/ai.math/` als auch mit einer eigenen Domain.
 
-Das Impressum ist unter `de/impressum/index.html` bzw. `en/legal-notice/index.html` erreichbar und im Fußbereich jeder Seite verlinkt.
+Impressum und Datenschutz sind im Fußbereich jeder Seite verlinkt. `404.html` enthält eine zweisprachige Fehlerseite, die auch bei beliebig tiefen ungültigen URLs ohne JavaScript funktioniert.
 
 ## Änderungen vornehmen
 
@@ -24,6 +26,10 @@ Das Impressum ist unter `de/impressum/index.html` bzw. `en/legal-notice/index.ht
 - `src/components/`: gemeinsame Navigation, Überschriften, Diskussionsboards und Bedienelemente.
 - `src/styles.css`: die bisherige Formatierung einschließlich Druckansicht.
 - `src/site.ts`: Seitentitel, Autor:innen, Seminaradresse und Padlet-Adressen.
+- `src/metadata.mjs`: individuelle Seitenbeschreibungen für beide Sprachen.
+- `src/pages/privacy.tsx`: Datenschutzhinweise zum tatsächlichen Betrieb der Seite.
+- `src/favicon.svg`, `src/favicon.png`, `src/apple-touch-icon.png`: Website-Symbole; SVG ist die bearbeitbare Vorlage.
+- `src/social-preview-*.svg` und `.png`: zweisprachige Vorschaugrafiken; nach Änderungen an SVG auch die PNG-Dateien neu exportieren (1200 × 630 Pixel).
 - `src/routing.mjs`: Seitenadressen und Kompatibilität mit alten Links.
 
 Die erzeugten HTML-Dateien und Dateien in `assets/` werden beim Bauen überschrieben. Dauerhafte Änderungen deshalb in `src/` vornehmen.
@@ -46,7 +52,7 @@ Die bisherige Einstellung bleibt passend: **Settings → Pages → Deploy from a
 Nach einer Änderung zuerst `pnpm build` und `pnpm test` ausführen. Anschließend Quelldateien **und** erzeugte Dateien gemeinsam committen und pushen:
 
 ```sh
-git add .
+git add -A
 git commit -m "Update website"
 git push
 ```
@@ -54,3 +60,19 @@ git push
 `generated-files.json` verzeichnet die erzeugten Dateien. Ein neuer Build entfernt ausschließlich veraltete Dateien aus dieser Liste. Eine später angelegte `CNAME` für eine eigene Domain bleibt erhalten. `.nojekyll` sorgt für die direkte Auslieferung der statischen Dateien.
 
 Die bestehende Angabe `noindex,nofollow` wurde unverändert übernommen. Padlet wird weiterhin erst nach Klick auf „Diskussionsboard öffnen“ geladen. Beim Wechsel der Sprache bleiben geöffnete Antworten und ein bereits geöffnetes Board erhalten.
+
+## Seiteninformationen und spätere Domain
+
+Der Build erzeugt Beschreibungen, Canonical- und vollständige hreflang-Adressen, Open-Graph- und Twitter-Vorschauen, Website-Strukturdaten auf der Einstiegsseite, Icons, `sitemap.xml` und `robots.txt`. Das schaltet die Website **nicht** für Suchmaschinen frei: Alle HTML-Seiten tragen weiterhin `noindex,nofollow`. `robots.txt` erlaubt das Abrufen, damit Suchmaschinen diese Sperre lesen können. Die Sitemap wird nicht automatisch bei Suchmaschinen eingereicht; Search Console ist nicht eingerichtet.
+
+Die öffentliche Basisadresse wird beim Bauen in dieser Reihenfolge bestimmt:
+
+1. Eine ausdrücklich gesetzte Umgebungsvariable `SITE_URL` (HTTPS, mit optionalem Projektpfad).
+2. Die Domain aus einer vorhandenen `CNAME`-Datei.
+3. `https://thomasnikolaus.github.io/ai.math/`.
+
+Wenn `ai.math.ms` in den GitHub-Pages-Einstellungen hinterlegt wird, erstellt GitHub eine `CNAME`-Datei. Diesen Commit zuerst mit `git pull --ff-only` übernehmen, anschließend neu bauen, prüfen und die erzeugten Dateien mit veröffentlichen. Damit werden Canonical-Adressen, Sprachverknüpfungen, Vorschaugrafik-Adressen, Sitemap und Fehlerseite auf die neue Domain umgestellt. Die Suchmaschinen-Sperre bleibt dabei erhalten. Dieser Build ändert weder die DNS-Einstellungen noch die Pages-Einstellungen.
+
+Unter der bisherigen GitHub-Projektadresse gilt eine `robots.txt` nur am Host-Stamm, nicht im Unterverzeichnis `/ai.math/`. Die mitgelieferte Datei wird nach dem Umzug an die Wurzel von `ai.math.ms` wirksam; die Sperre durch HTML-Metatags gilt bereits jetzt.
+
+Die Datenschutzhinweise beruhen auf der aktuellen Einbindung und den verlinkten Angaben von GitHub und Padlet (Stand 15. September 2026). Änderungen an Hosting, Boards, Analysefunktionen oder Speicherverfahren erfordern eine erneute Prüfung des Textes.

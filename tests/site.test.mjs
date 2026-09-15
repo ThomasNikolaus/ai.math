@@ -29,9 +29,10 @@ const unescape = (text) =>
     .replaceAll("&gt;", ">");
 
 test("Every page and internal anchor works at the domain root and at the GitHub project path", async () => {
-  assert.equal(documents.size, 15);
+  assert.equal(documents.size, 18);
   for (const base of ["https://example.org/", "https://example.org/ai.math/"]) {
     for (const [filename, html] of documents) {
+      if (filename === "404.html") continue; // Uses absolute publication URLs for arbitrary request paths.
       const current = new URL(filename, base);
       for (const match of html.matchAll(/\b(?:href|src)=(['"])(.*?)\1/g)) {
         const destination = new URL(unescape(match[2]), current);
@@ -160,6 +161,7 @@ test("The actual browser redirect preserves old links and query strings", async 
 
 test("The legal notice is directly linked from the footer of every page", () => {
   for (const [filename, html] of documents) {
+    if (filename === "404.html") continue;
     const footer = html.match(/<footer class="site-footer">(.*?)<\/footer>/s)?.[1];
     assert.ok(footer, `Missing footer: ${filename}`);
     const href = footer.match(/href="([^"]+)"/)?.[1];
@@ -167,5 +169,7 @@ test("The legal notice is directly linked from the footer of every page", () => 
     const current = new URL(filename, "https://example.org/ai.math/");
     assert.equal(new URL(href, current).href, new URL(paths[lang].imprint, "https://example.org/ai.math/").href);
     assert.ok(footer.includes(lang === "de" ? "Impressum" : "Legal notice"));
+    const privacyHref = footer.match(/href="([^"]+)"[^>]*>(?:Datenschutz|Privacy)<\/a>/)?.[1];
+    assert.equal(new URL(privacyHref, current).href, new URL(paths[lang].privacy, "https://example.org/ai.math/").href);
   }
 });

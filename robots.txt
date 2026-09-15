@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Indexing remains disabled by noindex meta tags on all HTML pages.
+Sitemap: https://thomasnikolaus.github.io/ai.math/sitemap.xml

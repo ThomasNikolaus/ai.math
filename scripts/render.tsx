@@ -6,6 +6,7 @@ import { TeachingPaper } from "../src/pages/education";
 import { Questions } from "../src/pages/questions";
 import { Experiences } from "../src/pages/discussion";
 import { Imprint } from "../src/pages/imprint";
+import { Privacy } from "../src/pages/privacy";
 import { Resources } from "../src/pages/resources";
 import { titles, siteTitle } from "../src/site";
 import type { PageRoute } from "../src/types";
@@ -18,6 +19,7 @@ const pages = {
   experiences: Experiences,
   resources: Resources,
   imprint: Imprint,
+  privacy: Privacy,
 };
 
 export function renderPage(route: PageRoute) {
