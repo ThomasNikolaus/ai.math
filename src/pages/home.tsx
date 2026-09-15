@@ -4,8 +4,7 @@ import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
 import type { Lang } from "../types";
 import landingText from "../content/home.json";
-import { seminarUrl } from "../site";
-import { MatrixDiscussion } from "../components/MatrixDiscussion";
+import { seminarUrl, matrixSpaceUrl } from "../site";
 
 export function Landing({ lang }: { lang: Lang }) {
   const link = useSiteLink();
@@ -25,17 +24,20 @@ export function Landing({ lang }: { lang: Lang }) {
         {landingText[lang].map((p, i) => (
           <p key={i}>{p}</p>
         ))}
-        <MatrixDiscussion lang={lang} />
         <p>
           {de
-            ? "Weitere Gelegenheit zum Austausch bietet das Online-Seminar "
-            : "The online seminar "}
+            ? "Weitere Gelegenheiten zum Austausch bieten der "
+            : "You can also exchange ideas in the "}
+          <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
+            {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
+          </a>
+          {de ? " und das Online-Seminar " : " and at the online seminar "}
           <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
             AI and the Future of Mathematics
           </a>
           {de
             ? " mit Vorträgen und anschließenden Diskussionen."
-            : " offers further opportunities for exchange through talks and follow-up discussions."}
+            : ", which features talks and follow-up discussions."}
         </p>
       </article>
       <p className="discussion-byline" id="people">

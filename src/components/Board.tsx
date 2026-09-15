@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useLanguageState, useSiteLink } from "./Layout";
-import { boards } from "../site";
+import { boards, matrixSpaceUrl } from "../site";
 import type { Lang } from "../types";
-import { MatrixDiscussion } from "./MatrixDiscussion";
 
 export function Board({ kind, lang }: { kind: keyof typeof boards; lang: Lang }) {
   const link = useSiteLink();
@@ -51,7 +50,13 @@ export function Board({ kind, lang }: { kind: keyof typeof boards; lang: Lang })
             ? "Ergänzt eine Perspektive, stellt eine Rückfrage oder teilt eine hilfreiche Referenz. Beiträge können auf Deutsch oder Englisch verfasst werden."
             : "Add a perspective, ask a follow-up question or share a useful reference. Contributions can be in German or English."}
       </p>
-      {(kind === "papers" || kind === "teaching") && <MatrixDiscussion lang={lang} />}
+      {(kind === "papers" || kind === "teaching") && (
+        <p className="matrix-paper-link">
+          <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
+            {de ? "Im Matrix-Space diskutieren" : "Discuss in the Matrix space"} ↗
+          </a>
+        </p>
+      )}
       {validId && enabled ? (
         <div className="embed-wrap">
           <iframe
