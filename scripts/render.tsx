@@ -5,6 +5,7 @@ import { PositionPaper } from "../src/pages/research";
 import { TeachingPaper } from "../src/pages/education";
 import { Questions } from "../src/pages/questions";
 import { Experiences } from "../src/pages/discussion";
+import { Imprint } from "../src/pages/imprint";
 import { Resources } from "../src/pages/resources";
 import { titles, siteTitle } from "../src/site";
 import type { PageRoute } from "../src/types";
@@ -16,6 +17,7 @@ const pages = {
   questions: Questions,
   experiences: Experiences,
   resources: Resources,
+  imprint: Imprint,
 };
 
 export function renderPage(route: PageRoute) {

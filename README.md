@@ -1,6 +1,6 @@
 # KI und Mathematik / AI and Mathematics
 
-Die Website besteht aus sechs Seiten pro Sprache. Texte, Gestaltung und Funktionen entsprechen der bisherigen Ein-Datei-Version. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
+Die Website besteht aus sechs Inhaltsseiten und einem Impressum pro Sprache. Texte, Gestaltung und Funktionen entsprechen der bisherigen Ein-Datei-Version. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
 
 ## Aufbau
 
@@ -15,10 +15,12 @@ Die Website besteht aus sechs Seiten pro Sprache. Texte, Gestaltung und Funktion
 
 Die Startdatei `index.html` führt anhand der gespeicherten Sprachwahl bzw. Browsersprache zur Startseite. Alte Links wie `#/de/papers/principle-1` führen weiterhin zum passenden Abschnitt. Die relativen Pfade funktionieren sowohl unter `thomasnikolaus.github.io/ai.math/` als auch mit einer eigenen Domain.
 
+Das Impressum ist unter `de/impressum/index.html` bzw. `en/legal-notice/index.html` erreichbar und im Fußbereich jeder Seite verlinkt.
+
 ## Änderungen vornehmen
 
 - `src/content/`: Texte der Startseite, Positionspapiere, Fragen, Perspektiven und Linkliste, jeweils in beiden Sprachen.
-- `src/pages/`: Vorlage jeder Seite, einschließlich ihrer weiteren Texte.
+- `src/pages/`: Vorlage jeder Seite, einschließlich ihrer weiteren Texte. Die Impressumsangaben stehen in `src/pages/imprint.tsx`.
 - `src/components/`: gemeinsame Navigation, Überschriften, Diskussionsboards und Bedienelemente.
 - `src/styles.css`: die bisherige Formatierung einschließlich Druckansicht.
 - `src/site.ts`: Seitentitel, Autor:innen, Seminaradresse und Padlet-Adressen.

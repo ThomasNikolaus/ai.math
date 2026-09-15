@@ -16,6 +16,7 @@ const entries = {
   questions: ["questions", "Questions"],
   experiences: ["discussion", "Experiences"],
   resources: ["resources", "Resources"],
+  imprint: ["imprint", "Imprint"],
 };
 for (const [view, [module, component]] of Object.entries(entries)) {
   await fs.writeFile(
@@ -131,4 +132,4 @@ await fs.writeFile(
   path.join(root, "generated-files.json"),
   JSON.stringify([...generated.keys()].sort(), null, 2) + "\n",
 );
-console.log("Built 12 HTML pages, the language entry page, and shared assets.");
+console.log(`Built ${Object.values(paths).reduce((count, pages) => count + Object.keys(pages).length, 0)} HTML pages, the language entry page, and shared assets.`);

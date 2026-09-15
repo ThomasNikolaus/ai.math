@@ -127,6 +127,11 @@ export function Layout({ route, children }: { route: PageRoute; children: ReactN
         <main id="main" tabIndex={-1} lang={lang}>
           {children}
         </main>
+        <footer className="site-footer">
+          <a href={link(lang, "imprint")} aria-current={view === "imprint" ? "page" : undefined}>
+            {de ? "Impressum" : "Legal notice"}
+          </a>
+        </footer>
       </div>
     </RouteContext.Provider>
   );

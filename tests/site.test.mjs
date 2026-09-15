@@ -29,7 +29,7 @@ const unescape = (text) =>
     .replaceAll("&gt;", ">");
 
 test("Every page and internal anchor works at the domain root and at the GitHub project path", async () => {
-  assert.equal(documents.size, 13);
+  assert.equal(documents.size, 15);
   for (const base of ["https://example.org/", "https://example.org/ai.math/"]) {
     for (const [filename, html] of documents) {
       const current = new URL(filename, base);
@@ -155,4 +155,17 @@ test("The actual browser redirect preserves old links and query strings", async 
     redirect("https://example.org/en/research/#principle-3", false, "../../", "de"),
     undefined,
   );
+});
+
+
+test("The legal notice is directly linked from the footer of every page", () => {
+  for (const [filename, html] of documents) {
+    const footer = html.match(/<footer class="site-footer">(.*?)<\/footer>/s)?.[1];
+    assert.ok(footer, `Missing footer: ${filename}`);
+    const href = footer.match(/href="([^"]+)"/)?.[1];
+    const lang = html.match(/<html lang="([^"]+)"/)?.[1];
+    const current = new URL(filename, "https://example.org/ai.math/");
+    assert.equal(new URL(href, current).href, new URL(paths[lang].imprint, "https://example.org/ai.math/").href);
+    assert.ok(footer.includes(lang === "de" ? "Impressum" : "Legal notice"));
+  }
 });
