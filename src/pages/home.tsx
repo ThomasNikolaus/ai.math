@@ -26,18 +26,18 @@ export function Landing({ lang }: { lang: Lang }) {
         ))}
         <p>
           {de
-            ? "Weitere Gelegenheiten zum Austausch bieten der "
-            : "You can also exchange ideas in the "}
+            ? "Welche Grundsätze überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website. Ihr könnt euch auch im "
+            : "Which principles do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards. You can also exchange ideas in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
-          {de ? " und das Online-Seminar " : " and at the online seminar "}
+          {de ? " und im Online-Seminar " : " and at the online seminar "}
           <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
             AI and the Future of Mathematics
           </a>
           {de
-            ? " mit Vorträgen und anschließenden Diskussionen."
-            : ", which features talks and follow-up discussions."}
+            ? " mit Vorträgen und anschließenden Diskussionen austauschen. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
+            : ", which features talks and follow-up discussions. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
         </p>
       </article>
       <p className="discussion-byline" id="people">
