@@ -7,9 +7,15 @@ export function MatrixDiscussion({ lang }: { lang: Lang }) {
   const link = useSiteLink();
   return (
     <div className="matrix-discussion">
-      <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
-        {de ? "Im Matrix-Space diskutieren" : "Discuss in the Matrix space"} ↗
-      </a>
+      <p className="matrix-invitation">
+        {de
+          ? "Wir laden dazu ein, Erfahrungen, Hoffnungen und Sorgen im offenen Board zu teilen und die Positionspapiere zu Forschung und Lehre in den jeweiligen Boards zu diskutieren. Ihr könnt auch im "
+          : "We invite you to share experiences, hopes and concerns on the open board and to discuss the position papers on research and education on their respective boards. You can also join the discussion in the "}
+        <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
+          {de ? "Matrix-Space" : "Matrix space"} ↗
+        </a>
+        {de ? " mitdiskutieren." : "."}
+      </p>{" "}
       <details className="matrix-help">
         <summary>{de ? "Hilfe zum Beitritt" : "Help with joining"}</summary>
         <div className="matrix-help-content">

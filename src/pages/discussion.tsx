@@ -31,11 +31,6 @@ export function Experiences({ lang }: { lang: Lang }) {
             ? "Wir setzen auf eine Diskussion auf Augenhöhe. Lasst uns reflektiert und mit Empathie diskutieren! Ein Postdoc in der Bewerbungsphase verspürt mehr Druck, KI einzusetzen, um schneller zu arbeiten, als ein Professor mit einer gesicherten Dauerstelle. Menschen reagieren unterschiedlich auf neue Entwicklungen: Einige sind skeptisch und vorsichtig, andere neugierig und gespannt. Geprägt durch unsere Persönlichkeiten und Erfahrungen gehen wir unterschiedlich mit Unsicherheit um. Gerade wenn wir über den generellen Einsatz von KI oder unsere Erwartungen an das Verständnis von Resultaten diskutieren, sollten wir daher viel Verständnis für die Lebensumstände unserer Diskussionspartner:innen aufbringen."
             : "We seek a discussion on equal terms. Let us discuss thoughtfully and with empathy! A postdoc applying for jobs feels more pressure to use AI to work faster than a professor with a secure permanent position. People react differently to new developments: some are sceptical and cautious, others curious and excited. Different people deal with uncertainty differently, shaped by our personalities and experiences. Especially when discussing whether to use AI in general or what understanding of results we expect, we should therefore show considerable understanding for our discussion partners’ circumstances."}
         </p>
-        <p>
-          {de
-            ? "Wir laden dazu ein, Erfahrungen, Hoffnungen und Sorgen im offenen Board zu teilen und die Positionspapiere zu Forschung und Lehre in den jeweiligen Boards zu diskutieren."
-            : "We invite you to share experiences, hopes and concerns on the open board and to discuss the position papers on research and education on their respective boards."}
-        </p>
         <MatrixDiscussion lang={lang} />
         <p>
           {de
@@ -45,8 +40,8 @@ export function Experiences({ lang }: { lang: Lang }) {
             AI and the Future of Mathematics
           </a>
           {de
-            ? " bietet mit Vorträgen und anschließenden Diskussionen weitere Anlässe dafür. Lokale Treffen können diese Gespräche aufgreifen und fortsetzen. Wir laden dazu ein, solche Treffpunkte zu organisieren!"
-            : " offers further opportunities through talks and follow-up discussions. Local meetings can build on and continue these conversations. We invite you to organise such meeting points!"}
+            ? " bietet mit Vorträgen und anschließenden Diskussionen weitere Anlässe dafür. Lokale Treffen können diese Gespräche aufgreifen und fortsetzen. Wir laden dazu ein, solche Treffen zu organisieren!"
+            : " offers further opportunities through talks and follow-up discussions. Local meetings can build on and continue these conversations. We invite you to organise such meetings!"}
         </p>
       </div>
 
