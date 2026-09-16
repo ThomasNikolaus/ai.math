@@ -61,11 +61,13 @@ git push
 
 `generated-files.json` verzeichnet die erzeugten Dateien. Ein neuer Build entfernt ausschließlich veraltete Dateien aus dieser Liste. Eine später angelegte `CNAME` für eine eigene Domain bleibt erhalten. `.nojekyll` sorgt für die direkte Auslieferung der statischen Dateien.
 
-Die bestehende Angabe `noindex,nofollow` wurde unverändert übernommen. Padlet wird weiterhin erst nach Klick auf „Diskussionsboard öffnen“ geladen. Beim Wechsel der Sprache bleiben geöffnete Antworten und ein bereits geöffnetes Board erhalten.
+Padlet wird weiterhin erst nach Klick auf „Diskussionsboard öffnen“ geladen. Beim Wechsel der Sprache bleiben geöffnete Antworten und ein bereits geöffnetes Board erhalten.
 
 ## Seiteninformationen und Domain
 
-Der Build erzeugt Beschreibungen, Canonical- und vollständige hreflang-Adressen, Open-Graph- und Twitter-Vorschauen, Website-Strukturdaten auf der Einstiegsseite, Icons, `sitemap.xml` und `robots.txt`. Das schaltet die Website **nicht** für Suchmaschinen frei: Alle HTML-Seiten tragen weiterhin `noindex,nofollow`. `robots.txt` erlaubt das Abrufen, damit Suchmaschinen diese Sperre lesen können. Die Sitemap wird nicht automatisch bei Suchmaschinen eingereicht; Search Console ist nicht eingerichtet.
+Der Build erzeugt Beschreibungen, Canonical- und vollständige hreflang-Adressen, Open-Graph- und Twitter-Vorschauen, Website-Strukturdaten auf der Einstiegsseite, Icons, `sitemap.xml` und `robots.txt`. Die Website ist seit dem 17. September 2026 für Suchmaschinen freigegeben: Alle regulären HTML-Seiten einschließlich der Spracheinstiegsseite tragen `index,follow`. Nur die Fehlerseite `404.html` bleibt mit `noindex,nofollow` ausgeschlossen. `robots.txt` erlaubt das Abrufen und verweist auf `https://ai.math.ms/sitemap.xml`; die Sitemap enthält die 16 kanonischen Seiten in beiden Sprachen. Google entscheidet selbst, wann und welche Seiten indexiert werden.
+
+Search Console wurde im Rahmen dieser Freigabe nicht eingerichtet und die Sitemap dort nicht eingereicht. Optional kann die Website als URL-Präfix-Property `https://ai.math.ms/` in Google Search Console bestätigt und anschließend `https://ai.math.ms/sitemap.xml` eingereicht werden. Ein bestätigter Zugang ist auch Voraussetzung für einzelne Anträge auf erneute Indexierung. Die Freigabe der Website funktioniert unabhängig davon.
 
 Die öffentliche Basisadresse wird beim Bauen in dieser Reihenfolge bestimmt:
 
@@ -73,8 +75,8 @@ Die öffentliche Basisadresse wird beim Bauen in dieser Reihenfolge bestimmt:
 2. Die Domain aus einer vorhandenen `CNAME`-Datei.
 3. `https://thomasnikolaus.github.io/ai.math/`.
 
-`CNAME` enthält bereits `ai.math.ms`. Ein normaler Build verwendet diese Adresse für Canonical-Angaben, Sprachverknüpfungen, Vorschaugrafiken, Sitemap und Fehlerseite. Die Suchmaschinen-Sperre bleibt dabei erhalten. Wird die Domain später über die GitHub-Pages-Einstellungen geändert, den dort erzeugten Commit zuerst mit `git pull --ff-only` übernehmen, anschließend neu bauen, prüfen und die erzeugten Dateien mit veröffentlichen. Der Build selbst ändert weder die DNS-Einstellungen noch die Pages-Einstellungen.
+`CNAME` enthält bereits `ai.math.ms`. Ein normaler Build verwendet diese Adresse für Canonical-Angaben, Sprachverknüpfungen, Vorschaugrafiken, Sitemap und Fehlerseite. Die Freigabe für Suchmaschinen bleibt dabei erhalten. Wird die Domain später über die GitHub-Pages-Einstellungen geändert, den dort erzeugten Commit zuerst mit `git pull --ff-only` übernehmen, anschließend neu bauen, prüfen und die erzeugten Dateien mit veröffentlichen. Der Build selbst ändert weder die DNS-Einstellungen noch die Pages-Einstellungen.
 
-Unter der bisherigen GitHub-Projektadresse gilt eine `robots.txt` nur am Host-Stamm, nicht im Unterverzeichnis `/ai.math/`. Auf `ai.math.ms` liegt die mitgelieferte Datei an der richtigen Stelle. Die Sperre durch HTML-Metatags bleibt bestehen.
+Unter der bisherigen GitHub-Projektadresse gilt eine `robots.txt` nur am Host-Stamm, nicht im Unterverzeichnis `/ai.math/`. Auf `ai.math.ms` liegt die mitgelieferte Datei an der richtigen Stelle. Die Indexierungsangaben werden für jede HTML-Seite beim Build erzeugt.
 
 Die Datenschutzhinweise beruhen auf der aktuellen Einbindung und den verlinkten Angaben von GitHub und Padlet (Stand 15. September 2026). Änderungen an Hosting, Boards, Analysefunktionen oder Speicherverfahren erfordern eine erneute Prüfung des Textes.

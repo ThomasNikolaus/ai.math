@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Indexing remains disabled by noindex meta tags on all HTML pages.
 Sitemap: https://ai.math.ms/sitemap.xml

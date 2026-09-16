@@ -14,7 +14,7 @@ const base = publicationUrl({ siteUrl: process.env.SITE_URL, cname });
 const absolute = (relative) => new URL(relative, base).href;
 const unescape = (text) => text.replaceAll("&amp;", "&").replaceAll("&quot;", '"').replaceAll("&lt;", "<");
 
-test("Metadata identifies every page and its translations without enabling indexing", async () => {
+test("Metadata identifies every indexable page and its translations", async () => {
   const descriptions = new Set();
   for (const [lang, pages] of Object.entries(paths)) {
     for (const [view, directory] of Object.entries(pages)) {
@@ -24,7 +24,8 @@ test("Metadata identifies every page and its translations without enabling index
       assert.ok(description?.length > 40, `${directory}: missing description`);
       assert.ok(!descriptions.has(description), `${directory}: duplicate description`);
       descriptions.add(description);
-      assert.ok(head.includes('name="robots" content="noindex,nofollow"'));
+      assert.ok(head.includes('name="robots" content="index,follow"'));
+      assert.ok(!/noindex|nofollow/i.test(head));
       assert.ok(head.includes(`rel="canonical" href="${absolute(directory)}"`));
       assert.ok(head.includes(`property="og:url" content="${absolute(directory)}"`));
       assert.ok(head.includes(`property="og:description" content="${description}"`));
@@ -64,7 +65,7 @@ test("Sitemap contains exactly the named pages at the publication URL", async ()
   assert.equal(new Set(urls).size, urls.length);
   const robots = await fs.readFile(path.join(root, "robots.txt"), "utf8");
   assert.ok(robots.includes(`Sitemap: ${absolute("sitemap.xml")}`));
-  assert.ok(!/^Disallow:\s*\//m.test(robots), "Crawlers must be able to read the noindex tags");
+  assert.ok(!/^Disallow:\s*\//m.test(robots), "Public pages must be crawlable");
 });
 
 test("The bilingual 404 works at arbitrary nested URLs without JavaScript", async () => {

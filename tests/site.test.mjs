@@ -83,10 +83,12 @@ test("Questions and all perspectives are present in the initial HTML in both lan
   }
 });
 
-test("Padlet remains opt-in and existing indexing preference is preserved", () => {
+test("Padlet remains opt-in and only the error page is excluded from indexing", () => {
   for (const [filename, html] of documents) {
     assert.ok(!/<iframe\b/i.test(html), `Unexpected external frame in ${filename}`);
-    assert.ok(html.includes('name="robots" content="noindex,nofollow"'));
+    const policy = filename === "404.html" ? "noindex,nofollow" : "index,follow";
+    const robots = [...html.matchAll(/<meta\s+name="(?:robots|googlebot)"\s+content="([^"]+)"/g)];
+    assert.deepEqual(robots.map((match) => match[1]), [policy], `${filename}: unexpected indexing policy`);
   }
 });
 
