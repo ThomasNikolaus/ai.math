@@ -21,21 +21,10 @@ html{overflow-x:clip}.view-experiences .embed-wrap iframe{display:block;width:ca
 .site-shell :is(.landing-prose,.discussion-introduction) a:hover{color:#710041;text-decoration-thickness:2px}
 .site-shell :is(.landing-prose,.discussion-introduction) a:focus-visible{outline:2px solid #920055;outline-offset:4px}
 
-/* Matrix links stay inline; join help appears only on the discussion page. */
+/* Matrix discussion links. */
 .site-shell .matrix-discussion{max-width:850px;margin:0 0 24px;color:var(--discussion-text,#3f4a5d);font-size:1.0625rem;line-height:1.8}
-.site-shell .matrix-discussion .matrix-invitation{display:inline;margin:0}
+.site-shell .matrix-discussion .matrix-invitation{margin:0}
 .site-shell .matrix-paper-link{margin:0 0 24px;font-size:1.0625rem;line-height:1.8}
 .site-shell :is(.matrix-discussion,.matrix-paper-link) a{color:#920055;font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.18em;text-decoration-skip-ink:auto}
 .site-shell :is(.matrix-discussion,.matrix-paper-link) a:hover{color:#710041;text-decoration-thickness:2px}
-.site-shell .matrix-help{display:inline;margin-left:.5em;font-size:.875rem;line-height:1.65}
-.site-shell .matrix-help summary{display:inline;padding:3px 0;color:#52606d;cursor:pointer;font-size:.8125rem;font-weight:400;text-decoration:underline;text-underline-offset:.18em;list-style:none}
-.site-shell .matrix-help summary::-webkit-details-marker{display:none}
-.site-shell .matrix-help summary::before{content:"▸\00a0"}
-.site-shell .matrix-help[open] summary::before{content:"▾\00a0"}
-.site-shell .matrix-help summary:hover{color:#172033}
-.site-shell .matrix-help-content{max-width:48rem;margin-top:10px}
-.site-shell .matrix-help-content ol{list-style:decimal;margin:0 0 10px;padding-left:1.5em}
-.site-shell .matrix-help-content li{padding-left:.25em;margin:0 0 6px}
-.site-shell .matrix-help .matrix-help-content p{margin:0;font-size:.875rem;line-height:1.65}
-.site-shell .matrix-help-content a{font-weight:400}
-.site-shell :is(.matrix-discussion,.matrix-paper-link) :is(a,summary):focus-visible{outline:2px solid #920055;outline-offset:4px}
+.site-shell :is(.matrix-discussion,.matrix-paper-link) a:focus-visible{outline:2px solid #920055;outline-offset:4px}
