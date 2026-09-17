@@ -59,7 +59,7 @@ git commit -m "Update website"
 git push
 ```
 
-`generated-files.json` verzeichnet die erzeugten Dateien. Ein neuer Build entfernt ausschließlich veraltete Dateien aus dieser Liste. Eine später angelegte `CNAME` für eine eigene Domain bleibt erhalten. `.nojekyll` sorgt für die direkte Auslieferung der statischen Dateien.
+`generated-files.json` verzeichnet die erzeugten Dateien. CSS- und JavaScript-Dateien mit einem Inhaltsfingerabdruck im Namen bleiben bei späteren Builds erhalten und werden weiterhin mit veröffentlicht. So finden auch zwischengespeicherte HTML-Seiten ihre passenden Layoutdateien und Skripte, einschließlich gemeinsamer JavaScript-Module. Diese Dateien nicht beim Veröffentlichen aufräumen. Andere veraltete erzeugte Dateien werden ausschließlich anhand dieser Liste entfernt. Eine später angelegte `CNAME` für eine eigene Domain bleibt erhalten. `.nojekyll` sorgt für die direkte Auslieferung der statischen Dateien.
 
 Padlet wird weiterhin erst nach Klick auf „Diskussionsboard öffnen“ geladen. Beim Wechsel der Sprache bleiben geöffnete Antworten und ein bereits geöffnetes Board erhalten.
 

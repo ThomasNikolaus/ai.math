@@ -134,7 +134,8 @@ generated.set("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xm
 // Let crawlers discover the public pages through the sitemap.
 generated.set("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${absolute("sitemap.xml")}\n`);
 
-// Delete only files written by an earlier build, never CNAME or user-owned files.
+// Cached HTML can still request the previous release's CSS and JavaScript.
+// Keep fingerprinted assets, including shared chunks, at their immutable URLs.
 let previous = [];
 try {
   previous = JSON.parse(await fs.readFile(path.join(root, "generated-files.json"), "utf8"));
@@ -142,6 +143,13 @@ try {
   if (error.code !== "ENOENT") throw error;
 }
 for (const filename of previous) {
+  if (
+    !generated.has(filename) &&
+    /^assets\/[a-z][a-z0-9-]*-(?:[0-9a-f]{12}|[A-Z0-9]{8})\.(?:css|js)$/.test(filename)
+  ) {
+    generated.set(filename, await fs.readFile(path.join(root, filename)));
+  }
+  // Delete only obsolete generated files, never CNAME or user-owned files.
   if (
     !generated.has(filename) &&
     /^(assets|de|en)\//.test(filename) &&
