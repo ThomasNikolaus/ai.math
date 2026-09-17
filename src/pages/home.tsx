@@ -74,15 +74,16 @@ export function Landing({ lang }: { lang: Lang }) {
           <ArrowRight size={17} />
         </a>
       </div>
-      <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">
-        <h2 id="initiative-background-title">{de ? "Warum diese Initiative?" : "Why this initiative?"}</h2>
-        {landingText[lang].map((p, i) => (
-          <p key={i}>{p}</p>
-        ))}
+      <div className="landing-prose prose">
         <p>
           {de
-            ? "Welche Grundsätze überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website. Ihr könnt euch auch im "
-            : "Which principles do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards. You can also exchange ideas in the "}
+            ? "Welche dieser Vorschläge überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website und helft uns, die Entwürfe weiterzuentwickeln. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
+            : "Which of these proposals do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards and help us develop the drafts further. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
+        </p>
+        <p>
+          {de
+            ? "Ihr könnt euch auch im "
+            : "You can also exchange ideas in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
@@ -91,9 +92,15 @@ export function Landing({ lang }: { lang: Lang }) {
             AI and the Future of Mathematics
           </a>
           {de
-            ? " mit Vorträgen und anschließenden Diskussionen austauschen. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
-            : ", which features talks and follow-up discussions. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
+            ? " mit Vorträgen und anschließenden Diskussionen austauschen."
+            : ", which features talks and follow-up discussions."}
         </p>
+      </div>
+      <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">
+        <h2 id="initiative-background-title">{de ? "Warum diese Initiative?" : "Why this initiative?"}</h2>
+        {landingText[lang].map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
       </article>
       <p className="discussion-byline" id="people">
         {de ? "Eine Initiative von " : "An initiative by "}
