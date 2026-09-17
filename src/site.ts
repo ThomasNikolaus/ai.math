@@ -36,7 +36,7 @@ export const titles: Record<Lang, Record<View, string>> = {
 };
 export const initiators = [
   { name: "Claudia Alfes", homepage: "https://www.claudia-alfes.de/" },
-  { name: "Thomas Nikolaus", homepage: "https://www.uni-muenster.de/FB10/u/nikolaus" },
+  { name: "Thomas Nikolaus", homepage: "https://thomasnikolaus.de/" },
   { name: "Andreas Thom", homepage: "https://andreasthom.github.io" },
 ];
 export const seminarUrl = "https://www.uni-muenster.de/MathematicsMuenster/ai-math/";
