@@ -19,38 +19,10 @@ export function Landing({ lang }: { lang: Lang }) {
         }
         title={siteTitle[lang]}
         subtitle={de ? "Den Wandel gemeinsam gestalten" : "Shaping change together"}
+        description={de
+          ? "Auf dieser Seite stellen wir Thesen zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI zur Diskussion. Unsere Positionsentwürfe und die Sammlung von Fragen und möglichen Antworten laden zum Mitdenken, Widersprechen und Weiterentwickeln ein. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
+          : "On this website, we present positions on the future of mathematical research and mathematics degree programmes in the age of AI for discussion. Our draft position papers and collection of questions and possible answers invite reflection, disagreement and further development. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}
       />
-      <article className="landing-prose prose">
-        {landingText[lang].map((p, i) => (
-          <p key={i}>{p}</p>
-        ))}
-        <p>
-          {de
-            ? "Welche Grundsätze überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website. Ihr könnt euch auch im "
-            : "Which principles do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards. You can also exchange ideas in the "}
-          <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
-            {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
-          </a>
-          {de ? " und im Online-Seminar " : " and at the online seminar "}
-          <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
-            AI and the Future of Mathematics
-          </a>
-          {de
-            ? " mit Vorträgen und anschließenden Diskussionen austauschen. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
-            : ", which features talks and follow-up discussions. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
-        </p>
-      </article>
-      <p className="discussion-byline" id="people">
-        {de ? "Eine Initiative von " : "An initiative by "}
-        {initiators.map((p, i) => (
-          <span key={p.name}>
-            {i > 0 && " · "}
-            <a href={p.homepage} target="_blank" rel="noopener noreferrer">
-              {p.name}
-            </a>
-          </span>
-        ))}
-      </p>
       <div
         className="discussion-paths landing-paths"
         style={{ gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,400px),1fr))" }}
@@ -70,7 +42,7 @@ export function Landing({ lang }: { lang: Lang }) {
         <a href={link(lang, "teaching")}>
           <BookOpen size={20} />
           <span>
-            <strong>{de ? "Lehre" : "Education"}</strong>
+            <strong>{de ? "Studium" : "Degree programmes"}</strong>
             <small>
               {de
                 ? "Positionspapier zum Mathematikstudium"
@@ -102,6 +74,38 @@ export function Landing({ lang }: { lang: Lang }) {
           <ArrowRight size={17} />
         </a>
       </div>
+      <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">
+        <h2 id="initiative-background-title">{de ? "Warum diese Initiative?" : "Why this initiative?"}</h2>
+        {landingText[lang].map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
+        <p>
+          {de
+            ? "Welche Grundsätze überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website. Ihr könnt euch auch im "
+            : "Which principles do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards. You can also exchange ideas in the "}
+          <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
+            {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
+          </a>
+          {de ? " und im Online-Seminar " : " and at the online seminar "}
+          <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
+            AI and the Future of Mathematics
+          </a>
+          {de
+            ? " mit Vorträgen und anschließenden Diskussionen austauschen. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
+            : ", which features talks and follow-up discussions. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
+        </p>
+      </article>
+      <p className="discussion-byline" id="people">
+        {de ? "Eine Initiative von " : "An initiative by "}
+        {initiators.map((p, i) => (
+          <span key={p.name}>
+            {i > 0 && " · "}
+            <a href={p.homepage} target="_blank" rel="noopener noreferrer">
+              {p.name}
+            </a>
+          </span>
+        ))}
+      </p>
     </>
   );
 }

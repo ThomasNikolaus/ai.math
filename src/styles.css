@@ -28,3 +28,9 @@ html{overflow-x:clip}.view-experiences .embed-wrap iframe{display:block;width:ca
 .site-shell :is(.matrix-discussion,.matrix-paper-link) a{color:#920055;font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.18em;text-decoration-skip-ink:auto}
 .site-shell :is(.matrix-discussion,.matrix-paper-link) a:hover{color:#710041;text-decoration-thickness:2px}
 .site-shell :is(.matrix-discussion,.matrix-paper-link) a:focus-visible{outline:2px solid #920055;outline-offset:4px}
+
+/* Home: short introduction, direct entry points, then the longer background. */
+.site-shell.view-home .page-heading>p:last-child{color:var(--discussion-text)}
+.site-shell.view-home .landing-paths{margin:4px 0 42px}
+.site-shell.view-home .landing-background{border-top:1px solid var(--border);padding-top:32px}
+.site-shell.view-home .landing-background h2{font-family:Georgia,"Times New Roman",serif;color:var(--foreground);font-size:clamp(1.5rem,3vw,1.875rem);line-height:1.25;margin:0 0 24px}
