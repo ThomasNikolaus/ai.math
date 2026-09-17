@@ -20,8 +20,8 @@ export function Landing({ lang }: { lang: Lang }) {
         title={siteTitle[lang]}
         subtitle={de ? "Den Wandel gemeinsam gestalten" : "Shaping change together"}
         description={de
-          ? "Auf dieser Seite stellen wir Thesen zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI zur Diskussion. Unsere Positionsentwürfe und die Sammlung von Fragen und möglichen Antworten laden zum Mitdenken, Widersprechen und Weiterentwickeln ein. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
-          : "On this website, we present positions on the future of mathematical research and mathematics degree programmes in the age of AI for discussion. Our draft position papers and collection of questions and possible answers invite reflection, disagreement and further development. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}
+          ? "Auf dieser Seite stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen und mögliche Antworten vor. Sie dienen als Ausgangspunkte für die Diskussion. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
+          : "This website brings together draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions and possible answers. These are starting points for discussion. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}
       />
       <div
         className="discussion-paths landing-paths"
