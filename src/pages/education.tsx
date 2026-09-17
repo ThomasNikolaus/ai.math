@@ -21,6 +21,7 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
         }
         title={siteTitle[lang]}
         subtitle={paper.title}
+        description={paper.draftNotice}
       />
       <div className="paper-byline">
         {de ? "Autoren: " : "Authors: "}
@@ -35,7 +36,7 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
       </div>
       <p className="version-date">
         {de ? "Stand: " : "Last updated: "}
-        <time dateTime="2026-09-14">{de ? "14. September 2026" : "14 September 2026"}</time>
+        <time dateTime="2026-09-17">{de ? "17. September 2026" : "17 September 2026"}</time>
       </p>
       <div className="paper-toolbar">
         <Button variant="ghost" onClick={() => window.print()}>
