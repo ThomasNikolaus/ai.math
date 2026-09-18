@@ -1,4 +1,4 @@
-# KI und Mathematik / AI and Mathematics
+# AI.MATH
 
 Die Website besteht aus sechs Inhaltsseiten, einem Impressum und Datenschutzhinweisen pro Sprache. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
 
@@ -59,7 +59,7 @@ git commit -m "Update website"
 git push
 ```
 
-`generated-files.json` verzeichnet die erzeugten Dateien. CSS- und JavaScript-Dateien mit einem Inhaltsfingerabdruck im Namen bleiben bei späteren Builds erhalten und werden weiterhin mit veröffentlicht. So finden auch zwischengespeicherte HTML-Seiten ihre passenden Layoutdateien und Skripte, einschließlich gemeinsamer JavaScript-Module. Diese Dateien nicht beim Veröffentlichen aufräumen. Andere veraltete erzeugte Dateien werden ausschließlich anhand dieser Liste entfernt. Eine später angelegte `CNAME` für eine eigene Domain bleibt erhalten. `.nojekyll` sorgt für die direkte Auslieferung der statischen Dateien.
+`generated-files.json` verzeichnet die erzeugten Dateien. CSS-, JavaScript-Dateien und Vorschaugrafiken mit einem Inhaltsfingerabdruck im Namen bleiben bei späteren Builds erhalten und werden weiterhin mit veröffentlicht. So finden auch zwischengespeicherte HTML-Seiten ihre passenden Layoutdateien und Skripte, einschließlich gemeinsamer JavaScript-Module und Vorschaugrafiken. Diese Dateien nicht beim Veröffentlichen aufräumen. Andere veraltete erzeugte Dateien werden ausschließlich anhand dieser Liste entfernt. Eine später angelegte `CNAME` für eine eigene Domain bleibt erhalten. `.nojekyll` sorgt für die direkte Auslieferung der statischen Dateien.
 
 Padlet wird weiterhin erst nach Klick auf „Diskussionsboard öffnen“ geladen. Beim Wechsel der Sprache bleiben geöffnete Antworten und ein bereits geöffnetes Board erhalten.
 
@@ -80,3 +80,5 @@ Die öffentliche Basisadresse wird beim Bauen in dieser Reihenfolge bestimmt:
 Unter der bisherigen GitHub-Projektadresse gilt eine `robots.txt` nur am Host-Stamm, nicht im Unterverzeichnis `/ai.math/`. Auf `ai.math.ms` liegt die mitgelieferte Datei an der richtigen Stelle. Die Indexierungsangaben werden für jede HTML-Seite beim Build erzeugt.
 
 Die Datenschutzhinweise beruhen auf der aktuellen Einbindung und den verlinkten Angaben von GitHub und Padlet (Stand 15. September 2026). Änderungen an Hosting, Boards, Analysefunktionen oder Speicherverfahren erfordern eine erneute Prüfung des Textes.
+
+Der gemeinsame Markenname `AI.MATH` und die Beschreibungen stehen in `src/metadata.mjs`. Browser-Titel, Vorschaukarten, gespeicherte Seitennamen und Website-Strukturdaten verwenden diese Bezeichnung. Die Startseitentitel ergänzen das Thema „KI und Mathematik“ bzw. „AI and Mathematics“. Die Vorschaugrafiken zeigen die Wortmarke mit Cassis-Punkt (`#920055`); das kleine Icon verwendet „AI“ mit Punkt. SVG-Dateien sind die Grafikquellen, PNG-Dateien die Exporte (Vorschau 1200 × 630, Favicon 64 × 64, Apple-Icon 180 × 180). Nach einer Änderung der SVGs auch die PNGs aktualisieren. Neue Vorschaugrafiken erhalten beim Build eine eigene Adresse anhand ihres Inhalts; die bisherigen festen Adressen bleiben gültig. Favicon-Adressen bleiben stabil. Externe Vorschau-Dienste und Suchmaschinen müssen geänderte Metadaten erneut abrufen.

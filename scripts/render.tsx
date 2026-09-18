@@ -9,6 +9,7 @@ import { Imprint } from "../src/pages/imprint";
 import { Privacy } from "../src/pages/privacy";
 import { Resources } from "../src/pages/resources";
 import { titles, siteTitle } from "../src/site";
+import { homeTitles } from "../src/metadata.mjs";
 import type { PageRoute } from "../src/types";
 
 const pages = {
@@ -25,7 +26,7 @@ const pages = {
 export function renderPage(route: PageRoute) {
   const Page = pages[route.view];
   return {
-    title: titles[route.lang][route.view] + " | " + siteTitle[route.lang],
+    title: route.view === "home" ? homeTitles[route.lang] : titles[route.lang][route.view] + " | " + siteTitle[route.lang],
     html: renderToString(
       <Layout route={route}>
         <Page lang={route.lang} />

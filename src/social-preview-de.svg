@@ -1,10 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
- <rect width="1200" height="630" fill="#faf6f8"/><rect width="12" height="630" fill="#920055"/>
- <g transform="translate(76 62) scale(1.1)"><rect width="64" height="64" rx="10" fill="#920055"/><text x="32" y="46" text-anchor="middle" font-family="Georgia,serif" font-size="44" fill="white">m</text></g>
- <text x="76" y="196" font-family="Arial,Helvetica,sans-serif" font-weight="600" font-size="18" letter-spacing="2" fill="#920055">FORSCHUNG · LEHRE · DISKUSSION</text>
- <text x="72" y="293" font-family="Georgia,serif" font-size="76" fill="#172033">KI und Mathematik</text>
- <text x="76" y="357" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#3f4a5d">Eine offene Initiative der mathematischen Gemeinschaft</text>
- <text x="76" y="405" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#3f4a5d">Positionen entwickeln. Perspektiven austauschen.</text>
- <path d="M76 489H1124" stroke="#dfd1da"/>
- <text x="76" y="545" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#3f4a5d">Claudia Alfes · Thomas Nikolaus · Andreas Thom</text>
- </svg>
+  <rect width="1200" height="630" fill="#faf6f8"/>
+  <rect width="12" height="630" fill="#920055"/>
+  <g transform="translate(76 55) scale(1.1)"><rect width="64" height="64" rx="10" fill="#faf6f8"/>
+  <path d="M5 48 18 15h8l13 33h-9l-2.5-7h-12L13 48Zm13-14h7L21.5 24Z" fill="#172033" fill-rule="evenodd"/>
+  <path d="M42 15h8v33h-8z" fill="#172033"/>
+  <circle cx="57" cy="45" r="4" fill="#920055"/></g>
+  <text x="1124" y="102" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#920055">ai.math.ms</text>
+  <text x="76" y="192" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" letter-spacing="2" fill="#920055">FORSCHUNG · STUDIUM · DISKUSSION</text>
+  <text x="70" y="306" font-family="Georgia,serif" font-size="112" fill="#172033">AI<tspan fill="#920055">.</tspan>MATH</text>
+  <text x="76" y="376" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#3f4a5d">Mathematische Forschung und Studium im Zeitalter der KI</text>
+  <text x="76" y="425" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#3f4a5d">Positionsentwürfe. Fragen. Gemeinsame Diskussion.</text>
+  <path d="M76 489H1124" stroke="#dfd1da"/>
+  <text x="76" y="545" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#3f4a5d">Claudia Alfes · Thomas Nikolaus · Andreas Thom</text>
+</svg>

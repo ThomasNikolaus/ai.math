@@ -11,8 +11,6 @@ export function PageHeading({
   description?: string;
 }) {
   const headings: Record<string, string> = {
-    "Den Wandel gemeinsam gestalten": "KI und Mathematik",
-    "Shaping change together": "AI and Mathematics",
     "Grundsätze für die Forschung": "KI in der mathematischen Forschung",
     "Principles for Research": "AI in Mathematical Research",
     "Diskussionen in der Community": "Diskussion",

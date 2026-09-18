@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import { paths } from "../src/routing.mjs";
 import { publicationUrl, defaultSiteUrl } from "../scripts/publication.mjs";
 import { notFoundPage } from "../scripts/not-found.mjs";
@@ -29,6 +30,13 @@ test("Metadata identifies every indexable page and its translations", async () =
       assert.ok(head.includes(`rel="canonical" href="${absolute(directory)}"`));
       assert.ok(head.includes(`property="og:url" content="${absolute(directory)}"`));
       assert.ok(head.includes(`property="og:description" content="${description}"`));
+      const title = head.match(/<title>(.*?)<\/title>/)[1];
+      assert.ok(title.includes("AI.MATH"), `${directory}: missing brand in title`);
+      assert.ok(head.includes(`property="og:title" content="${title}"`));
+      assert.ok(head.includes(`name="twitter:title" content="${title}"`));
+      assert.ok(head.includes('property="og:site_name" content="AI.MATH"'));
+      assert.ok(head.includes('name="application-name" content="AI.MATH"'));
+      assert.ok(head.includes('name="apple-mobile-web-app-title" content="AI.MATH"'));
       for (const other of ["de", "en"]) {
         assert.ok(head.includes(`hreflang="${other}" href="${absolute(paths[other][view])}"`));
       }
@@ -36,8 +44,14 @@ test("Metadata identifies every indexable page and its translations", async () =
       assert.ok(head.includes(`hreflang="x-default" href="${fallback}"`));
       assert.ok(head.includes('name="twitter:card" content="summary_large_image"'));
       const image = unescape(head.match(/property="og:image" content="([^"]+)"/)[1]);
-      assert.equal(image, absolute(`assets/social-preview-${lang}.png`));
       const bytes = await fs.readFile(path.join(root, `assets/social-preview-${lang}.png`));
+      const hash = createHash("sha256").update(bytes).digest("hex").slice(0, 12);
+      const filename = `assets/social-preview-${lang}-${hash}.png`;
+      assert.equal(image, absolute(filename));
+      assert.deepEqual(await fs.readFile(path.join(root, filename)), bytes);
+      assert.ok(head.includes(`name="twitter:image" content="${image}"`));
+      assert.ok(head.includes('property="og:image:alt" content="AI.MATH"'));
+      assert.ok(head.includes('name="twitter:image:alt" content="AI.MATH"'));
       assert.equal(bytes.toString("hex", 0, 8), "89504e470d0a1a0a");
       assert.equal(bytes.readUInt32BE(16), 1200);
       assert.equal(bytes.readUInt32BE(20), 630);
@@ -75,6 +89,7 @@ test("The bilingual 404 works at arbitrary nested URLs without JavaScript", asyn
     assert.ok(html.includes('name="robots" content="noindex,nofollow"'));
     assert.ok(!html.includes("<script"));
     assert.ok(html.includes("Seite nicht gefunden") && html.includes("Page not found"));
+    assert.ok(html.includes("| AI.MATH</title>"));
     for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
       const resolved = new URL(match[1], new URL("deep/missing/page/", siteUrl));
       assert.ok(resolved.href.startsWith(siteUrl));
@@ -89,9 +104,15 @@ test("Icons have usable raster sizes and the root has site information", async (
     assert.equal(bytes.readUInt32BE(16), size);
     assert.equal(bytes.readUInt32BE(20), size);
   }
-  const html = await fs.readFile(path.join(root, "index.html"), "utf8");
-  const site = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
-  assert.equal(site["@type"], "WebSite");
-  assert.equal(site.url, base);
-  assert.deepEqual(site.inLanguage, ["de", "en"]);
+  for (const filename of ["index.html", "de/index.html", "en/index.html"]) {
+    const html = await fs.readFile(path.join(root, filename), "utf8");
+    const site = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
+    assert.equal(site["@type"], "WebSite");
+    assert.equal(site.name, "AI.MATH");
+    assert.deepEqual(site.alternateName, ["AI.MATH initiative", "AI.MATH-Initiative"]);
+    assert.equal(site.url, base);
+    assert.deepEqual(site.inLanguage, ["de", "en"]);
+    assert.match(html, /<title>AI\.MATH – /);
+    assert.match(html, /name="description" content="[^"]*AI\.MATH/);
+  }
 });

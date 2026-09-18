@@ -1,9 +1,11 @@
+import { siteName } from "../src/metadata.mjs";
+
 export function notFoundPage(siteUrl) {
   const href = (path) => new URL(path, siteUrl).href;
   return `<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
-<title>Seite nicht gefunden / Page not found | KI und Mathematik</title>
-<meta name="description" content="Diese Seite wurde nicht gefunden. Zurück zu KI und Mathematik. / This page was not found. Return to AI and Mathematics.">
+<title>Seite nicht gefunden / Page not found | ${siteName}</title>
+<meta name="description" content="Diese Seite wurde nicht gefunden. Zurück zu ${siteName}. / This page was not found. Return to ${siteName}.">
 <link rel="icon" type="image/png" sizes="64x64" href="${href("assets/favicon.png")}"><link rel="icon" type="image/svg+xml" href="${href("assets/favicon.svg")}"><link rel="apple-touch-icon" sizes="180x180" href="${href("assets/apple-touch-icon.png")}">
 <meta name="theme-color" content="#920055">
 <style>
@@ -11,7 +13,7 @@ export function notFoundPage(siteUrl) {
 </style></head><body>
 <main>
 <img class="mark" src="${href("assets/favicon.svg")}" width="56" height="56" alt="">
-<p class="eyebrow">KI UND MATHEMATIK · 404</p><h1>Seite nicht gefunden</h1><p>Die Adresse ist möglicherweise nicht mehr aktuell oder enthält einen Tippfehler. Über die Startseite gelangt ihr zu den Papieren, Fragen und Diskussionen.</p><a class="home" href="${href("de/")}">Zur deutschen Startseite</a>
+<p class="eyebrow">${siteName} · 404</p><h1>Seite nicht gefunden</h1><p>Die Adresse ist möglicherweise nicht mehr aktuell oder enthält einen Tippfehler. Über die Startseite gelangt ihr zu den Papieren, Fragen und Diskussionen.</p><a class="home" href="${href("de/")}">Zur deutschen Startseite</a>
 <section class="translation" lang="en"><h2>Page not found</h2><p>The address may be out of date or contain a typo. You can find the papers, questions and discussions on the home page.</p><a class="home" href="${href("en/")}">Go to the English home page</a></section>
 </main><footer class="site-footer"><span><a href="${href("de/impressum/")}">Impressum</a><a href="${href("de/datenschutz/")}">Datenschutz</a></span><span lang="en"><a href="${href("en/legal-notice/")}">Legal notice</a><a href="${href("en/privacy/")}">Privacy</a></span></footer></body></html>\n`;
 }

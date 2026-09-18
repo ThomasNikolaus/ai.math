@@ -1,9 +1,7 @@
 import type { Lang, View } from "./types";
+import { siteNames } from "./metadata.mjs";
 
-export const siteTitle: Record<Lang, string> = {
-  de: "KI und Mathematik",
-  en: "AI and Mathematics",
-};
+export const siteTitle: Record<Lang, string> = siteNames;
 export const navigation: View[] = [
   "home",
   "papers",
