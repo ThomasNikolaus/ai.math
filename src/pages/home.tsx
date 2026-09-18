@@ -18,10 +18,10 @@ export function Landing({ lang }: { lang: Lang }) {
             : "An initiative for shared discussion"
         }
         title={siteTitle[lang]}
-        subtitle={de ? "Den Wandel gemeinsam gestalten" : "Shaping change together"}
+        subtitle="AI.Math"
         description={de
-          ? "Mit dieser Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen und mögliche Antworten vor. Sie dienen als Ausgangspunkte für die Diskussion. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
-          : "With this initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions and possible answers. These are starting points for discussion. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}
+          ? "Mit der AI.Math-Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen und mögliche Antworten vor. Sie dienen als Ausgangspunkte für die Diskussion. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
+          : "With the AI.Math initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions and possible answers. These are starting points for discussion. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}
       />
       <div
         className="discussion-paths landing-paths"
