@@ -18,7 +18,7 @@ export function Landing({ lang }: { lang: Lang }) {
             : "An initiative for shared discussion"
         }
         title={siteTitle[lang]}
-        subtitle="AI.MATH"
+        subtitle={<>AI<span className="brand-dot">.</span>MATH</>}
         description={de
           ? "Mit der AI.MATH-Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen und mögliche Antworten vor. Sie dienen als Ausgangspunkte für die Diskussion. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
           : "With the AI.MATH initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions and possible answers. These are starting points for discussion. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}

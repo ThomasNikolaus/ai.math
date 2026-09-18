@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export function PageHeading({
   title,
   subtitle,
@@ -5,7 +7,7 @@ export function PageHeading({
 }: {
   eyebrow: string;
   title: string;
-  subtitle: string;
+  subtitle: ReactNode;
   description?: string;
 }) {
   const headings: Record<string, string> = {
@@ -16,9 +18,10 @@ export function PageHeading({
     "Diskussionen in der Community": "Diskussion",
     "Community Discussions": "Discussion",
   };
+  const heading = typeof subtitle === "string" ? headings[subtitle] || subtitle : subtitle;
   return (
     <section className="page-heading">
-      <h1>{headings[subtitle] || subtitle || title}</h1>
+      <h1>{heading || title}</h1>
       {description && <p>{description}</p>}
     </section>
   );
