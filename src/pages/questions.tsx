@@ -29,14 +29,12 @@ const perspectivesByQuestion = perspectiveData.questions as Record<
   { title: string; perspectives: Perspective[] }
 >;
 const perspectiveSources = perspectiveData.sources as Record<string, PerspectiveSource>;
+const questionCount = questionGroups.reduce((count, group) => count + group.questions.length, 0);
+const perspectiveCount = Object.values(perspectivesByQuestion).reduce(
+  (count, question) => count + question.perspectives.length, 0,
+);
 const themeLetter = (id: string) =>
   String.fromCharCode(65 + questionGroups.findIndex((g) => g.id === id));
-const questionLabel = (id: number) => {
-  const group = questionGroups.find((g) => g.questions.some((q) => q.id === id));
-  return group
-    ? themeLetter(group.id) + (group.questions.findIndex((q) => q.id === id) + 1)
-    : String(id);
-};
 
 function SourceReference({ reference, lang }: { reference: PerspectiveReference; lang: Lang }) {
   const link = useSiteLink();
@@ -91,7 +89,7 @@ export function Questions({ lang }: { lang: Lang }) {
             : "Open questions · different perspectives"
         }
         title={siteTitle[lang]}
-        subtitle={de ? "30 Fragen und mögliche Antworten" : "30 Questions and Possible Answers"}
+        subtitle={de ? `${questionCount} Fragen und mögliche Antworten` : `${questionCount} Questions and Possible Answers`}
         description={
           de
             ? "Hier sammeln wir wichtige Fragen und unterschiedliche Perspektiven für die mathematische Gemeinschaft."
@@ -118,10 +116,14 @@ export function Questions({ lang }: { lang: Lang }) {
       </div>
       <p className="version-date">
         {de ? "Stand: " : "Last updated: "}
-        <time dateTime="2026-09-14">{de ? "14. September 2026" : "14 September 2026"}</time>
+        <time dateTime={perspectiveData.asOf}>
+          {new Intl.DateTimeFormat(de ? "de-DE" : "en-GB", {
+            day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
+          }).format(new Date(perspectiveData.asOf))}
+        </time>
       </p>
       <div className="question-reading-hint">
-        <span>{de ? "30 Fragen · 133 Antwortansätze" : "30 questions · 133 perspectives"}</span>
+        <span>{de ? `${questionCount} Fragen · ${perspectiveCount} Antwortansätze` : `${questionCount} questions · ${perspectiveCount} perspectives`}</span>
         <span>
           {de
             ? "Eine Frage öffnen, um die Perspektiven zu lesen."
@@ -164,7 +166,7 @@ export function Questions({ lang }: { lang: Lang }) {
                   return (
                     <AccordionItem key={q.id} value={String(q.id)} id={"q-" + q.id}>
                       <AccordionTrigger className="question-trigger">
-                        <span className="question-number">{questionLabel(q.id)}</span>
+                        <span className="question-number">{q.label}</span>
                         <span className="question-title">
                           {q.text[lang]}
                           <span className="perspective-count">

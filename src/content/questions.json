@@ -8,6 +8,7 @@
     "questions": [
       {
         "id": 1,
+        "label": "A1",
         "text": {
           "de": "Was ist das Ziel der Mathematik, wenn KI immer mehr Sätze beweist?",
           "en": "What is the purpose of mathematics when AI proves more and more theorems?"
@@ -15,6 +16,7 @@
       },
       {
         "id": 2,
+        "label": "A2",
         "text": {
           "de": "Welchen Fortschritt wollen wir: möglichst schnelle Resultate oder Fortschritt unter selbstbestimmten Bedingungen?",
           "en": "What kind of progress do we want: results as quickly as possible, or progress on our own terms?"
@@ -22,6 +24,7 @@
       },
       {
         "id": 3,
+        "label": "A3",
         "text": {
           "de": "Bleibt menschliche Forschung wichtig, oder sollten wir eine neue Arbeitsteilung abwarten?",
           "en": "Does human research remain important, or should we wait for a new division of labour?"
@@ -29,9 +32,18 @@
       },
       {
         "id": 4,
+        "label": "A4",
         "text": {
           "de": "Was heißt mathematisches Verständnis, und wie viel davon müssen Autor:innen selbst besitzen?",
           "en": "What does mathematical understanding mean, and how much of it must authors possess themselves?"
+        }
+      },
+      {
+        "id": 31,
+        "label": "A5",
+        "text": {
+          "de": "Wie gehen wir mit Verunsicherung, Verlustgefühlen und veränderter beruflicher Identität um?",
+          "en": "How do we deal with uncertainty, feelings of loss and changing professional identities?"
         }
       }
     ]
@@ -45,6 +57,7 @@
     "questions": [
       {
         "id": 5,
+        "label": "B1",
         "text": {
           "de": "Wer darf ein weitgehend KI-erzeugtes Ergebnis als eigene Publikation beanspruchen?",
           "en": "Who may claim a largely AI-generated result as their own publication?"
@@ -52,6 +65,7 @@
       },
       {
         "id": 6,
+        "label": "B2",
         "text": {
           "de": "Wie würdigen wir Vorarbeiten und die kollektive Arbeit hinter einem Resultat?",
           "en": "How do we acknowledge prior work and the collective effort behind a result?"
@@ -59,6 +73,7 @@
       },
       {
         "id": 7,
+        "label": "B3",
         "text": {
           "de": "Welche KI-Nutzung muss in einer Publikation offengelegt werden?",
           "en": "Which uses of AI must be disclosed in a publication?"
@@ -66,6 +81,7 @@
       },
       {
         "id": 8,
+        "label": "B4",
         "text": {
           "de": "Wie ermöglichen wir ehrliche Offenlegung, wenn KI-Nutzung oder KI-Verzicht berufliche Nachteile auslösen können?",
           "en": "How can we enable honest disclosure when using or foregoing AI can lead to career disadvantages?"
@@ -73,9 +89,18 @@
       },
       {
         "id": 9,
+        "label": "B5",
         "text": {
           "de": "Müssen Prompts, Denkprotokolle und Rechenaufwand zugänglich sein?",
           "en": "Must prompts, reasoning traces and computational costs be accessible?"
+        }
+      },
+      {
+        "id": 32,
+        "label": "B6",
+        "text": {
+          "de": "Wie können unfertige Ideen, Beweisversuche und Teilresultate geteilt werden, ohne ihre Urheber:innen zu benachteiligen?",
+          "en": "How can unfinished ideas, proof attempts and partial results be shared without disadvantaging their originators?"
         }
       }
     ]
@@ -89,6 +114,7 @@
     "questions": [
       {
         "id": 10,
+        "label": "C1",
         "text": {
           "de": "Wie sichern wir Korrektheit, und was leistet ein formaler Beweis?",
           "en": "How do we ensure correctness, and what does a formal proof establish?"
@@ -96,6 +122,7 @@
       },
       {
         "id": 11,
+        "label": "C2",
         "text": {
           "de": "Wer bewältigt die Flut von Beweisen und trägt die Prüfungslast?",
           "en": "Who handles the flood of proofs and bears the burden of reviewing?"
@@ -103,6 +130,7 @@
       },
       {
         "id": 12,
+        "label": "C3",
         "text": {
           "de": "Soll KI selbst Gutachten und wissenschaftliche Werturteile verfassen?",
           "en": "Should AI itself write reviews and make judgements of scientific value?"
@@ -110,9 +138,18 @@
       },
       {
         "id": 13,
+        "label": "C4",
         "text": {
           "de": "Wie werden KI-erzeugte Resultate verständlich und für weitere mathematische Arbeit nutzbar?",
           "en": "How do AI-generated results become understandable and useful for further mathematical work?"
+        }
+      },
+      {
+        "id": 33,
+        "label": "C5",
+        "text": {
+          "de": "Wie vermitteln wir Öffentlichkeit und Fördernden den Wert menschlicher Mathematik?",
+          "en": "How do we communicate the value of human mathematics to the public and to funders?"
         }
       }
     ]
@@ -126,6 +163,7 @@
     "questions": [
       {
         "id": 14,
+        "label": "D1",
         "text": {
           "de": "Wie beurteilen wir KI-Fähigkeiten jenseits von Erfolgsankündigungen?",
           "en": "How do we assess AI capabilities beyond announcements of success?"
@@ -133,6 +171,7 @@
       },
       {
         "id": 15,
+        "label": "D2",
         "text": {
           "de": "Wie erhalten wir die „difficulty landscape“: gemeinsames Wissen darüber, welche Probleme noch schwierig sind?",
           "en": "How do we preserve the “difficulty landscape”: shared knowledge of which problems remain difficult?"
@@ -140,9 +179,18 @@
       },
       {
         "id": 16,
+        "label": "D3",
         "text": {
           "de": "Wie kann KI neue Forschungsfragen erschließen, ohne die wissenschaftliche Agenda zu bestimmen?",
           "en": "How can AI open up new research questions without determining the scientific agenda?"
+        }
+      },
+      {
+        "id": 34,
+        "label": "D4",
+        "text": {
+          "de": "Wie organisieren wir längere Forschungsprojekte mit KI, ohne fachliche Kontrolle und einen verlässlichen Projektstand zu verlieren?",
+          "en": "How do we organise longer research projects with AI without losing expert oversight or a reliable account of the project’s state?"
         }
       }
     ]
@@ -156,6 +204,7 @@
     "questions": [
       {
         "id": 17,
+        "label": "E1",
         "text": {
           "de": "Welche Kompetenzen sollen Studiengänge künftig vermitteln?",
           "en": "Which competencies should degree programmes teach in the future?"
@@ -163,6 +212,7 @@
       },
       {
         "id": 18,
+        "label": "E2",
         "text": {
           "de": "Wie können Lehrformate Eigenkompetenz und verantwortliche KI-Nutzung verbinden?",
           "en": "How can teaching formats combine independent competence and responsible AI use?"
@@ -170,6 +220,7 @@
       },
       {
         "id": 19,
+        "label": "E3",
         "text": {
           "de": "Wie lernen Studierende mit KI, ohne das eigene Denken auszulagern?",
           "en": "How do students learn with AI without outsourcing their own thinking?"
@@ -177,6 +228,7 @@
       },
       {
         "id": 20,
+        "label": "E4",
         "text": {
           "de": "Wie prüfen wir Verständnis in Prüfungen, Abschlussarbeiten und Promotionen?",
           "en": "How do we assess understanding in examinations, final theses and doctorates?"
@@ -184,6 +236,7 @@
       },
       {
         "id": 21,
+        "label": "E5",
         "text": {
           "de": "Welche Ressourcen braucht eine Reform der Mathematiklehre, und wie lässt sie sich realistisch einführen?",
           "en": "What resources does reforming mathematics education require, and how can it realistically be introduced?"
@@ -200,6 +253,7 @@
     "questions": [
       {
         "id": 22,
+        "label": "F1",
         "text": {
           "de": "Woran sollen Einstellungen und wissenschaftliche Anerkennung gemessen werden?",
           "en": "What should hiring decisions and scientific recognition be based on?"
@@ -207,6 +261,7 @@
       },
       {
         "id": 23,
+        "label": "F2",
         "text": {
           "de": "Wie erhalten Nachwuchsforschende sinnvolle Arbeit und Entwicklungsmöglichkeiten?",
           "en": "How can early-career researchers retain meaningful work and opportunities to develop?"
@@ -223,6 +278,7 @@
     "questions": [
       {
         "id": 24,
+        "label": "G1",
         "text": {
           "de": "Brauchen wir öffentliche KI-Infrastruktur statt Abhängigkeit von wenigen Firmen?",
           "en": "Do we need public AI infrastructure rather than dependence on a few companies?"
@@ -230,6 +286,7 @@
       },
       {
         "id": 25,
+        "label": "G2",
         "text": {
           "de": "Wie verhindern wir, dass finanzschwache Forschende und Länder abgehängt werden?",
           "en": "How do we prevent researchers and countries with limited financial resources from being left behind?"
@@ -237,13 +294,15 @@
       },
       {
         "id": 26,
+        "label": "G3",
         "text": {
-          "de": "Wie schützen wir unveröffentlichte Forschung vor Nutzung durch KI-Anbieter?",
-          "en": "How do we protect unpublished research from use by AI providers?"
+          "de": "Wie schützen wir Forschung vor unerwünschter Nutzung durch KI-Anbieter?",
+          "en": "How do we protect research from unwanted use by AI providers?"
         }
       },
       {
         "id": 27,
+        "label": "G4",
         "text": {
           "de": "Wie verhindern wir Prioritätsvorteile aus privilegiertem Zugang zu unveröffentlichter Forschung?",
           "en": "How do we prevent priority advantages arising from privileged access to unpublished research?"
@@ -260,6 +319,7 @@
     "questions": [
       {
         "id": 28,
+        "label": "H1",
         "text": {
           "de": "Wie gehen wir mit entschiedener KI-Ablehnung innerhalb der Mathematik um?",
           "en": "How do we engage with firm opposition to AI within mathematics?"
@@ -267,6 +327,7 @@
       },
       {
         "id": 29,
+        "label": "H2",
         "text": {
           "de": "Unter welchen Bedingungen sollte die Gemeinschaft mit KI-Firmen zusammenarbeiten?",
           "en": "Under what conditions should the community collaborate with AI companies?"
@@ -274,9 +335,26 @@
       },
       {
         "id": 30,
+        "label": "H3",
         "text": {
           "de": "Wie berücksichtigen wir gesellschaftliche und ökologische Folgen und organisieren gemeinsames Handeln?",
           "en": "How do we account for social and ecological consequences and organise collective action?"
+        }
+      },
+      {
+        "id": 35,
+        "label": "H4",
+        "text": {
+          "de": "Wie kann die mathematische Gemeinschaft breit und unabhängig an Entscheidungen über KI mitwirken?",
+          "en": "How can the mathematical community participate broadly and independently in decisions about AI?"
+        }
+      },
+      {
+        "id": 36,
+        "label": "H5",
+        "text": {
+          "de": "Welche Verantwortung trägt die mathematische Gemeinschaft angesichts möglicher existenzieller Risiken leistungsfähiger KI?",
+          "en": "What responsibility does the mathematical community bear in the face of possible existential risks from powerful AI?"
         }
       }
     ]

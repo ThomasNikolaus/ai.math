@@ -56,7 +56,7 @@ export function Landing({ lang }: { lang: Lang }) {
           <span>
             <strong>{de ? "Fragen & Perspektiven" : "Questions & Perspectives"}</strong>
             <small>
-              {de ? "30 Fragen und mögliche Antworten" : "30 questions and possible answers"}
+              {de ? "36 Fragen und mögliche Antworten" : "36 questions and possible answers"}
             </small>
           </span>
           <ArrowRight size={17} />
