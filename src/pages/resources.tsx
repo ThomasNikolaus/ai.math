@@ -8,7 +8,9 @@ export function Resources({ lang }: { lang: Lang }) {
   const html = resources[lang];
   return (
     <>
-      <h1 className="screenreader-heading">{de ? "Links & Veranstaltungen" : "Links & Events"}</h1>
+      <h1 className="screenreader-heading">
+        {de ? "Materialien & Veranstaltungen" : "Resources & Events"}
+      </h1>
       <section className="external-seminar prose" aria-labelledby="external-seminar-title">
         <p className="seminar-label">{de ? "Online-Seminar" : "Online Seminar"}</p>
         <h2 id="external-seminar-title">

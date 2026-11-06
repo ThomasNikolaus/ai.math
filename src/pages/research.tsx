@@ -1,7 +1,7 @@
-import { MessageSquare, Printer } from "lucide-react";
+import { Printer } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { PageHeading } from "../components/PageHeading";
-import { Board } from "../components/Board";
+import { MatrixDiscussion } from "../components/MatrixDiscussion";
 import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
 import type { Lang } from "../types";
@@ -51,10 +51,6 @@ export function PositionPaper({ lang }: { lang: Lang }) {
               {p.title.replace(/\.$/, "")}
             </a>
           ))}
-          <a className="index-discuss" href={link(lang, "papers", "board")}>
-            <MessageSquare size={15} />
-            {de ? "Papier diskutieren" : "Discuss this paper"}
-          </a>
         </aside>
         <article className="paper-body">
           <section id="preamble">
@@ -92,7 +88,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
           </section>
         </article>
       </div>
-      <Board kind="papers" lang={lang} />
+      <MatrixDiscussion lang={lang} />
     </>
   );
 }

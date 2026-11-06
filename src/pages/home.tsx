@@ -1,4 +1,4 @@
-import { ArrowRight, MessageSquare, BookOpen, CircleHelp } from "lucide-react";
+import { ArrowRight, CalendarDays, BookOpen, CircleHelp } from "lucide-react";
 import { PageHeading } from "../components/PageHeading";
 import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
@@ -61,14 +61,14 @@ export function Landing({ lang }: { lang: Lang }) {
           </span>
           <ArrowRight size={17} />
         </a>
-        <a href={link(lang, "experiences")}>
-          <MessageSquare size={20} />
+        <a href={link(lang, "resources")}>
+          <CalendarDays size={20} />
           <span>
-            <strong>{de ? "Diskussion" : "Discussion"}</strong>
+            <strong>{de ? "Seminar & Veranstaltungen" : "Seminar & Events"}</strong>
             <small>
               {de
-                ? "Erfahrungen, Hoffnungen und Sorgen teilen"
-                : "Share experiences, hopes and concerns"}
+                ? "Vorträge, Diskussionen und weiterführende Materialien"
+                : "Talks, discussions and further resources"}
             </small>
           </span>
           <ArrowRight size={17} />
@@ -77,22 +77,17 @@ export function Landing({ lang }: { lang: Lang }) {
       <div className="landing-prose prose">
         <p>
           {de
-            ? "Welche dieser Vorschläge überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website und helft uns, die Entwürfe weiterzuentwickeln. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
-            : "Which of these proposals do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards and help us develop the drafts further. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
-        </p>
-        <p>
-          {de
-            ? "Ihr könnt euch auch im "
-            : "You can also exchange ideas in the "}
+            ? "Die Positionspapiere sind Arbeitsdokumente; Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Zum Austausch gibt es den "
+            : "The position papers are working documents; comments, references and accounts of relevant experiences are welcome. You can exchange ideas in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
-          {de ? " und im Online-Seminar " : " and at the online seminar "}
+          {de ? " sowie das Online-Seminar " : " and at the online seminar "}
           <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
             AI and the Future of Mathematics
           </a>
           {de
-            ? " mit Vorträgen und anschließenden Diskussionen austauschen."
+            ? " mit Vorträgen und anschließenden Diskussionen."
             : ", which features talks and follow-up discussions."}
         </p>
       </div>
