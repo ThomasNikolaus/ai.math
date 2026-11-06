@@ -5,7 +5,10 @@ import { seminarUrl } from "../site";
 
 export function Resources({ lang }: { lang: Lang }) {
   const de = lang === "de";
-  const html = resources[lang];
+  const html = resources[lang].replace(
+    /<section>\s*<h2>(?:Past events|Vergangene Veranstaltungen)<\/h2>[\s\S]*?<\/section>\s*/,
+    "",
+  );
   return (
     <>
       <h1 className="screenreader-heading">
