@@ -66,8 +66,8 @@ export function Landing({ lang }: { lang: Lang }) {
       <div className="landing-prose prose">
         <p>
           {de
-            ? "Wir befinden uns in einer Zeit des schnellen Wandels. Deshalb müssen diese Grundsätze regelmäßig überprüft und im Lichte neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
-            : "We are living through a period of rapid change. These principles must therefore be reviewed regularly and developed further in light of new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
+            ? "Die mathematische Gemeinschaft befindet sich in einer Zeit tiefgreifenden Wandels. Deshalb müssen die in den Positionspapieren formulierten Grundsätze regelmäßig überprüft und im Lichte neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+            : "The mathematical community is living through a period of profound transformation. The principles formulated in the position papers must therefore be reviewed regularly and developed further in light of new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
