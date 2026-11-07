@@ -3,7 +3,6 @@ import type { Lang } from "../types";
 
 const githubPrivacy = "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement";
 const githubPages = "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection";
-const padletPrivacy = "https://legal.padlet.com/privacy";
 
 export function Privacy({ lang }: { lang: Lang }) {
   const de = lang === "de";
@@ -17,7 +16,7 @@ export function Privacy({ lang }: { lang: Lang }) {
       <div className="imprint-content">
         <p className="version-date">
           {de ? "Stand: " : "Last updated: "}
-          <time dateTime="2026-09-15">{de ? "15. September 2026" : "15 September 2026"}</time>
+          <time dateTime="2026-11-07">{de ? "7. November 2026" : "7 November 2026"}</time>
         </p>
         <section aria-labelledby="controller-title">
           <h2 id="controller-title">{de ? "Verantwortlicher und Kontakt" : "Controller and contact"}</h2>
@@ -29,8 +28,8 @@ export function Privacy({ lang }: { lang: Lang }) {
             <a href="tel:+492518333744">+49 251 83-33744</a>
           </address>
           <p>{de
-            ? "Diese Hinweise beschreiben die Verarbeitung personenbezogener Daten beim Besuch dieser Website und bei der Nutzung ihrer Diskussionsangebote."
-            : "This notice explains how personal data is processed when you visit this website and use its discussion features."}</p>
+            ? "Diese Hinweise beschreiben die Verarbeitung personenbezogener Daten beim Besuch dieser Website und bei einer Kontaktaufnahme per E-Mail."
+            : "This notice explains how personal data is processed when you visit this website or contact us by email."}</p>
         </section>
         <section aria-labelledby="hosting-title">
           <h2 id="hosting-title">{de ? "Bereitstellung der Website" : "Website hosting"}</h2>
@@ -40,8 +39,8 @@ export function Privacy({ lang }: { lang: Lang }) {
             <a href={githubPages}>{de ? "Informationen von GitHub Pages" : "GitHub Pages information"}</a>.
           </p>
           <p>{de
-            ? "Unsere Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. f DSGVO: unser berechtigtes Interesse an einer zuverlässigen und sicheren Bereitstellung dieses Informations- und Diskussionsangebots. Ohne die Übermittlung der Verbindungsdaten kann die Website nicht ausgeliefert werden. Wir führen keine eigene personenbezogene Besuchsstatistik."
-            : "Our legal basis is Article 6(1)(f) GDPR: our legitimate interest in reliably and securely providing this information and discussion website. Delivering the website requires transmission of connection data. We do not maintain our own visitor statistics containing personal data."}</p>
+            ? "Unsere Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. f DSGVO: unser berechtigtes Interesse an einer zuverlässigen und sicheren Bereitstellung dieses Informationsangebots. Ohne die Übermittlung der Verbindungsdaten kann die Website nicht ausgeliefert werden. Wir führen keine eigene personenbezogene Besuchsstatistik."
+            : "Our legal basis is Article 6(1)(f) GDPR: our legitimate interest in reliably and securely providing this information website. Delivering the website requires transmission of connection data. We do not maintain our own visitor statistics containing personal data."}</p>
           <p>{de
             ? "GitHub nennt für die Besucherprotokolle von GitHub Pages keine feste Löschfrist. Nach seiner Datenschutzerklärung richtet sich die Speicherdauer nach Verarbeitungszwecken und rechtlichen Anforderungen. Anbieter sind GitHub, Inc. (USA) und GitHub B.V. (Niederlande)."
             : "GitHub does not specify a fixed deletion period for GitHub Pages visitor logs. Its privacy statement relates retention to processing purposes and legal requirements. The providers are GitHub, Inc. (USA) and GitHub B.V. (Netherlands)."}{" "}
@@ -51,28 +50,11 @@ export function Privacy({ lang }: { lang: Lang }) {
         <section aria-labelledby="preferences-title">
           <h2 id="preferences-title">{de ? "Einstellungen im Browser" : "Browser preferences"}</h2>
           <p>{de
-            ? "Wenn ihr Deutsch oder Englisch auswählt, speichern wir diese Wahl lokal in eurem Browser, damit die Startseite künftig in dieser Sprache erscheint. Die Einstellung bleibt bis zum Löschen der Websitedaten im Browser erhalten. Beim Sprachwechsel werden außerdem kurzzeitig die geöffneten Fragen und die Aktivierung eines Diskussionsboards gespeichert und auf die andere Sprachfassung übertragen. Diese Übergabedaten werden nach dem Auslesen gelöscht, andernfalls mit dem Ende der Browsersitzung."
-            : "When you select German or English, we save that preference locally in your browser so that future visits to the home page use your chosen language. It remains until you delete the website’s browser data. When switching languages, open questions and the activation of a discussion board are also saved temporarily and transferred to the other language version. These transfer data are deleted when read, or otherwise when the browser session ends."}</p>
+            ? "Wenn ihr Deutsch oder Englisch auswählt, speichern wir diese Wahl lokal in eurem Browser, damit die Startseite künftig in dieser Sprache erscheint. Die Einstellung bleibt bis zum Löschen der Websitedaten im Browser erhalten. Beim Sprachwechsel werden außerdem kurzzeitig die geöffneten Fragen gespeichert und auf die andere Sprachfassung übertragen. Diese Übergabedaten werden nach dem Auslesen gelöscht, andernfalls mit dem Ende der Browsersitzung."
+            : "When you select German or English, we save that preference locally in your browser so that future visits to the home page use your chosen language. It remains until you delete the website’s browser data. When switching languages, open questions are also saved temporarily and transferred to the other language version. These transfer data are deleted when read, or otherwise when the browser session ends."}</p>
           <p>{de
             ? "Diese Einstellungen werden von unserem Seitencode nicht an einen Server übermittelt. Die Speicherung dient den von euch gewählten Funktionen (§ 25 Abs. 2 Nr. 2 TDDDG); soweit personenbezogene Daten betroffen sind, beruht sie auf Art. 6 Abs. 1 Buchst. f DSGVO und unserem Interesse an einer nutzerfreundlichen Sprachwahl. Ihr könnt die gespeicherten Einstellungen über die Websitedaten eures Browsers löschen. Auf unseren Seiten sind keine Analyse- oder Werbeskripte eingebaut."
             : "Our page code does not transmit these preferences to a server. Storage supports the functions you select (section 25(2), no. 2 TDDDG). To the extent personal data is involved, it relies on Article 6(1)(f) GDPR and our interest in providing a convenient language choice. You can remove the preferences by clearing this website’s browser data. We do not include analytics or advertising scripts in our pages."}</p>
-        </section>
-        <section id="padlet" aria-labelledby="padlet-title">
-          <h2 id="padlet-title">{de ? "Diskussionen auf Padlet" : "Discussions on Padlet"}</h2>
-          <p>{de
-            ? "Diskussionsboards werden erst eingebettet, wenn ihr „Diskussionsboard öffnen“ auswählt. Mit diesem Klick willigt ihr in die Verbindung zu Padlet ein (Art. 6 Abs. 1 Buchst. a DSGVO; für erforderliche Einwilligungen in Zugriffe auf euer Endgerät zusätzlich § 25 Abs. 1 TDDDG). Die Website selbst lässt sich ohne Padlet nutzen. Ein aktiviertes Board bleibt beim Sprachwechsel aktiviert. Durch erneutes Laden der Seite wird die Einbettung wieder deaktiviert; damit könnt ihr eure Einwilligung für weitere Verbindungen widerrufen. Die Rechtmäßigkeit vorheriger Verarbeitung bleibt unberührt."
-            : "Discussion boards are embedded only after you select “Open discussion board”. This click gives consent to connecting to Padlet (Article 6(1)(a) GDPR; section 25(1) TDDDG also applies where consent to access your device is required). You can use this website without Padlet. An activated board stays active when you switch languages. Reloading the page deactivates the embed, allowing you to withdraw consent to further connections. Withdrawal does not affect the lawfulness of earlier processing."}</p>
-          <p>{de
-            ? "Padlet (Wallwisher, Inc., USA) erhält unter anderem IP-Adresse und Geräteinformationen und kann Cookies verwenden. Laut Padlet werden IP-Adressen höchstens 30 Tage gespeichert. Weitere Daten bleiben nach den in seiner Datenschutzerklärung beschriebenen Zwecken und gesetzlichen Anforderungen gespeichert."
-            : "Padlet (Wallwisher, Inc., USA) receives data including IP addresses and device information and may use cookies. Padlet states that it retains IP addresses for no more than 30 days. Other data is retained according to the purposes and legal requirements described in its privacy policy."}{" "}
-            <a href={padletPrivacy}>{de ? "Datenschutzerklärung von Padlet" : "Padlet privacy policy"}</a>.
-          </p>
-          <p>{de
-            ? "Freiwillige Beiträge dienen dem fachlichen Austausch und der Weiterentwicklung der Papiere. Sie können von anderen Personen mit Zugang zum Board und dessen Administrator:innen gelesen werden. Bitte veröffentlicht keine vertraulichen Angaben. Für die Bearbeitung oder Löschung eines eigenen Beitrags könnt ihr die Funktionen von Padlet nutzen oder euch an den oben genannten Kontakt wenden. Wir bewahren Beiträge für die laufende Diskussion auf; Löschanfragen prüfen wir unter Berücksichtigung der Rechte anderer Beteiligter und gesetzlicher Pflichten. Rechtsgrundlage für die Moderation und Auswertung ist unser berechtigtes Interesse an dieser fachlichen Diskussion (Art. 6 Abs. 1 Buchst. f DSGVO)."
-            : "Voluntary contributions support the discussion and development of the papers. Other people with access to the board and its administrators may read them. Please do not publish confidential information. You can use Padlet’s controls to edit or delete your contribution, or contact us at the address above. We retain contributions for the ongoing discussion and assess deletion requests taking account of other participants’ rights and legal obligations. Moderation and evaluation rely on our legitimate interest in this academic discussion (Article 6(1)(f) GDPR)."}</p>
-          <p>{de
-            ? "Der Link „Board direkt auf Padlet öffnen“ führt zu einem externen Angebot. Auch dort gelten die Datenschutzhinweise von Padlet."
-            : "The “Open board directly on Padlet” link opens an external service, where Padlet’s privacy policy also applies."}</p>
         </section>
         <section aria-labelledby="email-title">
           <h2 id="email-title">{de ? "Kontakt per E-Mail" : "Contact by email"}</h2>
@@ -83,8 +65,8 @@ export function Privacy({ lang }: { lang: Lang }) {
         <section aria-labelledby="transfers-title">
           <h2 id="transfers-title">{de ? "Verarbeitung außerhalb der EU" : "Processing outside the EU"}</h2>
           <p>{de
-            ? "Bei GitHub und Padlet kann eine Verarbeitung in den USA stattfinden. Beide Anbieter erklären ihre Teilnahme am EU–US Data Privacy Framework. Angaben zu internationalen Übermittlungen und den dafür eingesetzten Garantien findet ihr in den oben verlinkten Datenschutzerklärungen."
-            : "GitHub and Padlet may process data in the USA. Both providers state that they participate in the EU–US Data Privacy Framework. Their privacy statements linked above describe international transfers and the safeguards they use."}</p>
+            ? "Bei GitHub kann eine Verarbeitung in den USA stattfinden. GitHub erklärt seine Teilnahme am EU–US Data Privacy Framework. Angaben zu internationalen Übermittlungen und den dafür eingesetzten Garantien findet ihr in der oben verlinkten Datenschutzerklärung."
+            : "GitHub may process data in the USA. GitHub states that it participates in the EU–US Data Privacy Framework. Its privacy statement linked above describes international transfers and the safeguards it uses."}</p>
         </section>
         <section aria-labelledby="rights-title">
           <h2 id="rights-title">{de ? "Eure Rechte" : "Your rights"}</h2>

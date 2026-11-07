@@ -5,6 +5,7 @@ import path from "node:path";
 import vm from "node:vm";
 import {
   paths,
+  legacyDiscussionPaths,
   rootPrefixFor,
   siteLink,
   resolveLanguage,
@@ -83,10 +84,15 @@ test("Questions and all perspectives are present in the initial HTML in both lan
   }
 });
 
-test("Padlet remains opt-in and only the error page is excluded from indexing", () => {
+test("Only legacy redirects and the error page are excluded from indexing", () => {
+  const legacyFiles = new Set(
+    Object.values(legacyDiscussionPaths).map((directory) => directory + "index.html"),
+  );
   for (const [filename, html] of documents) {
     assert.ok(!/<iframe\b/i.test(html), `Unexpected external frame in ${filename}`);
-    const policy = filename === "404.html" ? "noindex,nofollow" : "index,follow";
+    const policy = filename === "404.html" || legacyFiles.has(filename)
+      ? "noindex,nofollow"
+      : "index,follow";
     const robots = [...html.matchAll(/<meta\s+name="(?:robots|googlebot)"\s+content="([^"]+)"/g)];
     assert.deepEqual(robots.map((match) => match[1]), [policy], `${filename}: unexpected indexing policy`);
   }
@@ -161,6 +167,8 @@ test("Navigation maps every view and language within the current deployment", ()
   assert.equal(legacyDestination("#/de/research/principle-2", "en"), "de/forschung/#principle-2");
   assert.equal(legacyDestination("#principle-1", "de"), null);
   assert.equal(legacyDestination("#/de/missing", "en"), "de/");
+  assert.equal(legacyDestination("#/de/experiences", "en"), "de/");
+  assert.equal(legacyDestination("#/en/discussion", "de"), "en/");
   assert.equal(resolveLanguage("de", "en", "en-US"), "de");
   assert.equal(resolveLanguage(null, "de", "en-US"), "de");
   assert.equal(resolveLanguage(null, null, "de-DE"), "de");
@@ -212,8 +220,11 @@ test("The actual browser redirect preserves old links and query strings", async 
 
 
 test("The legal notice is directly linked from the footer of every page", () => {
+  const legacyFiles = new Set(
+    Object.values(legacyDiscussionPaths).map((directory) => directory + "index.html"),
+  );
   for (const [filename, html] of documents) {
-    if (filename === "404.html") continue;
+    if (filename === "404.html" || legacyFiles.has(filename)) continue;
     const footer = html.match(/<footer class="site-footer">(.*?)<\/footer>/s)?.[1];
     assert.ok(footer, `Missing footer: ${filename}`);
     const href = footer.match(/href="([^"]+)"/)?.[1];
@@ -223,5 +234,18 @@ test("The legal notice is directly linked from the footer of every page", () => 
     assert.ok(footer.includes(lang === "de" ? "Impressum" : "Legal notice"));
     const privacyHref = footer.match(/href="([^"]+)"[^>]*>(?:Datenschutz|Privacy)<\/a>/)?.[1];
     assert.equal(new URL(privacyHref, current).href, new URL(paths[lang].privacy, "https://example.org/ai.math/").href);
+  }
+});
+
+test("Legacy discussion URLs redirect to the language home page and stay out of the sitemap", async () => {
+  const sitemap = await fs.readFile(path.join(root, "sitemap.xml"), "utf8");
+  for (const [lang, directory] of Object.entries(legacyDiscussionPaths)) {
+    const filename = directory + "index.html";
+    const html = documents.get(filename);
+    assert.ok(html, `Missing legacy redirect: ${filename}`);
+    assert.ok(html.includes('<meta name="robots" content="noindex,nofollow">'));
+    assert.ok(html.includes('<meta http-equiv="refresh" content="0;url=../">'));
+    assert.ok(html.includes(`<link rel="canonical" href="https://ai.math.ms/${paths[lang].home}">`));
+    assert.ok(!sitemap.includes(directory));
   }
 });

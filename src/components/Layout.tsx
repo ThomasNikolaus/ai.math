@@ -10,8 +10,8 @@ import { navigation, titles } from "../site";
 import { languagePreferenceKey, siteLink } from "../routing.mjs";
 import type { Lang, PageRoute, View } from "../types";
 
-type LanguageState = { openQuestions: string[]; boardEnabled: boolean };
-const emptyState: LanguageState = { openQuestions: [], boardEnabled: false };
+type LanguageState = { openQuestions: string[] };
+const emptyState: LanguageState = { openQuestions: [] };
 const transferKey = "ai-mathematics-language-transfer";
 const RouteContext = createContext<(PageRoute & { languageState: LanguageState }) | null>(null);
 
@@ -59,12 +59,11 @@ export function Layout({ route, children }: { route: PageRoute; children: ReactN
       ]
         .map((button) => button.closest('[id^="q-"]')?.id.slice(2))
         .filter(Boolean);
-      const boardEnabled = !!document.querySelector(".embed-wrap iframe");
       sessionStorage.setItem(
         transferKey,
         JSON.stringify({
           pathname: new URL(event.currentTarget.href).pathname,
-          state: { openQuestions, boardEnabled },
+          state: { openQuestions },
         }),
       );
     } catch {}

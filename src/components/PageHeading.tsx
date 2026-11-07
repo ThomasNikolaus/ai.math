@@ -13,8 +13,6 @@ export function PageHeading({
   const headings: Record<string, string> = {
     "Grundsätze für die Forschung": "KI in der mathematischen Forschung",
     "Principles for Research": "AI in Mathematical Research",
-    "Diskussionen in der Community": "Diskussion",
-    "Community Discussions": "Discussion",
   };
   const heading = typeof subtitle === "string" ? headings[subtitle] || subtitle : subtitle;
   return (

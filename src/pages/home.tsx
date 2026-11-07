@@ -4,7 +4,6 @@ import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
 import type { Lang } from "../types";
 import landingText from "../content/home.json";
-import { seminarUrl, matrixSpaceUrl } from "../site";
 
 export function Landing({ lang }: { lang: Lang }) {
   const link = useSiteLink();
@@ -14,14 +13,14 @@ export function Landing({ lang }: { lang: Lang }) {
       <PageHeading
         eyebrow={
           de
-            ? "Eine Initiative für den gemeinsamen Austausch"
-            : "An initiative for shared discussion"
+            ? "Eine Initiative zu KI und Mathematik"
+            : "An initiative on AI and mathematics"
         }
         title={siteTitle[lang]}
         subtitle={<>AI<span className="brand-dot">.</span>MATH</>}
         description={de
-          ? "Mit der AI.MATH-Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen und mögliche Antworten vor."
-          : "With the AI.MATH initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions and possible answers."}
+          ? "Mit der AI.MATH-Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen, Perspektiven und weiterführende Materialien vor."
+          : "With the AI.MATH initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions, perspectives and further resources."}
       />
       <div
         className="discussion-paths landing-paths"
@@ -73,23 +72,6 @@ export function Landing({ lang }: { lang: Lang }) {
           </span>
           <ArrowRight size={17} />
         </a>
-      </div>
-      <div className="landing-prose prose">
-        <p>
-          {de
-            ? "Die Positionspapiere sind Arbeitsdokumente; Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Zum Austausch gibt es den "
-            : "The position papers are working documents; comments, references and accounts of relevant experiences are welcome. You can exchange ideas in the "}
-          <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
-            {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
-          </a>
-          {de ? " sowie das Online-Seminar " : " and at the online seminar "}
-          <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
-            AI and the Future of Mathematics
-          </a>
-          {de
-            ? " mit Vorträgen und anschließenden Diskussionen."
-            : ", which features talks and follow-up discussions."}
-        </p>
       </div>
       <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">
         <h2 id="initiative-background-title">{de ? "Warum diese Initiative?" : "Why this initiative?"}</h2>
