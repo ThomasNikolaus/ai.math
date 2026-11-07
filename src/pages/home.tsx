@@ -63,8 +63,8 @@ export function Landing({ lang }: { lang: Lang }) {
       <div className="landing-prose prose">
         <p>
           {de
-            ? "Die mathematische Gemeinschaft erlebt durch KI einen tiefgreifenden Wandel. Deshalb müssen die in den Positionspapieren formulierten Grundsätze regelmäßig überprüft und im Lichte neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
-            : "AI is bringing profound change to the mathematical community. The principles formulated in the position papers must therefore be reviewed regularly and developed further in light of new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
+            ? "Die mathematische Gemeinschaft erlebt durch KI einen tiefgreifenden Wandel. Deshalb müssen die in den Positionspapieren formulierten Grundsätze regelmäßig überprüft und anhand neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+            : "AI is bringing profound change to the mathematical community. The principles formulated in the position papers must therefore be reviewed regularly and developed further based on new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
