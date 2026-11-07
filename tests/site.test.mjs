@@ -113,8 +113,6 @@ test("The expanded collection preserves question numbers and direct links", asyn
       assert.ok(html.includes(`id="q-${question.id}"`));
       assert.ok(html.includes(`<span class="question-number">${label}</span>`));
       assert.ok(question.text[lang]?.trim());
-      const home = unescape(documents.get(paths[lang].home + "index.html").replace(/<[^>]*>/g, ""));
-      assert.ok(home.includes(lang === "de" ? "36 Fragen" : "36 questions"));
     }
   }
   assert.equal(new Set(questions.map((q) => q.id)).size, 36);

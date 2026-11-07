@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarDays, BookOpen, CircleHelp } from "lucide-react";
+import { ArrowRight, CalendarDays, BookOpen } from "lucide-react";
 import { PageHeading } from "../components/PageHeading";
 import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators, seminarUrl, matrixSpaceUrl } from "../site";
@@ -46,16 +46,6 @@ export function Landing({ lang }: { lang: Lang }) {
               {de
                 ? "Positionspapier zum Mathematikstudium"
                 : "Position paper on mathematics degree programmes"}
-            </small>
-          </span>
-          <ArrowRight size={17} />
-        </a>
-        <a href={link(lang, "questions")}>
-          <CircleHelp size={20} />
-          <span>
-            <strong>{de ? "Fragen & Perspektiven" : "Questions & Perspectives"}</strong>
-            <small>
-              {de ? "36 Fragen und mögliche Antworten" : "36 questions and possible answers"}
             </small>
           </span>
           <ArrowRight size={17} />
