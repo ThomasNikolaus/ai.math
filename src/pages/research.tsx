@@ -20,7 +20,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
       />
       <div className="paper-byline">
         <span>
-          {de ? "Autoren: " : "Authors: "}
+          {de ? "Von " : "Authors: "}
           {initiators.map((person, i) => (
             <span key={person.name}>
               {i > 0 && " · "}
@@ -82,7 +82,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
             <h2 id="acknowledgements-title">{de ? "Danksagung" : "Acknowledgements"}</h2>
             <p>
               {de
-                ? "Wir danken Vadim Alekseev, Anne Schindler, Mario Ohlberger und Robin Sroka für hilfreiche Diskussionen und Kommentare zu einem Entwurf dieses Positionspapiers. Die vertretenen Positionen sind die der Autoren."
+                ? "Wir danken Vadim Alekseev, Anne Schindler, Mario Ohlberger und Robin Sroka für hilfreiche Diskussionen und Kommentare zu einem Entwurf dieses Positionspapiers. Die vertretenen Positionen liegen in der Verantwortung der Verfassenden."
                 : "We thank Vadim Alekseev, Anne Schindler, Mario Ohlberger and Robin Sroka for helpful discussions and comments on a draft of this position paper. The views expressed are those of the authors."}
             </p>
           </section>

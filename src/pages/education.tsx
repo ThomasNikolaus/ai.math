@@ -23,7 +23,7 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
         subtitle={paper.title}
       />
       <div className="paper-byline">
-        {de ? "Autoren: " : "Authors: "}
+        {de ? "Von " : "Authors: "}
         {initiators.map((p, i) => (
           <span key={p.name}>
             {i > 0 && " · "}
