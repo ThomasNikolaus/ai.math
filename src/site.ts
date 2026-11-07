@@ -6,7 +6,6 @@ export const navigation: View[] = [
   "home",
   "papers",
   "teaching",
-  "questions",
   "resources",
 ];
 export const titles: Record<Lang, Record<View, string>> = {
@@ -14,7 +13,6 @@ export const titles: Record<Lang, Record<View, string>> = {
     home: "Startseite",
     papers: "Forschung",
     teaching: "Lehre",
-    questions: "Fragen & Perspektiven",
     resources: "Materialien & Veranstaltungen",
     imprint: "Impressum",
     privacy: "Datenschutz",
@@ -23,7 +21,6 @@ export const titles: Record<Lang, Record<View, string>> = {
     home: "Home",
     papers: "Research",
     teaching: "Education",
-    questions: "Questions & Perspectives",
     resources: "Resources & Events",
     imprint: "Legal notice",
     privacy: "Privacy",

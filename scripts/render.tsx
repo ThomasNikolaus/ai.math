@@ -3,7 +3,6 @@ import { Layout } from "../src/components/Layout";
 import { Landing } from "../src/pages/home";
 import { PositionPaper } from "../src/pages/research";
 import { TeachingPaper } from "../src/pages/education";
-import { Questions } from "../src/pages/questions";
 import { Imprint } from "../src/pages/imprint";
 import { Privacy } from "../src/pages/privacy";
 import { Resources } from "../src/pages/resources";
@@ -15,7 +14,6 @@ const pages = {
   home: Landing,
   papers: PositionPaper,
   teaching: TeachingPaper,
-  questions: Questions,
   resources: Resources,
   imprint: Imprint,
   privacy: Privacy,

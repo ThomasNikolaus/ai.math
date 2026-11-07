@@ -3,7 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { createHash } from "node:crypto";
 import { build } from "esbuild";
-import { paths, legacyDiscussionPaths, rootPrefixFor } from "../src/routing.mjs";
+import { paths, legacyDiscussionPaths, legacyQuestionPaths, rootPrefixFor } from "../src/routing.mjs";
 import { descriptions, siteNames } from "../src/metadata.mjs";
 import { publicationUrl } from "./publication.mjs";
 import { notFoundPage } from "./not-found.mjs";
@@ -24,7 +24,6 @@ const entries = {
   home: ["home", "Landing"],
   papers: ["research", "PositionPaper"],
   teaching: ["education", "TeachingPaper"],
-  questions: ["questions", "Questions"],
   resources: ["resources", "Resources"],
   imprint: ["imprint", "Imprint"],
   privacy: ["privacy", "Privacy"],
@@ -126,7 +125,7 @@ function documentFor(route, entry = false) {
   // Content pages are open to search engines; the separate 404 page stays noindex.
   return `<!doctype html><html lang="${route.lang}" data-root="${prefix}"${entry ? ' data-entry="true"' : ""}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>${escape(title)}</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" type="image/png" sizes="64x64" href="${prefix}assets/favicon.png"><link rel="icon" type="image/svg+xml" href="${prefix}assets/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="${prefix}assets/apple-touch-icon.png"><meta name="theme-color" content="#920055"><meta name="application-name" content="${escape(siteNames[route.lang])}"><meta name="apple-mobile-web-app-title" content="${escape(siteNames[route.lang])}"><link rel="stylesheet" href="${prefix}${styleName}">${alternate}<meta property="og:type" content="website"><meta property="og:site_name" content="${escape(siteNames[route.lang])}"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:locale" content="${locale}"><meta property="og:locale:alternate" content="${route.lang === "de" ? "en_US" : "de_DE"}"><meta property="og:image" content="${preview}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${escape(siteNames[route.lang])}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(title)}"><meta name="twitter:description" content="${escape(description)}"><meta name="twitter:image" content="${preview}"><meta name="twitter:image:alt" content="${escape(siteNames[route.lang])}">${structuredData}<script src="${prefix}${redirectName}"></script></head><body><div id="root">${html}</div><script id="page-route" type="application/json">${JSON.stringify(route).replaceAll("<", "\\u003c")}</script><script type="module" src="${prefix}${pageScripts[route.view]}"></script></body></html>\n`;
 }
-function legacyDiscussionRedirect(lang) {
+function legacyRemovedPageRedirect(lang) {
   const target = "../";
   const label = lang === "de" ? "Zur Startseite" : "Go to the home page";
   const title = lang === "de" ? "Weiterleitung – AI.MATH" : "Redirect – AI.MATH";
@@ -140,8 +139,10 @@ for (const [lang, pages] of Object.entries(paths)) {
     );
   }
 }
-for (const [lang, directory] of Object.entries(legacyDiscussionPaths)) {
-  generated.set(directory + "index.html", legacyDiscussionRedirect(lang));
+for (const legacyPaths of [legacyDiscussionPaths, legacyQuestionPaths]) {
+  for (const [lang, directory] of Object.entries(legacyPaths)) {
+    generated.set(directory + "index.html", legacyRemovedPageRedirect(lang));
+  }
 }
 generated.set("index.html", documentFor({ lang: "en", view: "home", rootPrefix: "./" }, true));
 generated.set(".nojekyll", "");
