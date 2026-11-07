@@ -1,9 +1,9 @@
 {
   "de": {
     "title": "KI und Mathematikstudium",
-    "draftNotice": "Die folgenden Prinzipien sind noch in einem vorläufigen Stadium und bedürfen weiterer Reflexion, Diskussion und Überarbeitung anhand praktischer Erfahrungen. Mittelfristig möchten wir hier auch konkrete Lehrideen und Beispiele guter Praxis sammeln.",
     "preamble": [
-      "Mathematische Ausbildung soll Verständnis und die Fähigkeit zur eigenständigen und gemeinsamen Problemlösung entwickeln. Die Verfügbarkeit von KI verändert die Voraussetzungen dafür vom Studienbeginn bis zur Promotion. Wir müssen klären, welche Fähigkeiten künftig benötigt werden und wie sie erworben und nachgewiesen werden können. Dieses Papier formuliert dafür Grundsätze als Grundlage gemeinsamer Diskussion und Erprobung."
+      "Mathematische Ausbildung soll Verständnis und die Fähigkeit zur eigenständigen und gemeinsamen Problemlösung entwickeln. Die Verfügbarkeit von KI verändert die Bedingungen dafür vom Studienbeginn bis zur Promotion. Wir müssen daher klären, welche Kompetenzen Studierende erwerben und nachweisen sollen.",
+      "Aus diesen Zielen müssen sich die Regeln für den Einsatz von KI ergeben: KI sollte dort zulässig sein, wo sie den Kompetenzerwerb unterstützt, und dort begrenzt werden, wo sie den Erwerb eigener Kompetenzen ersetzt. Zugleich ist der verantwortliche, kritische und sachgerechte Umgang mit KI selbst ein eigenständiges Lernziel. Dieses Papier formuliert dafür Grundsätze, anhand derer mathematische Bildung im Zeitalter der KI gemeinsam weiterentwickelt und praktisch erprobt werden kann."
     ],
     "principles": [
       [
@@ -15,12 +15,12 @@
         "Ausgangspunkt sind die Tätigkeiten in Gesellschaft und Forschung, zu denen das Studium befähigen soll. Dazu gehört verantwortliche Problemlösung mit KI: Probleme präzisieren, Werkzeuge auswählen und Ergebnisse prüfen, einordnen und nutzbar machen. Hierfür müssen die nicht delegierbaren Kompetenzen bestimmt werden. Begriffsverständnis, die Beurteilung von Argumenten und der Umgang mit Beispielen und Gegenbeispielen sind Ausgangspunkte für ein noch zu entwickelndes Kompetenzprofil. Der erforderliche Umfang hängt von Studienrichtung und Qualifikationsstufe ab. Ein wichtiges Ziel der Promotion ist die Entwicklung der Fähigkeit, den Erfolg von Forschungsansätzen einschätzen zu können."
       ],
       [
-        "Kommunikation der eigenen Fähigkeiten und Ergebnisse ist zentral",
+        "Kommunikation der eigenen Fähigkeiten und Ergebnisse ist zentral.",
         "Die mathematische Ausbildung soll Studierende und Promovierende befähigen, Lösungen und Ergebnisse zu kommunizieren. Schreiben, Vortragen und Erklären gehören zu den Kernkompetenzen. KI-Nutzung in diesem Prozess ist transparent offenzulegen."
       ],
       [
         "Die Ausbildung muss zur kritischen Beurteilung von KI befähigen.",
-        "Zum verantwortlichen Umgang mit KI gehört die Auseinandersetzung mit Verzerrungen, der Herkunft von Trainingsdaten, Fragen geistigen Eigentums sowie sozialen und ökologischen Folgen. Studierende sollen diese Bedingungen beurteilen und begründete Entscheidungen über den Einsatz von KI treffen können. Unterschiedliche, auch ablehnende Haltungen sind dabei ernst zu nehmen."
+        "Zum verantwortlichen Umgang mit KI gehört die Auseinandersetzung mit Verzerrungen, der Herkunft von Trainingsdaten, Fragen geistigen Eigentums sowie sozialen und ökologischen Folgen. Studierende sollen diese Bedingungen beurteilen und begründete Entscheidungen über den Einsatz von KI treffen können. Auch begründete Entscheidungen, KI nicht einzusetzen, sind dabei ernst zu nehmen."
       ],
       [
         "Lernwege müssen den Aufbau eigener Fähigkeiten sichern.",
@@ -46,9 +46,9 @@
   },
   "en": {
     "title": "AI and Mathematics Degree Programmes",
-    "draftNotice": "The following principles are still at a preliminary stage and require further reflection, discussion and revision in light of practical experience. In the medium term, we also aim to collect concrete teaching ideas and examples of good practice here.",
     "preamble": [
-      "Mathematical education should develop understanding and the ability to solve problems independently and collaboratively. The availability of AI changes the conditions for this from the start of university studies through to the doctorate. We must clarify which abilities will be needed and how they can be acquired and demonstrated. This paper sets out principles as a basis for shared discussion and experimentation."
+      "Mathematical education should develop understanding and the ability to solve problems independently and collaboratively. The availability of AI changes the conditions for this from the start of university studies through to the doctorate. We must therefore clarify which competencies students should acquire and demonstrate.",
+      "Rules for the use of AI must follow from these objectives: AI should be permitted where it supports the development of these competencies and restricted where it would take the place of students developing them themselves. At the same time, the responsible, critical and effective use of AI is itself an independent learning objective. This paper sets out principles for the joint development and practical testing of mathematics education in the age of AI."
     ],
     "principles": [
       [
@@ -60,12 +60,12 @@
         "The starting point is the work in society and research for which a degree programme should prepare students. This includes responsible problem-solving with AI: refining problems, selecting tools, and checking, interpreting and making use of results. The competencies that cannot be delegated must be identified. Conceptual understanding, evaluating arguments, and working with examples and counterexamples are starting points for a competency profile that remains to be developed. The required scope depends on the field of study and level of qualification. An important aim of doctoral study is to develop the ability to assess the prospects of success of research approaches."
       ],
       [
-        "Communicating one’s own abilities and results is central",
+        "Communicating one’s own abilities and results is central.",
         "Mathematical education should enable students and doctoral researchers to communicate solutions and results. Writing, presenting and explaining are core competencies. AI use in this process must be transparently disclosed."
       ],
       [
         "Education must enable critical assessment of AI.",
-        "Responsible engagement with AI includes examining biases, the provenance of training data, questions of intellectual property, and social and ecological consequences. Students should be able to assess these conditions and make reasoned decisions about the use of AI. Different positions, including rejection of AI, must be taken seriously."
+        "Responsible engagement with AI includes examining biases, the provenance of training data, questions of intellectual property, and social and ecological consequences. Students should be able to assess these conditions and make reasoned decisions about the use of AI. Reasoned decisions not to use AI must also be taken seriously."
       ],
       [
         "Learning pathways must ensure the development of students’ own abilities.",

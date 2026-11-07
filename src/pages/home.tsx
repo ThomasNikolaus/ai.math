@@ -1,10 +1,9 @@
-import { ArrowRight, MessageSquare, BookOpen, CircleHelp } from "lucide-react";
+import { ArrowRight, CalendarDays, BookOpen } from "lucide-react";
 import { PageHeading } from "../components/PageHeading";
 import { useSiteLink } from "../components/Layout";
-import { siteTitle, initiators } from "../site";
+import { siteTitle, initiators, seminarUrl, matrixSpaceUrl } from "../site";
 import type { Lang } from "../types";
 import landingText from "../content/home.json";
-import { seminarUrl, matrixSpaceUrl } from "../site";
 
 export function Landing({ lang }: { lang: Lang }) {
   const link = useSiteLink();
@@ -14,19 +13,16 @@ export function Landing({ lang }: { lang: Lang }) {
       <PageHeading
         eyebrow={
           de
-            ? "Eine Initiative für den gemeinsamen Austausch"
-            : "An initiative for shared discussion"
+            ? "Eine Initiative zu KI und Mathematik"
+            : "An initiative on AI and mathematics"
         }
         title={siteTitle[lang]}
         subtitle={<>AI<span className="brand-dot">.</span>MATH</>}
         description={de
-          ? "Mit der AI.MATH-Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie Fragen und mögliche Antworten vor. Sie dienen als Ausgangspunkte für die Diskussion. Dabei möchten wir auch den Unsicherheiten, Hoffnungen und Sorgen Raum geben, die mit diesem Wandel verbunden sind."
-          : "With the AI.MATH initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside questions and possible answers. These are starting points for discussion. We also aim to make room for the uncertainties, hopes and concerns associated with this change."}
+          ? "Die AI.MATH-Initiative formuliert Positionen zum Umgang mit KI in der mathematischen Forschung und im Mathematikstudium und bündelt weiterführende Materialien und Veranstaltungen."
+          : "The AI.MATH initiative develops positions on the use of AI in mathematical research and mathematics degree programmes and brings together related resources and events."}
       />
-      <div
-        className="discussion-paths landing-paths"
-        style={{ gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,400px),1fr))" }}
-      >
+      <div className="discussion-paths landing-paths">
         <a href={link(lang, "papers")}>
           <BookOpen size={20} />
           <span>
@@ -51,24 +47,14 @@ export function Landing({ lang }: { lang: Lang }) {
           </span>
           <ArrowRight size={17} />
         </a>
-        <a href={link(lang, "questions")}>
-          <CircleHelp size={20} />
+        <a href={link(lang, "resources")}>
+          <CalendarDays size={20} />
           <span>
-            <strong>{de ? "Fragen & Perspektiven" : "Questions & Perspectives"}</strong>
-            <small>
-              {de ? "36 Fragen und mögliche Antworten" : "36 questions and possible answers"}
-            </small>
-          </span>
-          <ArrowRight size={17} />
-        </a>
-        <a href={link(lang, "experiences")}>
-          <MessageSquare size={20} />
-          <span>
-            <strong>{de ? "Diskussion" : "Discussion"}</strong>
+            <strong>{de ? "Materialien & Veranstaltungen" : "Resources & Events"}</strong>
             <small>
               {de
-                ? "Erfahrungen, Hoffnungen und Sorgen teilen"
-                : "Share experiences, hopes and concerns"}
+                ? "Vorträge, Diskussionen und weiterführende Materialien"
+                : "Talks, discussions and further resources"}
             </small>
           </span>
           <ArrowRight size={17} />
@@ -77,23 +63,18 @@ export function Landing({ lang }: { lang: Lang }) {
       <div className="landing-prose prose">
         <p>
           {de
-            ? "Welche dieser Vorschläge überzeugen euch, wo widersprecht ihr und was fehlt? Teilt eure Gedanken auf den Diskussionsboards dieser Website und helft uns, die Entwürfe weiterzuentwickeln. Wir werten eure Beiträge aus, überarbeiten die Papiere und machen Änderungen sowie offene Streitpunkte sichtbar."
-            : "Which of these proposals do you find convincing, where do you disagree, and what is missing? Share your thoughts on this website’s discussion boards and help us develop the drafts further. We review your contributions, revise the papers, and make changes and unresolved points of disagreement visible."}
-        </p>
-        <p>
-          {de
-            ? "Ihr könnt euch auch im "
-            : "You can also exchange ideas in the "}
+            ? "Die mathematische Gemeinschaft erlebt durch KI einen tiefgreifenden Wandel. Deshalb müssen die in den Positionspapieren formulierten Grundsätze regelmäßig überprüft und anhand neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+            : "AI is bringing profound change to the mathematical community. The principles formulated in the position papers must therefore be reviewed regularly and developed further based on new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
-          {de ? " und im Online-Seminar " : " and at the online seminar "}
+          {de ? " sowie im Online-Seminar " : " and at the online seminar "}
           <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
             AI and the Future of Mathematics
           </a>
           {de
-            ? " mit Vorträgen und anschließenden Diskussionen austauschen."
-            : ", which features talks and follow-up discussions."}
+            ? " möglich, das Vorträge mit anschließenden Diskussionen verbindet."
+            : ", which combines talks with follow-up discussions."}
         </p>
       </div>
       <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">

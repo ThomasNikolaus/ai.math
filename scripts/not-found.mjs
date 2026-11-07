@@ -13,7 +13,7 @@ export function notFoundPage(siteUrl) {
 </style></head><body>
 <main>
 <img class="mark" src="${href("assets/favicon.svg")}" width="56" height="56" alt="">
-<p class="eyebrow">${siteName} · 404</p><h1>Seite nicht gefunden</h1><p>Die Adresse ist möglicherweise nicht mehr aktuell oder enthält einen Tippfehler. Über die Startseite gelangt ihr zu den Papieren, Fragen und Diskussionen.</p><a class="home" href="${href("de/")}">Zur deutschen Startseite</a>
-<section class="translation" lang="en"><h2>Page not found</h2><p>The address may be out of date or contain a typo. You can find the papers, questions and discussions on the home page.</p><a class="home" href="${href("en/")}">Go to the English home page</a></section>
+<p class="eyebrow">${siteName} · 404</p><h1>Seite nicht gefunden</h1><p>Die Adresse ist möglicherweise nicht mehr aktuell oder enthält einen Tippfehler. Über die Startseite gelangt ihr zu den Positionspapieren und weiteren Materialien.</p><a class="home" href="${href("de/")}">Zur deutschen Startseite</a>
+<section class="translation" lang="en"><h2>Page not found</h2><p>The address may be out of date or contain a typo. You can find the position papers and further resources on the home page.</p><a class="home" href="${href("en/")}">Go to the English home page</a></section>
 </main><footer class="site-footer"><span><a href="${href("de/impressum/")}">Impressum</a><a href="${href("de/datenschutz/")}">Datenschutz</a></span><span lang="en"><a href="${href("en/legal-notice/")}">Legal notice</a><a href="${href("en/privacy/")}">Privacy</a></span></footer></body></html>\n`;
 }

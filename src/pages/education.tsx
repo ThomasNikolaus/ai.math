@@ -1,7 +1,7 @@
-import { MessageSquare, Printer } from "lucide-react";
+import { Printer } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { PageHeading } from "../components/PageHeading";
-import { Board } from "../components/Board";
+import { MatrixDiscussion } from "../components/MatrixDiscussion";
 import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
 import type { Lang } from "../types";
@@ -21,10 +21,9 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
         }
         title={siteTitle[lang]}
         subtitle={paper.title}
-        description={paper.draftNotice}
       />
       <div className="paper-byline">
-        {de ? "Autoren: " : "Authors: "}
+        {de ? "Von " : "Authors: "}
         {initiators.map((p, i) => (
           <span key={p.name}>
             {i > 0 && " · "}
@@ -36,7 +35,7 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
       </div>
       <p className="version-date">
         {de ? "Stand: " : "Last updated: "}
-        <time dateTime="2026-09-17">{de ? "17. September 2026" : "17 September 2026"}</time>
+        <time dateTime="2026-11-07">{de ? "7. November 2026" : "7 November 2026"}</time>
       </p>
       <div className="paper-toolbar">
         <Button variant="ghost" onClick={() => window.print()}>
@@ -54,10 +53,6 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
               {title.replace(/\.$/, "")}
             </a>
           ))}
-          <a className="index-discuss" href={link(lang, "teaching", "board")}>
-            <MessageSquare size={15} />
-            {de ? "Papier diskutieren" : "Discuss this paper"}
-          </a>
         </aside>
         <article className="paper-body">
           <section id="preamble">
@@ -78,7 +73,7 @@ export function TeachingPaper({ lang }: { lang: Lang }) {
           ))}
         </article>
       </div>
-      <Board kind="teaching" lang={lang} />
+      <MatrixDiscussion lang={lang} />
     </>
   );
 }

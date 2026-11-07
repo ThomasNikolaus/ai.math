@@ -1,7 +1,7 @@
-import { MessageSquare, Printer } from "lucide-react";
+import { Printer } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { PageHeading } from "../components/PageHeading";
-import { Board } from "../components/Board";
+import { MatrixDiscussion } from "../components/MatrixDiscussion";
 import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
 import type { Lang } from "../types";
@@ -20,7 +20,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
       />
       <div className="paper-byline">
         <span>
-          {de ? "Autoren: " : "Authors: "}
+          {de ? "Von " : "Authors: "}
           {initiators.map((person, i) => (
             <span key={person.name}>
               {i > 0 && " · "}
@@ -51,10 +51,6 @@ export function PositionPaper({ lang }: { lang: Lang }) {
               {p.title.replace(/\.$/, "")}
             </a>
           ))}
-          <a className="index-discuss" href={link(lang, "papers", "board")}>
-            <MessageSquare size={15} />
-            {de ? "Papier diskutieren" : "Discuss this paper"}
-          </a>
         </aside>
         <article className="paper-body">
           <section id="preamble">
@@ -86,13 +82,13 @@ export function PositionPaper({ lang }: { lang: Lang }) {
             <h2 id="acknowledgements-title">{de ? "Danksagung" : "Acknowledgements"}</h2>
             <p>
               {de
-                ? "Wir danken Vadim Alekseev, Anne Schindler, Mario Ohlberger und Robin Sroka für hilfreiche Diskussionen und Kommentare zu einem Entwurf dieses Positionspapiers. Die vertretenen Positionen sind die der Autoren."
+                ? "Wir danken Vadim Alekseev, Anne Schindler, Mario Ohlberger und Robin Sroka für hilfreiche Diskussionen und Kommentare zu einem Entwurf dieses Positionspapiers. Die vertretenen Positionen liegen in der Verantwortung der Verfassenden."
                 : "We thank Vadim Alekseev, Anne Schindler, Mario Ohlberger and Robin Sroka for helpful discussions and comments on a draft of this position paper. The views expressed are those of the authors."}
             </p>
           </section>
         </article>
       </div>
-      <Board kind="papers" lang={lang} />
+      <MatrixDiscussion lang={lang} />
     </>
   );
 }

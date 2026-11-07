@@ -4,16 +4,17 @@ import type { Lang } from "../types";
 export function MatrixDiscussion({ lang }: { lang: Lang }) {
   const de = lang === "de";
   return (
-    <div className="matrix-discussion">
+    <section className="matrix-discussion" aria-labelledby="comments-title">
+      <h2 id="comments-title">{de ? "Kommentare und Hinweise" : "Comments and suggestions"}</h2>
       <p className="matrix-invitation">
         {de
-          ? "Wir laden dazu ein, Erfahrungen, Hoffnungen und Sorgen im offenen Board zu teilen und die Positionspapiere zu Forschung und Lehre in den jeweiligen Boards zu diskutieren. Ihr könnt auch im "
-          : "We invite you to share experiences, hopes and concerns on the open board and to discuss the position papers on research and education on their respective boards. You can also join the discussion in the "}
+          ? "Dieses Positionspapier ist ein Arbeitsdokument. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+          : "This position paper is a working document. Comments, references and accounts of relevant experiences are welcome. You can join the conversation in the "}
         <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
           {de ? "Matrix-Space" : "Matrix space"} ↗
         </a>
-        {de ? " mitdiskutieren." : "."}
+        {de ? " möglich." : "."}
       </p>
-    </div>
+    </section>
   );
 }

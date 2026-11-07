@@ -5,8 +5,6 @@ export const paths = {
     home: "de/",
     papers: "de/forschung/",
     teaching: "de/lehre/",
-    questions: "de/fragen/",
-    experiences: "de/diskussion/",
     resources: "de/links/",
     imprint: "de/impressum/",
     privacy: "de/datenschutz/",
@@ -15,14 +13,20 @@ export const paths = {
     home: "en/",
     papers: "en/research/",
     teaching: "en/education/",
-    questions: "en/questions/",
-    experiences: "en/discussion/",
     resources: "en/resources/",
     imprint: "en/legal-notice/",
     privacy: "en/privacy/",
   },
 };
 export const languagePreferenceKey = "ai-mathematics-language";
+export const legacyDiscussionPaths = {
+  de: "de/diskussion/",
+  en: "en/discussion/",
+};
+export const legacyQuestionPaths = {
+  de: "de/fragen/",
+  en: "en/questions/",
+};
 
 export function resolveLanguage(explicit, stored, browserLanguage) {
   if (explicit === "de" || explicit === "en") return explicit;
@@ -45,7 +49,8 @@ export function legacyDestination(hash, fallbackLanguage) {
   const language = resolveLanguage(rawLanguage, fallbackLanguage, "en");
   let view = rawView;
   if (view === "research") view = "papers";
-  if (view === "overview") view = rawAnchor === "people" ? "experiences" : "home";
+  if (view === "overview") view = "home";
+  if (view === "experiences" || view === "discussion" || view === "questions") view = "home";
   if (!Object.hasOwn(paths[language], view)) view = "home";
   return paths[language][view] + (rawAnchor ? "#" + rawAnchor : "");
 }
