@@ -66,18 +66,18 @@ export function Landing({ lang }: { lang: Lang }) {
       <div className="landing-prose prose">
         <p>
           {de
-            ? "Da sich die Situation dynamisch entwickelt, müssen die Positionspapiere fortlaufend weiterentwickelt und angepasst werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
-            : "Because the situation is evolving rapidly, the position papers will need to be continually developed and adapted. Comments, references and accounts of relevant experiences are welcome. You can exchange ideas in the "}
+            ? "Wir befinden uns in einer Zeit des schnellen Wandels. Deshalb müssen diese Grundsätze regelmäßig überprüft und im Lichte neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+            : "We are living through a period of rapid change. These principles must therefore be reviewed regularly and developed further in light of new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
-          {de ? " sowie im Online-Seminar " : " and through the online seminar "}
+          {de ? " sowie im Online-Seminar " : " and at the online seminar "}
           <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
             AI and the Future of Mathematics
           </a>
           {de
-            ? " möglich, das Vorträge mit anschließenden Diskussionen bietet."
-            : ", which features talks and follow-up discussions."}
+            ? " möglich, das Vorträge mit anschließenden Diskussionen verbindet."
+            : ", which combines talks with follow-up discussions."}
         </p>
       </div>
       <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">
