@@ -19,13 +19,10 @@ export function Landing({ lang }: { lang: Lang }) {
         title={siteTitle[lang]}
         subtitle={<>AI<span className="brand-dot">.</span>MATH</>}
         description={de
-          ? "Mit der AI.MATH-Initiative stellen wir Positionsentwürfe zur Zukunft mathematischer Forschung und des Mathematikstudiums in Zeiten von KI sowie weiterführende Materialien vor."
-          : "With the AI.MATH initiative, we put forward draft positions on the future of mathematical research and mathematics degree programmes in the age of AI, alongside further resources."}
+          ? "Die AI.MATH-Initiative formuliert Positionen zum Umgang mit KI in der mathematischen Forschung und im Mathematikstudium und bündelt weiterführende Materialien und Veranstaltungen."
+          : "The AI.MATH initiative develops positions on the use of AI in mathematical research and mathematics degree programmes and brings together related resources and events."}
       />
-      <div
-        className="discussion-paths landing-paths"
-        style={{ gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,400px),1fr))" }}
-      >
+      <div className="discussion-paths landing-paths">
         <a href={link(lang, "papers")}>
           <BookOpen size={20} />
           <span>
@@ -53,7 +50,7 @@ export function Landing({ lang }: { lang: Lang }) {
         <a href={link(lang, "resources")}>
           <CalendarDays size={20} />
           <span>
-            <strong>{de ? "Seminar & Veranstaltungen" : "Seminar & Events"}</strong>
+            <strong>{de ? "Materialien & Veranstaltungen" : "Resources & Events"}</strong>
             <small>
               {de
                 ? "Vorträge, Diskussionen und weiterführende Materialien"
@@ -66,8 +63,8 @@ export function Landing({ lang }: { lang: Lang }) {
       <div className="landing-prose prose">
         <p>
           {de
-            ? "Die mathematische Gemeinschaft befindet sich in einer Zeit tiefgreifenden Wandels. Deshalb müssen die in den Positionspapieren formulierten Grundsätze regelmäßig überprüft und im Lichte neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
-            : "The mathematical community is living through a period of profound transformation. The principles formulated in the position papers must therefore be reviewed regularly and developed further in light of new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
+            ? "Die mathematische Gemeinschaft erlebt durch KI einen tiefgreifenden Wandel. Deshalb müssen die in den Positionspapieren formulierten Grundsätze regelmäßig überprüft und im Lichte neuer Erfahrungen weiterentwickelt werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+            : "AI is bringing profound change to the mathematical community. The principles formulated in the position papers must therefore be reviewed regularly and developed further in light of new experiences. We welcome comments, references, and reports of relevant experiences. You can join the discussion in the "}
           <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
             {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
           </a>
