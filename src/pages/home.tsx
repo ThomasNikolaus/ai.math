@@ -1,7 +1,7 @@
 import { ArrowRight, CalendarDays, BookOpen, CircleHelp } from "lucide-react";
 import { PageHeading } from "../components/PageHeading";
 import { useSiteLink } from "../components/Layout";
-import { siteTitle, initiators } from "../site";
+import { siteTitle, initiators, seminarUrl, matrixSpaceUrl } from "../site";
 import type { Lang } from "../types";
 import landingText from "../content/home.json";
 
@@ -72,6 +72,23 @@ export function Landing({ lang }: { lang: Lang }) {
           </span>
           <ArrowRight size={17} />
         </a>
+      </div>
+      <div className="landing-prose prose">
+        <p>
+          {de
+            ? "Da sich die Situation dynamisch entwickelt, müssen die Positionspapiere fortlaufend weiterentwickelt und angepasst werden. Kommentare, Referenzen und Berichte über einschlägige Erfahrungen sind willkommen. Austausch ist im "
+            : "Because the situation is evolving rapidly, the position papers will need to be continually developed and adapted. Comments, references and accounts of relevant experiences are welcome. You can exchange ideas in the "}
+          <a href={matrixSpaceUrl} target="_blank" rel="noopener noreferrer">
+            {de ? "Matrix-Space „Mathematik und KI“" : "“Mathematik und KI” Matrix space"}
+          </a>
+          {de ? " sowie im Online-Seminar " : " and through the online seminar "}
+          <a href={seminarUrl} target="_blank" rel="noopener noreferrer">
+            AI and the Future of Mathematics
+          </a>
+          {de
+            ? " möglich, das Vorträge mit anschließenden Diskussionen bietet."
+            : ", which features talks and follow-up discussions."}
+        </p>
       </div>
       <article className="landing-prose landing-background prose" aria-labelledby="initiative-background-title">
         <h2 id="initiative-background-title">{de ? "Warum diese Initiative?" : "Why this initiative?"}</h2>
