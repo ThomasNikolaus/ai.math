@@ -7,7 +7,7 @@ export const homeTitles = {
 
 export const descriptions = {
   de: {
-    home: "Die AI.MATH-Initiative stellt Positionsentwürfe zu KI in mathematischer Forschung und Studium sowie weiterführende Materialien vor.",
+    home: "AI.MATH: Positionen zu KI in mathematischer Forschung und Lehre, Perspektiven auf universitäre KI-Infrastruktur sowie Materialien und Veranstaltungen.",
     papers: "Grundsätze für den Umgang mit KI in der mathematischen Forschung: ein Positionspapier zu Verständnis, Verantwortung und wissenschaftlicher Zusammenarbeit.",
     teaching: "KI im Mathematikstudium: Grundsätze zu Bildungszielen, eigenen Fähigkeiten, Prüfungen und der gemeinsamen Weiterentwicklung mathematischer Lehre.",
     resources: "Materialien, Veranstaltungen und das Online-Seminar AI and the Future of Mathematics: Perspektiven, Positionen und Werkzeuge zu KI und Mathematik.",
@@ -16,7 +16,7 @@ export const descriptions = {
     privacy: "Datenschutzhinweise zur Website der AI.MATH-Initiative: Hosting bei GitHub Pages, lokale Einstellungen, Kontaktaufnahme und eure Rechte.",
   },
   en: {
-    home: "The AI.MATH initiative presents draft positions on AI in mathematical research and degree programmes, alongside further resources.",
+    home: "AI.MATH presents positions on AI in mathematical research and education, perspectives on university AI infrastructure, resources and events.",
     papers: "Principles for using AI in mathematical research: a position paper on understanding, responsibility and scientific collaboration.",
     teaching: "AI in mathematics education: principles for educational goals, personal competence, assessment and the shared development of teaching.",
     resources: "Resources, events and the online seminar AI and the Future of Mathematics: perspectives, positions and tools for AI and mathematics.",

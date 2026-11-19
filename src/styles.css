@@ -52,6 +52,8 @@ html{overflow-x:clip}.view-experiences .embed-wrap iframe{display:block;width:ca
 .site-shell .horizons-body h4{font-size:1.125rem;line-height:1.5;margin:17px 0 14px}
 .site-shell .horizons-section+.horizons-section{margin-top:24px}
 .site-shell .horizons-body :is(ul,ol){padding-left:1.3em;margin:0 0 1.2em}
+.site-shell .horizons-body ul{list-style-type:disc}
+.site-shell .horizons-body ol{list-style-type:decimal}
 .site-shell .horizons-body li{padding-left:.2em;margin-bottom:.4em}
 .site-shell .horizons-body strong{font-weight:650;color:#172033}
 .site-shell .horizons-body a{color:#920055;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.16em;text-decoration-skip-ink:auto}
@@ -94,3 +96,19 @@ html{overflow-x:clip}.view-experiences .embed-wrap iframe{display:block;width:ca
   .site-shell .horizons-body a{color:inherit}
   .site-shell .horizons-end-link{display:none}
 }
+
+/* Keep the desktop sidebar and offer the same contents on small screens. */
+.site-shell .paper-index-mobile{display:none}
+@media screen and (max-width:780px){
+  .site-shell .paper-index-mobile{display:block;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .site-shell .paper-index-mobile>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding:12px 0;color:var(--primary);font-size:1rem;line-height:1.5;cursor:pointer;list-style:none}
+  .site-shell .paper-index-mobile>summary::-webkit-details-marker{display:none}
+  .site-shell .paper-index-mobile>summary svg{flex:none;transition:transform .15s}
+  .site-shell .paper-index-mobile[open]>summary svg{transform:rotate(180deg)}
+  .site-shell .paper-index-mobile>nav{display:flex;flex-direction:column;padding:0 0 12px}
+  .site-shell .paper-index-mobile>nav>a{display:flex;align-items:baseline;gap:10px;padding:9px 0;color:var(--discussion-text);font-size:.9375rem;line-height:1.6;text-decoration:none}
+  .site-shell .paper-index-mobile>nav>a>span{flex:none;min-width:17px;color:var(--muted-foreground);font-size:.8125rem}
+  .site-shell .paper-index-mobile>nav>a:hover{color:var(--discussion-accent)}
+  .site-shell .paper-index-mobile :is(summary,a):focus-visible{outline:2px solid var(--discussion-accent);outline-offset:3px}
+}
+@media print{.site-shell .paper-index-mobile{display:none!important}}

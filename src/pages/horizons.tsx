@@ -1,5 +1,6 @@
 import { Printer } from "lucide-react";
 import { PageHeading } from "../components/PageHeading";
+import { PaperIndex } from "../components/PaperIndex";
 import { Button } from "../components/ui/button";
 import type { Lang } from "../types";
 import germanArticle from "../content/ki-horizonte.json";
@@ -34,8 +35,7 @@ export function AIHorizons({ lang }: { lang: Lang }) {
       </div>
 
       <div className="paper-layout">
-        <aside className="paper-index" aria-label={de ? "Inhaltsverzeichnis des Artikels" : "Article contents"}>
-          <p className="eyebrow">{de ? "In diesem Artikel" : "In this article"}</p>
+        <PaperIndex lang={lang} label={de ? "In diesem Artikel" : "In this article"}>
           {article.sections.map((section) => (
             <a key={section.id} href={"#" + section.id}>
               <span>{String(section.number).padStart(2, "0")}</span>
@@ -43,7 +43,7 @@ export function AIHorizons({ lang }: { lang: Lang }) {
             </a>
           ))}
           {article.footnotesHtml && <a href="#article-footnotes">{de ? "Fußnoten" : "Footnotes"}</a>}
-        </aside>
+        </PaperIndex>
 
         <article className="paper-body horizons-body" lang={lang} aria-label={de ? "Horizonte für souveräne KI von Thomas Kahle" : "Horizons for Sovereign AI by Thomas Kahle"}>
           {article.sections.map((section) => (

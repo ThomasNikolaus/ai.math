@@ -19,8 +19,8 @@ export function Landing({ lang }: { lang: Lang }) {
         title={siteTitle[lang]}
         subtitle={<>AI<span className="brand-dot">.</span>MATH</>}
         description={de
-          ? "Die AI.MATH-Initiative formuliert Positionen zum Umgang mit KI in der mathematischen Forschung und im Mathematikstudium und bündelt weiterführende Materialien und Veranstaltungen."
-          : "The AI.MATH initiative develops positions on the use of AI in mathematical research and mathematics degree programmes and brings together related resources and events."}
+          ? "Die AI.MATH-Initiative formuliert Positionen zum Umgang mit KI in der mathematischen Forschung und Lehre, beleuchtet universitäre KI-Infrastruktur und bündelt weiterführende Materialien und Veranstaltungen."
+          : "The AI.MATH initiative develops positions on the use of AI in mathematical research and education, explores AI infrastructure at universities, and brings together related resources and events."}
       />
       <div className="discussion-paths landing-paths">
         <a href={link(lang, "papers")}>
@@ -38,7 +38,7 @@ export function Landing({ lang }: { lang: Lang }) {
         <a href={link(lang, "teaching")}>
           <BookOpen size={20} />
           <span>
-            <strong>{de ? "Studium" : "Degree programmes"}</strong>
+            <strong>{de ? "Lehre" : "Education"}</strong>
             <small>
               {de
                 ? "Positionspapier zum Mathematikstudium"

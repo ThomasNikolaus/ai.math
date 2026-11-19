@@ -1,6 +1,7 @@
 import { Printer } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { PageHeading } from "../components/PageHeading";
+import { PaperIndex } from "../components/PaperIndex";
 import { MatrixDiscussion } from "../components/MatrixDiscussion";
 import { useSiteLink } from "../components/Layout";
 import { siteTitle, initiators } from "../site";
@@ -42,8 +43,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
         </Button>
       </div>
       <div className="paper-layout">
-        <aside className="paper-index">
-          <p className="eyebrow">{de ? "Im Papier" : "In this paper"}</p>
+        <PaperIndex lang={lang} label={de ? "Im Papier" : "In this paper"}>
           <a href={link(lang, "papers", "preamble")}>{de ? "Präambel" : "Preamble"}</a>
           {paper.principles.map((p, i) => (
             <a key={p.title} href={link(lang, "papers", "principle-" + (i + 1))}>
@@ -51,7 +51,7 @@ export function PositionPaper({ lang }: { lang: Lang }) {
               {p.title.replace(/\.$/, "")}
             </a>
           ))}
-        </aside>
+        </PaperIndex>
         <article className="paper-body">
           <section id="preamble">
             <h2>{de ? "Präambel" : "Preamble"}</h2>
