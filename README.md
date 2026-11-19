@@ -39,7 +39,7 @@ Die Website enthält unter dem Reiter „Infrastruktur“ / „Infrastructure“
 
 `src/content/ki-horizonte.json` enthält den vollständigen, aus der LaTeX-Quelle übernommenen Text mit Abschnittskennungen, Tabellen, internen Verweisen und Fußnoten; `ki-horizonte.en.json` enthält die englische Übersetzung mit denselben Kennungen und Verweisen. Die unveränderten Originaldateien liegen in `src/documents/`. Das deutsche PDF wird beim Build als Quelldokument mitgeführt; die Artikelseite zeigt keinen Download-Link. Die TeX-Datei bleibt eine Quelldatei. Die Quelle wurde mit TeX4ht konvertiert und semantisch bereinigt. Alle 106 Quelllinks, 186 Tabellenzellen, vier Fußnoten und 24 Glossarbegriffe wurden mit der Vorlage abgeglichen.
 
-Die zuvor geteilten Vorschau-Adressen unter `preview/` bleiben als separate Momentaufnahme erreichbar. Die regulären Seiten verwenden die kanonischen Adressen ohne `preview/` und sind für Suchmaschinen freigegeben.
+Die Vorschauseiten unter `preview/` wurden nach der Veröffentlichung entfernt. Die regulären Seiten verwenden die kanonischen Adressen ohne `preview/` und sind für Suchmaschinen freigegeben.
 
 Voraussetzungen: Node.js ab Version 22 und pnpm 11.
 
