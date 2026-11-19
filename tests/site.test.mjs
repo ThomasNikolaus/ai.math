@@ -31,7 +31,9 @@ const unescape = (text) =>
     .replaceAll("&gt;", ">");
 
 test("Every page and internal anchor works at the domain root and at the GitHub project path", async () => {
-  assert.equal(documents.size, 18);
+  const routeCount = Object.values(paths).reduce((count, pages) => count + Object.keys(pages).length, 0);
+  const redirectCount = Object.keys(legacyDiscussionPaths).length + Object.keys(legacyQuestionPaths).length;
+  assert.equal(documents.size, routeCount + redirectCount + 2);
   for (const base of ["https://example.org/", "https://example.org/ai.math/"]) {
     for (const [filename, html] of documents) {
       if (filename === "404.html") continue; // Uses absolute publication URLs for arbitrary request paths.

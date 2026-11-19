@@ -1,9 +1,11 @@
 // Reviewed local HTML for the resource list; never visitor-supplied content.
 import type { Lang } from "../types";
 import resources from "../content/resources.json";
+import { useSiteLink } from "../components/Layout";
 import { seminarUrl } from "../site";
 
 export function Resources({ lang }: { lang: Lang }) {
+  const link = useSiteLink();
   const de = lang === "de";
   const summitReports = `
       <article class="resource">
@@ -60,6 +62,18 @@ export function Resources({ lang }: { lang: Lang }) {
           <span aria-hidden="true">↗</span>
         </a>
       </section>
+      <article className="horizons-feature horizons-resource-feature" aria-labelledby="horizons-resource-title">
+        <div>
+          <p className="horizons-feature-meta">Thomas Kahle · {de ? "17. November 2026" : "17 November 2026"}</p>
+          <h2 id="horizons-resource-title"><a href={link(lang, "horizons")}>{de ? "Horizonte für souveräne KI" : "Horizons for Sovereign AI"}</a></h2>
+          <p>{de
+            ? "Eine Einordnung universitärer KI-Infrastruktur: Möglichkeiten, Kosten, Personal und Unabhängigkeit – mit Hintergrund, Glossar und Quellen."
+            : "An assessment of AI infrastructure at universities: capabilities, costs, staffing and independence, with background, a glossary and sources."}</p>
+        </div>
+        <a className="horizons-feature-link" href={link(lang, "horizons")}>
+          {de ? "Artikel lesen" : "Read article"}<span aria-hidden="true">↗</span>
+        </a>
+      </article>
       <div className="original-seminar links-original" dangerouslySetInnerHTML={{ __html: html }} />
     </>
   );

@@ -60,6 +60,19 @@ export function Landing({ lang }: { lang: Lang }) {
           <ArrowRight size={17} />
         </a>
       </div>
+      <article className="horizons-feature" aria-labelledby="horizons-feature-title">
+        <div>
+          <p className="horizons-feature-meta">Thomas Kahle · {de ? "17. November 2026" : "17 November 2026"}</p>
+          <h2 id="horizons-feature-title"><a href={link(lang, "horizons")}>{de ? "Horizonte für souveräne KI" : "Horizons for Sovereign AI"}</a></h2>
+          <p>{de
+            ? "Was können Universitäten mit eigener KI-Infrastruktur erreichen? Sechs Horizonte – vom Einsatz offener Modelle im Alltag bis zu eigenen Architekturen."
+            : "What can universities achieve with their own AI infrastructure? Six horizons, from using open models in everyday work to developing new architectures."}</p>
+        </div>
+        <a className="horizons-feature-link" href={link(lang, "horizons")}>
+          {de ? "Artikel lesen" : "Read article"}
+          <ArrowRight size={17} aria-hidden="true" />
+        </a>
+      </article>
       <div className="landing-prose prose">
         <p>
           {de

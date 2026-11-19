@@ -1,0 +1,1103 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\sisetup{locale=DE, group-minimum-digits=4}
+\usepackage{enumitem}
+\usepackage[hyphens]{url}
+% Umbruch in langen URLs der Quellenliste an jeder Stelle erlauben
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m
+  \do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z
+  \do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
+\usepackage[hidelinks]{hyperref}
+\hyphenation{OpenCode}
+
+\setlist[description]{style=nextline, leftmargin=1.2em, itemsep=0.3em, parsep=0pt}
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{0pt}
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {1.6ex \@plus .5ex \@minus .2ex}{-1em}{\normalfont\normalsize\bfseries}}
+\makeatother
+
+\begin{document}
+
+{\LARGE\bfseries Horizonte für souveräne KI\par}
+\smallskip
+{\small Stand 17.\,11.\,2026\par}
+\medskip
+\hrule
+\bigskip
+
+%=====================================================================
+\section{KI-Horizonte}
+\label{sec:horizonte}
+
+Unter \enquote{eigener KI-Infrastruktur} werden an Universitäten sehr
+verschiedene Vorhaben und Wünsche zusammengefasst, vom Betrieb eines
+offenen Modells für die Verwaltung bis zum Training eigener
+Forschungsmodelle.  Sie unterscheiden sich um Größenordnungen in
+Kosten, Personal und Realisierbarkeit. Dieser Bericht ordnet sie in
+sechs Horizonte und schätzt für jeden ein, wie weit eine deutsche
+Universität davon entfernt ist, ihn souverän, also ohne Abhängigkeit
+von US-Anbietern und mit eigenen Daten innerhalb der eigenen Organisation, zu erreichen.
+
+\paragraph{Horizont 1: Agentische Computernutzung im Alltag.}
+Sprachmodelle erledigen als Agenten alltägliche Wissensarbeit:
+Dokumente zusammenfassen, Skripte schreiben, \LaTeX{} korrigieren und
+umformatieren, übersetzen, Dokumentendatenbanken durchsuchen (RAG),
+als Tutor Schul- und Grundlagenstoff wiederholen. \textbf{Status:
+  heute erreichbar.}
+ Dieser Horizont sollte unverzüglich umgesetzt
+werden.  Die Standard-KI einer Universität muss ein datensparsames, in
+der EU oder im eigenen Datacenter gehostetes Modell sein
+(Abschnitt~\ref{sec:datenschutz}).  Modelle wie GLM-5.3-Flash
+erreichten im Oktober 2026 bei Coding- und Agentenaufgaben das Niveau
+des Frontiermodells Claude Opus~4.8 vom Mai 2026
+(Abschnitt~\ref{sec:vergleich}).
+
+\paragraph{Horizont 2: Autoformalisierung, Prozessautomatisierung.}
+Beispielsweise Übersetzung informeller Mathematik in Lean oder längere
+Entwicklungs- und Programmieraufgaben sind \textbf{im Prinzip
+  erreichbar}, aber womöglich holpriger als erwartet.  Die
+Anforderungen sind mit Horizont~1 vergleichbar, aber diese Modelle
+müssen mitunter lange laufen, um (automatisierte) Korrekturschleifen in
+Prozesse einzubinden.
+
+\paragraph{Horizont 3: Mathematische Forschung, Beweise finden.}
+Frontier-KI findet Beweise für offene Fragen oder trägt zu neuen
+Resultaten bei.  \textbf{Status: souverän nicht erreichbar.}  Kein
+offenes Modell erreicht Claude Fable~5.2 oder GPT-6.2 Astra.  Das
+beste, Kimi~K3.1 Pro, ist an Universitäten in Deutschland nicht für
+viele Nutzer hostbar,
+lässt sich aber in der EU einkaufen (Abschnitt~\ref{sec:groessen}).
+Perspektivisch könnten Verbünde mit kommerziellen Anbietern
+kooperieren oder Datacenter in Public-Private-Partnerships betreiben,
+in denen auch dieses Hosting möglich wird.
+
+\paragraph{Horizont 4: Eigenes Training.}
+Eigene Modelle trainieren, in drei Stufen: Feintuning und Destillation
+offener Gewichte, eigenes Pretraining, Frontier-Lauf.  \textbf{Status:
+  möglich für sehr kleine Modelle.} Selbst das Training sehr kleiner
+Modelle ist ein extrem aufwändiges Unternehmen.  Beispielsweise beschäftigt
+NVIDIA etwa 500 Personen und nutzt eine unbekannte Menge an
+Hardware/Strom, um ein für Horizont~1 geeignetes Modell selbst zu
+trainieren.  Training von Frontiermodellen ist für
+Forschungseinrichtungen unrealistisch (Abschnitt~\ref{sec:kosten}).
+
+\paragraph{Horizont 5: Neue Modellarchitekturen.}
+Eigene Architekturen, die für die eigene Forschung besser geeignet
+sind. \textbf{Status: unrealistisch.} Eine bessere Architektur zu
+finden erfordert sehr viele Trainingsläufe, also Rechenzeit und
+Personal in der Größenordnung von Horizont~4. Für Mathematik
+diskutiert die SAIR-Community dennoch Architektur- und Datenmix-Suche.
+
+\paragraph{Horizont 6: Eigene Spezial-Hardware / Neue KI-Ansätze.}
+Eigene Hardware für neue Architekturen, etwa neurosymbolische KI oder
+sonstige neuartige Ansätze, die nicht LLM-basiert sind.
+\textbf{Status: unklar.}  Es stellen sich sehr viele Fragen.  Selbst
+wenn ein Forschungsdurchbruch an einer deutschen Universität passieren
+würde, sind die Entwicklung, Vermarktung, Finanzierung oft hier nicht
+möglich usw.~usf.  Hier
+gibt es beliebig viel Spielraum für Wunschdenken.
+
+\clearpage
+%=====================================================================
+\section{Querschnittsthemen}
+\label{sec:querschnitt}
+
+\subsection{Hardware}
+
+GPU-Hardware ist teuer, 2026 kaum lieferbar und wird schnell
+abgeschrieben. Sie muss daher rund um die Uhr ausgelastet sein. Ein
+8-GPU-Knoten kostet mehrere hunderttausend Euro. Der Betrieb lässt
+sich bei europäischen Anbietern pro Token einkaufen.  Ein eigener
+Knoten ist erst bei hoher Auslastung günstiger
+(Abschnitt~\ref{sec:hosten}).  \textbf{Selbsthosten wird in der Regel
+  nicht billiger, sondern erkauft Datenschutz zu einem Aufpreis.} Das
+bestätigt auch die Diskussion in der
+SAIR-Community, in der ein Mathematik-Department mit denselben Motiven
+(Datenschutz, Unabhängigkeit, fehlende Mittel, vorhandene Hardware)
+nach lokalen Modellen fragte.
+
+\subsection{Personal}
+Betrieb großer Modelle und Entwicklung von Agentensoftware
+(Claude Code, Codex, OpenCode) erfordern Fachkräfte, die in der
+Industrie ein Vielfaches einer E11-Stelle verdienen. Auch
+professionelle Rechenzentren wie die GWDG betreiben bislang nicht die
+größten offenen Modelle.  Universitäten sollten sich an bestehende
+Open-Source-Projekte anschließen.  So bauen sie Expertise auf und
+halten Anschluss an eine Entwicklung, deren Tempo andere vorgeben.
+
+\subsection{Datenschutz und Politik}
+\label{sec:datenschutz}
+
+Bei der KI-Nutzung in Universitäten gibt es zwei Realitäten.
+Juristisch gesehen dürfen personenbezogene Daten, die in
+Universitäten anfallen (etwa Klausurabgaben, Bewerbungen,
+Prüfungsakten), auch bei EU-Cloud-Anbietern nur unter Auflagen
+verarbeitet werden: als Auftragsverarbeitung mit Vertrag nach Art.~28
+DSGVO.
+In der Praxis werden solche Daten nach unserer Beobachtung dennoch
+oft über Konten bei US-Anbietern verarbeitet.  Diese müssen Daten
+nach dem CLOUD Act auf Anordnung an US-Behörden herausgeben, auch
+wenn sie außerhalb der USA gespeichert sind.  Aus internen
+Dokumenten, Richtlinien und Senatsberichten entsteht so in
+Chatprotokollen ein recht vollständiges Bild der universitären
+Abläufe.  Unabhängig von der Absicht der Anbieter ist das eine
+politische Abhängigkeit: Was mit diesen Daten geschieht, können die
+Universitäten weder kontrollieren noch ausschließen.
+Daraus folgt die Priorität für Horizont~1.
+
+%=====================================================================
+\section{Fazit}
+\label{sec:fazit}
+\enlargethispage{\baselineskip}
+
+Horizont~1 und~2 sollten jetzt in Angriff genommen werden, und das
+geschieht bereits auf mehreren Ebenen. Rechenzentren wie die GWDG
+betreiben offene Modelle für die Wissenschaft. Auch wenn dort noch
+nicht die größten Modelle laufen, ist das der richtige
+Weg, weil so Betriebserfahrung und Unabhängigkeit entstehen. Auf
+europäischer Ebene stellen die AI Factories, in Deutschland HammerHAI
+und JAIF, Rechenzeit für die Wissenschaft bereit. Auch die AI
+Gigafactories sind richtig, sofern ein Teil der dort garantierten
+Rechenzeit der Forschung zufällt (Abschnitt~\ref{sec:projekte}). Vor
+Ort kommt es auf Vernetzung an: Universitäten, Rechenzentren und
+Fachgruppen sollten Hardware, Modelle, Agenten-Setups und Erfahrungen
+teilen, statt jeweils allein anzufangen. Offene Initiativen wie SAIR,
+deren erste Phase genau Horizont~1 und~2 umfasst, bieten dafür einen
+Rahmen über die eigene Universität hinaus.
+
+Ein Produkt, das alle nutzen, ist dabei noch nicht entstanden: Viele
+Nutzer haben bereits ein Abonnement bei einem US-Anbieter, und die
+IT-Abteilungen sind ausgelastet.  Mit den Produkten der
+Frontier-Anbieter müssen diese Angebote nicht konkurrieren.  Es geht
+darum, eigene
+Expertise aufzubauen, gerade im Umgang mit Coding-Agenten
+(Abschnitt~\ref{sec:agenten}): zu verstehen, was in diesem Feld tatsächlich
+geschieht, und Entscheidungen auf Fakten zu stützen statt auf die
+Vorstellung, man könne einfach eine eigene Spitzen-KI bauen.
+
+% =====================================================================
+
+\textbf{Im Folgenden gehen wir auf Detailaspekte ein.  Am Ende des Dokuments gibt es ein Glossar, in dem Begriffe wie \enquote{MoE} und andere erklärt werden.} 
+\section{Hintergrund: Modellgrößen}
+\label{sec:groessen}
+
+\enquote{B} steht für englisch \emph{billion}, also Milliarden
+Parameter, \enquote{T} für \emph{trillion}, also Billionen.  Die
+Parameter sind die gelernten Zahlen (Gewichte) eines Modells.
+
+Bei einem \emph{dichten} Modell gehen in die Berechnung jedes Tokens
+alle Parameter ein.  Fast alle großen Modelle sind dagegen
+Mixture-of-Experts-Modelle (MoE).  Ihre Parameter sind auf viele
+Teilnetze (Experten) verteilt, und für jedes Token rechnen nur einige
+davon.  Deshalb werden für solche Modelle zwei Zahlen angegeben.
+\begin{itemize}[itemsep=0.2em]
+  \item Die \emph{Gesamtzahl} der Parameter bestimmt den
+    Speicherbedarf.  Alle Gewichte müssen im GPU-Speicher liegen, weil
+    für jedes Token andere Experten gebraucht werden.
+  \item Die \emph{aktiven} Parameter bestimmen den Rechenaufwand pro
+    Token und damit Geschwindigkeit, Stromverbrauch und
+    Trainingskosten.
+\end{itemize}
+Die Schreibweise 120B-A12B bedeutet 120~Milliarden Parameter
+insgesamt, davon 12~Milliarden aktiv.  GLM-5.3-Flash (320B gesamt,
+18B aktiv) braucht also den Speicher eines sehr großen Modells,
+rechnet pro Token aber nur so viel wie ein dichtes Modell mit 18B.
+Faustregel für den Speicher: 4-Bit-Quantisierung braucht etwa
+0,5~GB pro Milliarde Parameter, 8-Bit-Quantisierung 1~GB pro Milliarde
+Parameter.  Dazu kommt der Speicher für den Kontext jedes Nutzers.
+
+\subsection{Kleine Modelle für einzelne Nutzer}
+\label{sec:klein}
+
+Die Modelle für Smartphone und Laptop sind dicht.  Gesamtzahl und
+aktive Parameter fallen dann zusammen.  In der Desktop-Klasse beginnen
+die MoE-Modelle.
+
+\begin{itemize}[itemsep=0.2em]
+  \item \emph{Smartphone:} ca.\ 2--4B, z.\,B.\ die kleinsten Modelle
+    der Reihen Gemma~4 und Qwen3.5.
+  \item \emph{Laptop:} ca.\ 27B, z.\,B.
+    \href{https://huggingface.co/Qwen/Qwen3.8-27B}{Qwen3.8-27B}. In
+    4~Bit quantisiert passt es auf eine Grafikkarte mit 24~GB; auf
+    einem Laptop sind ca.\ 32~GB RAM nötig.
+  \item \emph{Desktop mit 128~GB RAM:} ca.\ 120B, z.\,B.
+    \href{https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard}{Nemotron~3 Super 120B-A12B},
+    das weitgehend offen ist, inklusive eines Großteils der
+    Trainingsdaten und der Skripte (Abschnitt~\ref{sec:kosten}; Lizenz
+    NVIDIA Open Model License bzw.\ OpenMDW). Ein
+    Datenpunkt aus der SAIR-Community: Ein DGX Spark (128~GB Unified
+    Memory, 273~GB/s, etwa 4\,000--5\,000~USD) mit Qwen~3.8 Flash Next
+    (125B gesamt, 6B aktiv, 111~GB in 4~Bit) löst Übungsaufgaben auf
+    Hartshorne-Niveau, aber keine Forschungsfragen der algebraischen
+    Geometrie.
+\end{itemize}
+
+Diese Modelle halluzinieren deutlich und eignen sich vor allem für
+abgegrenzte Aufgaben. Mit einem guten Agent-Harness sind sie dennoch
+produktiv einsetzbar: \enquote{Lies diese Mail und erstelle den
+passenden Kalendereintrag} funktioniert zuverlässig; \enquote{Erstelle
+eine Synopse dieser 80 Bewerbungen} gelingt mit einem Coding-Agenten
+und passenden \texttt{SKILL.md}-Dateien.
+
+\subsection{Workstation- und Datacenter-Klasse}
+
+Hier sind mehrere GPUs mit eigenem HBM-Speicher nötig, die per NVLink
+verbunden sind. Für Einzelnutzer genügt teils ein Rechner mit sehr viel
+Unified Memory.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Modell & Parameter gesamt / aktiv & Gewichte in 4~Bit ca. \\
+    \midrule
+    \href{https://huggingface.co/zai-org/GLM-5.3-Flash}{GLM-5.3-Flash} & 320B / 18B & 160~GB \\
+    \href{https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash}{DeepSeek-V4.1-Flash} & 552B + 196B Memory / 8--16B & 380~GB \\
+    \href{https://huggingface.co/zai-org/GLM-5.3}{GLM-5.3} & 744B / 40B & 375~GB \\
+    \href{https://huggingface.co/moonshotai/Kimi-K3}{Kimi~K3} & 2,8T / 16 von 896 Experten & 1,4~TB \\
+    \bottomrule
+  \end{tabular}
+  \caption{Open-Weights-Modelle der Datacenter-Klasse (Stand Oktober 2026).}
+  \label{tab:modelle}
+\end{table}
+
+Diese Modelle sind für sehr viele Einsatzzwecke ausreichend. Kimi~K3
+lag beim Launch in Benchmarks nur hinter Fable und GPT-5.6 Sol.  Die
+aktuelle Frontier (Claude Fable~5.2, GPT-6.2 Astra, Gemini~4 Carbon,
+Stand 17.\,11.\,2026) ist eine Generation weiter.  Seit dem
+23.\,10.\,2026 gibt es mit Kimi~K3.1 Pro (2,8T gesamt, 104B aktiv)
+einen Nachfolger, ebenfalls mit offenen Gewichten.
+Die Gewichte aller genannten Modelle sind frei herunterladbar, die
+Lizenzen unterscheiden sich (MIT, Apache~2.0, bei Kimi~K3 eine eigene
+Lizenz). Der Betrieb ist teuer: Für Kimi~K3 sind allein für die
+Gewichte 1,4~TB GPU-Speicher nötig, dazu der KV-Cache für den Kontext
+jedes Nutzers, der bei langen Kontexten (1M Token) und vielen
+gleichzeitigen Nutzern mehr Speicher brauchen kann als die Gewichte.
+Die Größe der Frontiermodelle ist nicht öffentlich;
+unbestätigten Berichten zufolge liegt Fable bei etwa 10T Parametern,
+Astra darüber.
+
+\subsection{Leistungsvergleich}
+\label{sec:vergleich}
+
+Es gibt sehr viele Benchmarks für Sprachmodelle, für Wissen,
+Mathematik, Programmieren und agentische Aufgaben, und jede Woche
+kommen neue Modelle hinzu. Einen guten Überblick bietet Artificial
+Analysis (\url{https://artificialanalysis.ai}): Die Seite misst
+offene und geschlossene Modelle mit denselben Benchmarks und stellt
+Leistung, Preis und Geschwindigkeit nebeneinander.
+
+Tabelle~\ref{tab:vergleich} vergleicht offene und geschlossene Modelle
+nach den Messungen von Artificial Analysis, die unabhängig von den
+Herstellern erhoben werden. Es sind Benchmark-Ergebnisse, also
+berichtet, nicht im eigenen Einsatz verifiziert. Der Intelligence
+Index fasst zehn Evaluationen zusammen, davon vier agentische;
+Terminal-Bench~4.0 und GDPval-AA sind rein agentisch. GLM-5.3-Flash
+liegt in dieser Messung gleichauf mit Claude Opus~4.8 und bei den
+agentischen Benchmarks meist darüber. Das damals stärkste offene
+Modell, GLM-5.3, lag rund 13 Indexpunkte hinter dem damals besten
+Modell, Claude Opus~5.5.
+
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \begin{tabular}{llrrr}
+    \toprule
+    Modell & Release & Intelligence Index & Terminal-Bench 4.0 & GDPval-AA (Elo) \\
+    \midrule
+    GLM-5.3-Flash (offen) & 08/2026 & 41,8 & 32,8~\% & \num{1644} \\
+    GLM-5.3 (offen) & 08/2026 & 44,8 & 41,9~\% & \num{1650} \\
+    Kimi~K3 (offen) & 07/2026 & 43,6 & 12,6~\% & \num{1533} \\
+    Claude Opus~4.6 & 02/2026 & 31,9 & -- & -- \\
+    Claude Opus~4.8 & 05/2026 & 41,8 & 21,7~\% & \num{1453} \\
+    Claude Fable~5.1 & 09/2026 & 53,4 & 52,0~\% & \num{1754} \\
+    GPT-6 Astra & 09/2026 & 52,7 & 59,1~\% & \num{1573} \\
+    Claude Opus~5.5 & 09/2026 & 57,6 & 59,6~\% & \num{1866} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Leistungsvergleich nach Artificial Analysis (Intelligence
+    Index v4.3.2, Stand 16.\,10.\,2026). Jeweils höchste
+    Reasoning-Stufe; Opus~4.6 ohne Werte auf den aktuellen agentischen
+    Benchmarks.}
+  \label{tab:vergleich}
+\end{table}
+
+Tabelle~\ref{tab:vergleich} gibt den Stand vom 16.\,10.\,2026 wieder.
+Seitdem hat Artificial Analysis den Index neu zusammengesetzt
+(Version~5.0.1, neun Evaluationen, davon sechs mit Werkzeugnutzung).
+Die neuen Werte sind mit den älteren nicht vergleichbar, und Claude
+Opus~4.8 wird nicht mehr bewertet.  Stand 17.\,11.\,2026 führt Claude
+Fable~5.2 mit 65~Punkten vor GPT-6.2 Astra (62), Gemini~4 Carbon (60)
+und Claude Opus~5.5 (59).  Das stärkste offene Modell ist Kimi~K3.1
+Pro mit 46~Punkten, GLM-5.3 erreicht 32 und GLM-5.3-Flash 28.
+Ranglisten dieser Art ändern sich innerhalb von Wochen.  Jede
+Einordnung eines Modells ist deshalb mit ihrem Datum zu lesen.
+
+\subsection{Agenten und Korrekturschleifen}
+\label{sec:agenten}
+
+Benchmarks messen vor allem das Modell. Im Einsatz entscheidet aber
+das Gesamtsystem aus Modell, Harness und Werkzeugen. Viele Schwächen
+der Modelle, allen voran Halluzinationen, werden in der Praxis nicht
+durch bessere Modelle behoben, sondern durch Korrekturschleifen: Ein
+Coding-Agent führt Code aus, lässt Tests laufen, liest Fehlermeldungen
+und korrigiert sich. In der Mathematik übernimmt der Lean-Kernel diese
+Rolle. Ein offenes Modell in einem guten Agenten leistet deshalb
+deutlich mehr, als seine Benchmark-Werte vermuten lassen. \textbf{Die
+  Auseinandersetzung mit Coding-Agenten, ihren Harnesses und
+  Arbeitsweisen ist Grundlagenarbeit und mindestens so wichtig wie die
+  Wahl des Modells.}
+
+\subsection{Selbst hosten oder einkaufen: eine Überschlagsrechnung}
+\label{sec:hosten}
+
+Lohnt sich ein eigener GPU-Knoten gegenüber dem Einkauf pro Token?
+Wir rechnen das für GLM-5.3-Flash durch, das Modell aus Horizont~1.
+Alle Eingangsgrößen sind berichtet, nicht selbst gemessen, und stammen
+vom November 2026.
+
+\emph{Eigener Knoten.}  Die Gewichte in 8~Bit belegen 306~GiB und
+passen damit nicht auf zwei H200 (zusammen 282~GB).  Das Standardrezept
+der Serving-Software vLLM sieht acht H200 vor.  Die 4-Bit-Fassung
+setzt laut Rezept die neuere GPU-Generation Blackwell voraus.  Ein
+Server mit acht H200 kostet netto rund \num{318000}~USD und nimmt
+9,1~kW auf.  Über vier Jahre abgeschrieben sind das rund
+\num{80000}~USD pro Jahr.  Dazu kommen rund \num{16000}~EUR Strom
+(PUE~1,2 und 17,2~ct/kWh), zusammen knapp \num{100000} pro Jahr.
+Zwischen USD und EUR unterscheiden wir bei dieser Genauigkeit nicht.
+Nicht enthalten sind Personal, Raum, Netz und Ausfälle.
+
+\emph{Durchsatz.}  Eine veröffentlichte Messung auf dieser Hardware
+(acht H200, vLLM, Anfragen mit \num{8192}~Tokens Eingabe und
+256~Tokens Ausgabe) ergibt bei 128 gleichzeitigen Anfragen
+\num{2359}~Ausgabe-Tokens und 9,3~Anfragen pro Sekunde.  Rund um die
+Uhr voll ausgelastet verarbeitet der Knoten damit im Jahr 2,4~Bio.\
+Eingabe- und 74~Mrd.\ Ausgabe-Tokens.
+
+\emph{Einkauf.}  Cortecs, ein Vermittler für Anbieter mit Sitz in der
+EU, verlangt für GLM-5.3-Flash 0,09~EUR pro Million Eingabe-Tokens und
+0,314~EUR pro Million Ausgabe-Tokens.  Die genannte Tokenmenge kostet
+dort rund \num{240000}~EUR.  Beim US-Vermittler OpenRouter reichen die
+Preise der 44 Endpunkte für dieses Modell von 0,04 und 0,08~USD bis
+0,23 und 0,75~USD pro Million Eingabe- und Ausgabe-Tokens.  Der
+Hersteller Z.ai verlangt 0,15 und 0,50~USD, der einzige dort als
+europäisch ausgewiesene Anbieter 0,175 und 0,49~USD.
+
+\emph{Ergebnis.}  Bei Vollauslastung kosten eingekaufte Tokens etwa
+das Zweieinhalbfache der Hardware- und Stromkosten des eigenen
+Knotens.  Der eigene Knoten ist also ab etwa 40~Prozent
+Dauerauslastung günstiger.  Rechnet man eine Stelle für den Betrieb
+hinzu (Annahme: \num{90000}~EUR pro Jahr), liegt die Schwelle bei
+knapp 80~Prozent.  Eine Arbeitswoche von 40 bis 50~Stunden entspricht
+24 bis 30~Prozent der Woche.  Eine einzelne Universität erreicht die
+Schwelle daher kaum, ein Verbund oder ein Rechenzentrum für viele
+Einrichtungen eher.  Die Rechnung ist grob.  Sie gilt nur für das
+genannte Lastprofil, und Prompt-Caching, das beim Einkauf den Preis
+und auf dem eigenen Knoten die Last senkt, ist nicht berücksichtigt.
+
+%=====================================================================
+\section{Trainingskosten}
+\label{sec:kosten}
+
+Dieser Abschnitt unterlegt Horizont~4 mit öffentlich zugänglichen
+Zahlen.  Für Frontiermodelle sind Kosten und Rechenaufwand fast durchweg geheim. Kurzfassung: Der
+finale Trainingslauf eines Modells bis in die 100B-MoE-Klasse
+(\enquote{Desktop}) kostet Millionen. Die großen Posten sind Personal,
+Datenarbeit und Hardwarezugang.\footnote{Quellen in
+  Abschnitt~\ref{sec:quellen}.}
+
+Ein Training umfasst mehrere Stufen: Vorab werden Daten gesammelt,
+gefiltert und in kleineren Ablationsläufen getestet, dann folgt das
+Pretraining auf Billionen Tokens als teuerster Rechenschritt. Danach
+kommen Mid- und Long-Context-Training sowie das Post-Training aus
+überwachtem Feintuning (SFT) und Reinforcement Learning, das etwa
+Reasoning und Werkzeugnutzung beibringt.
+
+\subsection{Offengelegte Zahlen}
+
+Nur wenige Entwickler nennen Geldbeträge. DeepSeek bezifferte den
+finalen Lauf von DeepSeek-V3 auf 2,788~Mio.\ H800-Stunden, also
+5,6~Mio.\ USD bei 2~USD pro GPU-Stunde, ausdrücklich ohne
+Vorexperimente und ohne Hardwarekauf. Ai2 nannte für Olmo~3 32B
+1,38~Mio.\ H100-Stunden und 2,75~Mio.\ USD. Meta nennt GPU-Stunden,
+aber kein Geld. Alibaba legt für Qwen die Tokenzahlen (also
+verarbeitete Token beim Training) offen (18T für Qwen2.5, 36T für
+Qwen3), aber in keiner Generation GPU-Typ, GPU-Zahl oder
+Kosten.  Das größte Modell der nächsten Generation, Qwen4-Max, wird
+seit November 2026 über Alibabas API angeboten, bislang ohne offene
+Gewichte (berichtet, Stand 17.\,11.\,2026).  NVIDIA nennt für
+Nemotron~3 weder GPU-Stunden noch
+Kosten. Tabelle~\ref{tab:kosten} fasst zusammen und trennt dabei, was
+die Beträge enthalten: Die meisten sind der Mietwert der GPU-Stunden
+des finalen Laufs, einige sind Schätzungen von Epoch AI, andere
+Gesamtbudgets ganzer Programme. Geschätzte GPU-Stunden sind aus der
+Formel $C = 6\,N\,T$ (Rechenaufwand in FLOP gleich sechsmal aktive
+Parameter mal Tokens) abgeleitet.
+
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{llllll}
+    \toprule
+    Modell (Datum) & Parameter & Tokens & GPU-Stunden & Kosten & Basis \\
+    \midrule
+    DeepSeek-V3 (12/2024) & 671B / 37B & 14,8T & 2,79 Mio.\ H800 & 5,6 Mio.\ USD & Miete, D \\
+    Olmo 3 32B (11/2025) & 32B & 5,9T & 1,38 Mio.\ H100 & 2,75 Mio.\ USD & Miete, D \\
+    Llama 3.1 405B (07/2024) & 405B & 15T & 30,8 Mio.\ H100 & 62 Mio.\ USD & Miete, D \\
+    Llama 4 Maverick (04/2025) & 400B / 17B & 22T & 2,4 Mio.\ H100 & ca.\ 5 Mio.\ USD & Miete, D \\
+    gpt-oss-120b (08/2025) & 117B / 5B & k.\,A. & 2,1 Mio.\ H100 & ca.\ 4 Mio.\ USD & Miete, D \\
+    Nemotron 3 Super (03/2026) & 121B / 12B & 25T & k.\,A. & 1--2 Mio.\ USD & Miete, E \\
+    Qwen3-32B (05/2025) & 33B & 36T & ca.\ 5 Mio.\ H100 & 10--15 Mio.\ USD & Miete, E \\
+    Qwen3-235B-A22B (05/2025) & 235B / 22B & 36T & ca.\ 4,4 Mio.\ H100 & 9--13 Mio.\ USD & Miete, E \\
+    \midrule
+    Nemotron-4 340B (06/2024) & 340B & 9T & 12--13 Mio.\ H100 & 21 Mio.\ USD & Epoch \\
+    Grok 4 (07/2025) & k.\,A. & k.\,A. & 246 Mio.\ H100 & 490 Mio.\ USD & Epoch \\
+    \midrule
+    BLOOM 176B (07/2022) & 176B & 0,35T & 1,08 Mio.\ A100 & 3--5 Mio.\ EUR & Budget \\
+    Apertus-70B (09/2025) & 71B & 15T & 6--9 Mio.\ GH200 & CHF 20 Mio. & Budget \\
+    Teuken-7B (11/2024) & 7B & 4--6T & k.\,A. & 14 Mio.\ EUR & Budget \\
+    \bottomrule
+  \end{tabular}
+  \caption{Offengelegte und geschätzte Trainingskosten. Parameter:
+    gesamt / aktiv bei MoE, sonst dichte Modelle. \emph{Miete:}
+    GPU-Stunden des finalen Laufs mal 2~USD, ohne Vorexperimente,
+    Daten, Personal und Anschaffung; D: GPU-Stunden vom Hersteller
+    offengelegt, E: geschätzt. \emph{Epoch:} Schätzung von Epoch AI
+    (bei Nemotron-4 amortisierte Hardware und Energie); für Llama~3.1
+    schätzt Epoch 170~Mio.\ USD (AI Index 2025). \emph{Budget:}
+    Gesamtbudget eines Programms einschließlich Personal (Apertus:
+    Swiss AI Initiative, Teuken: OpenGPT-X-Förderung, BLOOM: inkl.\
+    Engineering laut Sekundärquelle), mit den übrigen Zeilen nicht
+    vergleichbar. Quellen: technische Berichte und Modellkarten der
+    Hersteller, Epoch AI.}
+  \label{tab:kosten}
+\end{table}
+
+\textbf{Für eine Budgetplanung taugen diese Zahlen nicht, für
+  Größenordnungen und Vergleiche schon.} Die Mietwerte sind
+Untergrenzen: Sie enthalten weder die vorgelagerten Experimente, für
+die das Rechenbeispiel unten noch einmal das 1,5- bis 2-Fache ansetzt,
+noch Datenarbeit und Personal, das bei Frontiermodellen nach Epoch AI
+29--49~Prozent der Gesamtkosten ausmacht. Wie groß die Lücke sein
+kann, zeigt OpenGPT-X (Abschnitt~\ref{sec:dsp}): 14~Mio.\ EUR Förderung
+für ein 7B-Modell, dessen finaler Lauf rechnerisch unter 1~Mio.\ EUR
+Mietwert liegt.
+
+Drei Beobachtungen. Erstens liegt zwischen einem offenen Lauf
+(2,75--5,6~Mio.\ USD) und einem Frontier-Lauf (100--500~Mio.\ USD)
+etwa Faktor~100. Zweitens beginnt niemand bei null: NVIDIAs
+\enquote{vollständig offene} Nemotron-Daten wurden mit Qwen- und
+DeepSeek-Modellen synthetisch angereichert, und NVIDIAs Dokumentation
+beziffert die freigegebenen Pretraining-Daten auf 40 bis 50~Prozent
+des internen Mixes. Qwen3 liefert die eindrücklichste Zahl zum Preis
+des Neuanfangs: Das Reasoning-Post-Training von Qwen3-8B kostete
+\num{17920}~GPU-Stunden per Reinforcement Learning, aber nur
+\num{1800}~GPU-Stunden per Destillation aus dem größeren Modell. Das
+Pretraining desselben 8B-Modells liegt rechnerisch bei 1,25~Mio.\
+GPU-Stunden. Für die RL-Stufe von DeepSeek-R1 nennt DeepSeek rund
+\num{294000}~USD.  Drittens lässt sich ein offener Lauf dieser Klasse
+auch außerhalb der großen Firmen organisieren.  Das Projekt Marin
+(Abschnitt~\ref{sec:projekte}) hat am 5.\,11.\,2026 das Pretraining
+eines MoE-Modells mit 535B Parametern, davon 23B aktiv, auf 18T
+Tokens abgeschlossen.  Die 768 GPUs vom Typ GB200 stellte eine
+Stiftung bereit.  Den Rechenaufwand beziffert das Projekt auf rund
+$2{,}6\cdot 10^{24}$~FLOP.  Mit den Annahmen des folgenden
+Rechenbeispiels entspricht das etwa 2,4~Mio.\ H100-Stunden oder
+7~Mio.\ EUR Mietwert.
+
+\subsection{Rechenbeispiel für universitätsrelevante Größen}
+
+Tabelle~\ref{tab:rechenbeispiel} rechnet Trainingsläufe in den Größen
+durch, die für ein deutsches Konsortium in Frage kommen. Annahmen:
+$C = 6NT$ mit $N$ als aktive Parameter; H100 mit 989~TFLOP/s
+Spitzenleistung; Auslastung (MFU) 40~Prozent für dichte Modelle
+(Llama~3 erreichte 38--43~Prozent) und 30~Prozent für MoE; Miete
+3~EUR pro H100-Stunde (Scaleway 2,87~EUR, OVHcloud 3,33~EUR, Stand
+Herbst 2026); Energie 1,28~kWh pro H100-Stunde inklusive Knoten, Netz
+und Kühlung bei PUE 1,2; Strompreis 17,2~ct/kWh (BDEW 2026,
+Mittelstand). Nicht enthalten sind Ablationen, Neustarts,
+Post-Training, Datenaufbereitung und Personal; dafür ist das 1,5- bis
+2-Fache des finalen Laufs zu budgetieren.
+
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{lrlrrr}
+    \toprule
+    Modell / Tokens & H100-h & Cluster (3 Monate) & Miete & Energie & Strom (DE) \\
+    \midrule
+    7B dicht / 2T & \num{59000} & 27 GPUs & 0,18 Mio.\ EUR & 76 MWh & \num{13000} EUR \\
+    7B dicht / 4T & \num{118000} & 55 GPUs & 0,35 Mio.\ EUR & 151 MWh & \num{26000} EUR \\
+    30B dicht / 10T & 1,27 Mio. & 590 GPUs & 3,8 Mio.\ EUR & 1,6 GWh & 0,28 Mio.\ EUR \\
+    120B-A12B MoE / 15T & 1,0 Mio. & 470 GPUs & 3,0 Mio.\ EUR & 1,3 GWh & 0,22 Mio.\ EUR \\
+    120B-A12B MoE / 25T & 1,7 Mio. & 780 GPUs & 5,0 Mio.\ EUR & 2,2 GWh & 0,37 Mio.\ EUR \\
+    400B dicht / 15T & 25 Mio. & \num{11700} GPUs & 76 Mio.\ EUR & 32 GWh & 5,6 Mio.\ EUR \\
+    \bottomrule
+  \end{tabular}
+  \caption{Rechenbeispiel für finale Trainingsläufe, eigene Arithmetik
+    mit den im Text genannten Annahmen. Die Zeile 120B-A12B/25T
+    entspricht dem Rezept von Nemotron~3 Super, die Zeile 400B/15T
+    der Klasse von Llama~3.1 405B.}
+  \label{tab:rechenbeispiel}
+\end{table}
+
+Die Plausibilitätsprüfung gegen gemessene Werte fällt gut aus: OLMo~2
+7B maß 157~MWh für 4T Tokens; Meta nannte 30,8~Mio.\ H100-Stunden für
+Llama~3.1 405B einschließlich Neustarts und Langkontextphasen.
+
+Auf JUPITER übersetzt: Ein einziges GCS-Large-Scale-Projekt an der
+Schwelle von 1,73~Mio.\ GPU-Stunden pro Jahr deckt das 30B/10T- oder
+das 120B-MoE/15T-Beispiel ab. Ein dichter 400B-Lauf entspräche mit
+25~Mio.\ GPU-Stunden fast dem gesamten Angebot einer
+GCS-Ausschreibung von 27,3~Mio.\ GPU-Stunden (Stand Juli 2026), für
+die das GCS rund 90~Anträge erwartet. Die
+realistische Pretraining-Obergrenze für ein Konsortium liegt damit bei
+10--30B dichten oder etwa 120B-A12B MoE-Modellen pro Jahr. Die
+Apertus-Klasse (70B auf 15T Tokens, 6--9~Mio.\ GPU-Stunden) war in der
+Schweiz nur möglich, weil 40~Prozent eines Exascale-Systems für ein
+Quartal reserviert wurden.
+
+\subsection{Daten, Strom, Personal}
+\label{sec:dsp}
+
+\emph{Daten.} Die Rohkorpora sind frei: FineWeb (15T Tokens), DCLM
+(4T), Nemotron-Pretraining-Dataset (6,6T, davon rund 3T synthetisch),
+The Stack v2 (900B Tokens Code). Teuer ist die Iteration: Allein die
+Ablationen für FineWeb kosteten \num{80000}~H100-Stunden, und 1T Tokens
+synthetische Daten über eine API kosten aktuell 0,75 bis 1,5~Mio.\
+USD. Deutscher Text ist zwei Größenordnungen knapper als englischer:
+FineWeb-2 enthält 262~Mrd.\ deutsche Wörter, die lizenzrechtlich
+sauberen \enquote{German Commons} 155~Mrd.\ Tokens.
+
+\emph{Recht.} Rechtlich stehen Hochschulen gut da.  \S\,60d UrhG
+erlaubt Forschungsorganisationen Text- und Data-Mining für die
+wissenschaftliche Forschung.  Einen Nutzungsvorbehalt der
+Rechteinhaber sieht das Gesetz nur für die allgemeine Schranke in
+\S\,44b UrhG vor, nicht in \S\,60d.  Das OLG Hamburg hat im
+LAION-Verfahren am 10.\,12.\,2025 entschieden, dass sich
+nichtkommerzielle Forschungsorganisationen auf \S\,60d stützen
+können, und die Revision zum BGH zugelassen.  Das LG München~I hat
+allerdings im Verfahren GEMA gegen OpenAI (11.\,11.\,2025) die
+Memorisierung von Liedtexten in Modellgewichten als Vervielfältigung
+gewertet.  Dieses Urteil ist nicht rechtskräftig.  Der AI Act
+verlangt von Anbietern von Modellen mit allgemeinem Verwendungszweck
+unter anderem eine Strategie zur Einhaltung des Urheberrechts und eine
+öffentliche Zusammenfassung der Trainingsinhalte (Art.~53).  Als
+Anhaltspunkt für ein solches Modell nennen die Leitlinien der
+Kommission einen Trainingsaufwand von mehr als $10^{23}$~FLOP.  Diesen
+Wert überschreitet bereits das 7B/4T-Beispiel in
+Tabelle~\ref{tab:rechenbeispiel}.  Die Pflichten greifen, sobald ein
+Modell in der EU in Verkehr gebracht wird, wozu die Leitlinien auch
+das Hochladen in ein öffentliches Repositorium zählen.  Forschung und
+Entwicklung vor diesem Schritt sind ausgenommen, und für Modelle unter
+freier Lizenz entfällt ein Teil der Dokumentationspflichten.
+
+\emph{Aufgaben statt Texte.} Für das Pretraining gibt es den
+beschriebenen Fundus frei verfügbarer Texte, für das Post-Training
+nichts Vergleichbares.  Open Athena fasst das so: Pretraining
+verbraucht Dokumente, Post-Training verbraucht Aufgaben, also eine
+Umgebung, ein Ziel, Werkzeuge und eine automatische
+Bewertung.\footnote{D.~Hall, \emph{There Is No Post-Training Data
+  Commons}, 15.\,10.\,2026,
+  \url{https://openathena.ai/blog/there-is-no-posttraining-data-commons/}.
+  Die Zahlen zu SWE-bench sind von dort übernommen.}  Selbst die
+Softwareentwicklung, die ihre Arbeit in Versionsverwaltung und Tests
+weitgehend aufzeichnet, liefert wenig: Für den Benchmark SWE-bench
+blieben von gut \num{90000} Pull Requests \num{2294}~Aufgaben übrig.
+OpenAI ließ danach 93~erfahrene Python-Entwickler \num{1699} dieser
+Aufgaben von Hand prüfen.  Mehr als zwei Drittel wurden beanstandet,
+500 bildeten am Ende SWE-bench Verified.  Die großen Firmen bezahlen
+deshalb Fachleute dafür, ihre Arbeit in solche Aufgaben zu
+übersetzen.  Für Universitäten folgt daraus zweierlei.  Wie Fachleute
+in einer konkreten Situation vorgehen, ist ein wertvolles Gut.  Es
+entsteht beim Arbeiten mit Agenten nebenbei und fällt bei dem
+Anbieter an, dessen Dienst genutzt wird.  Und die Mathematik ist
+womöglich in einer günstigeren Lage als andere Fächer, denn eine
+formalisierte Aussage mit dem Lean-Kernel als Prüfer ist bereits eine
+Aufgabe mit automatischer Bewertung.  Ob die vorhandenen formalen
+Bibliotheken dafür ausreichen, ist offen.
+
+\emph{Strom.} In Deutschland kostet die Energie für eine H100-Stunde
+0,19 bis 0,22~EUR, in Finnland ein Drittel davon. Das sind rund
+10~Prozent der Mietkosten, aber für eine Universität mit
+\emph{gewährter} Rechenzeit der einzige Posten, der aus dem Haushalt
+bezahlt wird: \num{13000}~EUR für ein 7B-Modell, \num{280000}~EUR für
+ein 30B-Modell. Das Energieeffizienzgesetz erfasst Rechenzentren ab
+300~kW Anschlussleistung.  Wer ab Juli 2026 den Betrieb aufnimmt, muss
+eine PUE von höchstens 1,2 erreichen und mindestens 10~Prozent der
+Energie als Abwärme wiederverwenden.
+
+\emph{Personal.} Was die Tabellen nicht zeigen, ist meist größer als
+das, was sie zeigen. OpenGPT-X erhielt rund 14~Mio.\ EUR für zehn
+Partner über drei Jahre und lieferte ein 7B-Modell, dessen reiner
+Trainingslauf rechnerisch unter 1~Mio.\ EUR Mietwert liegt. Apertus
+hatte ein Team von über 100 Personen, Nemotron rund 500
+Vollzeitäquivalente, Marin (Abschnitt~\ref{sec:projekte}) zehn
+Vollzeit-Engineers. Epoch AI setzt Personal auf 29--49~Prozent der
+Gesamtkosten eines Frontiermodells an, Energie auf 2--6~Prozent.
+Zur Qualität: Teuken-7B erreicht über 21 EU-Sprachen 0,543 gegenüber
+0,563 für Llama-3.1-8B, Apertus-70B 67,5~Prozent gegenüber 69,8~Prozent
+für Qwen2.5-72B. Europäische öffentliche Modelle erreichen damit fast
+das Niveau älterer offener Modelle.
+
+\subsection{Drei Stufen}
+
+Aus den Zahlen folgt für Horizont~4 eine Staffelung:
+
+\begin{enumerate}[itemsep=0.2em]
+  \item \emph{Feintuning und Destillation offener Gewichte} (Qwen,
+    Nemotron-Basis-Checkpoints, Apertus): Tausende GPU-Stunden, für
+    jede Universität mit einem GPU-Knoten erreichbar. Das ist die
+    Rechenseite von Horizont~1 und~2 und der realistische Kern der
+    SAIR-Initiative.
+  \item \emph{Eigenes Pretraining im Bereich 7--30B} auf offenen Korpora
+    unter \S\,60d UrhG: 0,1 bis 1,3~Mio.\ H100-Stunden und
+    \num{13000} bis \num{280000}~EUR Strom, über GCS oder EuroHPC
+    finanzierbar. Das Ergebnis ist ein Modell der Laptop-Klasse
+    (Abschnitt~\ref{sec:klein}) auf dem Stand von vor ein bis zwei
+    Jahren.
+  \item \emph{Frontier-Lauf}: 25~Mio.\ GPU-Stunden, 32~GWh, 5--6~Mio.\
+    EUR Strom, dazu ein Team von 50--100 Personen über Jahre. Der
+    Engpass ist nicht die Rechenzeit, sondern dieses Team. In
+    Deutschland ist das nur als nationales oder europäisches Vorhaben
+    denkbar.  US-Firmen setzen 100--500~Mio.\ USD pro Lauf ein.
+\end{enumerate}
+
+\textbf{Der Ertrag von Stufe~2 ist die Expertise, nicht das Modell.}
+Offene Modelle der Laptop-Klasse, etwa Qwen3.8-27B, stehen bei Hugging
+Face zum Herunterladen bereit und sind einem ersten eigenen Lauf
+voraus. Das Stromkosten-Delta von Faktor~2--3
+gegenüber Skandinavien ist eine Standortfrage, die zu benennen ist.
+Stufe~3 sollte nicht versprochen werden. Auf Stufe~1 aufbauend lässt
+sich prüfen, ob eigenes Post-Training offene Modelle in Mathematik
+verbessert.  Gemeint sind Feintuning auf Beispielen und Reinforcement
+Learning, bei dem das Modell an automatisch bewerteten Aufgaben lernt
+(Abschnitt~\ref{sec:dsp}).  Der Engpass sind dabei weniger die
+Rechenzeit als die Aufgaben und die Menschen, die sie aufbereiten.
+
+%=====================================================================
+\section{Projekte und Initiativen}
+\label{sec:projekte}
+
+Stand 16.\,10.\,2026, nach Rolle sortiert, ohne Anspruch auf
+Vollständigkeit.  Die Einträge zu Marin, Apertus, OpenEuroLLM und den
+AI Gigafactories sind am 17.\,11.\,2026 aktualisiert.
+
+\subsection{Offene Modelle für Mathematik}
+
+\begin{description}
+\item[SAIR Open Math Model Initiative.]
+  Foundation for Science and AI Research, 2025 von Terence Tao mit
+  privaten Spendern gegründet; Förderer der Wettbewerbe sind XTX
+  Markets und Susquehanna. Am 18.\,09.\,2026
+  angekündigt:\footnote{\url{https://terrytao.wordpress.com/2026/09/18/sairs-open-math-model-initiative/}
+  und \url{https://sair.foundation/open-math-model/}, abgerufen am
+  10.\,10.\,2026.} offene Modelle und offenes Tooling für die
+  Mathematik. Die erste Phase sind Alltagswerkzeuge (Argumente
+  verstehen, Referenzen prüfen, Beispiele explorieren, Code schreiben,
+  Beweise formalisieren); sie entspricht genau Horizont~1 und~2. Es
+  geht um Unabhängigkeit der Community von den großen KI-Firmen,
+  Reproduzierbarkeit und Governance, nicht um geografische
+  Souveränität. Partner, Plan, Modellgrößen und Budget sind noch nicht
+  benannt (Stand 10.\,10.\,2026). Offen ist die Lizenz: Die Ankündigung
+  nennt Apache/MIT/CC~BY, in der Community werden AGPLv3 und CC~BY-SA
+  vorgeschlagen, damit KI-Firmen Community-Arbeit nicht ohne
+  Gegenleistung einbauen. Unterstützung angeboten haben unter anderem
+  Hugging Face (Trainings-Know-how, Daten, Compute; Betreiber von
+  FineWeb und SmolLM), die Open Model Initiative der Linux Foundation
+  und Open Athena.
+\item[Open Athena und Marin (Jeff Hammerbacher).]
+  US-Non-Profit (\url{https://openathena.ai}), das mit akademischen
+  Laboren Foundation Models baut, Engineers anstellt, Compute
+  vermittelt und Multi-Universitäts-Kooperationen koordiniert. Größtes
+  Projekt Marin (\url{https://marin.community}): offen entwickeltes
+  LLM, zehn Vollzeit-Engineers.  Das Pretraining eines 535B-MoE mit
+  23B aktiven Parametern auf 18T Tokens ist seit dem 5.\,11.\,2026
+  abgeschlossen und war öffentlich verfolgbar.  Gespräche mit
+  akademischen Laboren in den USA und Europa über Mathematik-Modelle
+  laufen.  Frühere Läufe rechneten auf TPUs aus Googles TPU Research
+  Cloud, die 768 GB200 für den großen Lauf stellte die Huang Foundation
+  bereit.  Als Partner für Rechenzeit und Infrastruktur nennt Open
+  Athena außerdem Lambda, CoreWeave und AWS, als Geldgeber Stiftungen
+  wie Schmidt Sciences und die Sloan Foundation.  Eine vergleichbare
+  Organisationsschicht und Unterstützung dieser Art gibt es in
+  Deutschland bislang nicht.  Im Oktober 2026 hat Open Athena
+  beschrieben, warum für das Post-Training ein offener Datenfundus
+  fehlt (Abschnitt~\ref{sec:dsp}).
+\item[Project Numina (Pietro Pellegrino).]
+  Autoformalisierung mit Lean-4-Agenten (\enquote{Numina Fuse}),
+  öffentliche Formalisierung der dreidimensionalen Kakeya-Vermutung,
+  NuminaMath-Datensatz.
+\item[Prover- und Formalisierungsmodelle.]
+  Goedel-Prover-V2-8B und DeepSeek-Prover-7B (Beweise),
+  StepFun-Formalizer-7B (Autoformalisierung); Plattform
+  \url{https://prove2.me} für kollaborative Lean-Formalisierung.
+\end{description}
+
+\subsection{Öffentliche Modellprojekte in Europa}
+
+Größen, Rechenzeit und Budgets stehen in Tabelle~\ref{tab:kosten}.
+
+\begin{description}
+\item[OpenGPT-X und Teuken-7B.] Fraunhofer IAIS und neun Partner,
+  BMWK-gefördert 2022--2025, trainiert auf JUWELS Booster
+  (Abschnitt~\ref{sec:dsp}).
+\item[EuroLLM.] 9B-Modell auf 400 H100 (MareNostrum~5), EuroHPC- und
+  Horizon-Europe-finanziert.
+\item[Apertus (Swiss AI Initiative).] ETH, EPFL und CSCS; 8B und 70B,
+  trainiert auf Alps. Aktuell ist Apertus~1.5.  Apertus~2.0 ist
+  angekündigt, aber noch nicht erschienen.
+\item[OpenEuroLLM.] Seit Februar 2025, 20 Partner unter Leitung der
+  Karls-Universität Prag und von AMD Silo AI, 37~Mio.\ EUR (laut
+  Presse), über 10~Mio.\ GPU-Stunden auf LUMI, Leonardo, JUPITER und
+  MareNostrum~5. Das für Sommer 2026 angekündigte erste Modell gibt es
+  bislang nur als Zwischen-Checkpoints (\enquote{Prelude 9B}, rund 10T
+  Tokens, Apache~2.0), ohne Instruction-Tuning und ohne
+  veröffentlichten Vergleich mit anderen Modellen; ein 32B-Modell ist
+  im Training.
+\item[hessian.AI, LeoLM, Occiglot.] Continued Pretraining im Bereich
+  Tausender GPU-Stunden auf dem Cluster \enquote{42}.
+\end{description}
+
+\subsection{Öffentliche Recheninfrastruktur}
+
+\begin{description}
+\item[JUPITER und GCS.] Erstes europäisches Exascale-System am JSC
+  Jülich, 500~Mio.\ EUR, rund \num{24000} GH200. Die Hälfte der
+  Rechenzeit vergibt das Gauss Centre for Supercomputing an deutsche
+  Projekte (Abschnitt~\ref{sec:kosten}).
+\item[AI Factories.] Die 19 EuroHPC AI Factories sind das
+  gegenwärtige KI-Angebot für die Wissenschaft; die beiden deutschen
+  Standorte sind HammerHAI (Stuttgart, 55~Mio.\ EUR, etwa 860
+  Blackwell-GPUs, zweites Halbjahr 2026) und JAIF (Jülich,
+  55~Mio.\ EUR).
+\item[AI Gigafactories.] Die EU schreibt bis zu sieben
+  Rechenzentren der Industrieklasse mit jeweils \num{100000} oder mehr
+  KI-Beschleunigern aus, finanziert mit bis zu 10~Mrd.\ EUR öffentlich
+  (hälftig EU und Standort-Mitgliedstaat), die mindestens
+  20~Mrd.\ EUR private Investitionen auslösen sollen. Die
+  ursprüngliche Angebotsfrist (12.\,11.\,2026) gilt nicht mehr.  Seit
+  dem 5.\,11.\,2026 endet sie für Lot~2 am 3.\,12.\,2026 und für
+  Lot~1 am 4.\,2.\,2027, weil Mitgliedstaaten ihre Haushaltsverfahren
+  noch abschließen müssen.  Der Betrieb soll 18~Monate nach der
+  Auswahl beginnen, die bisher für Anfang 2027 vorgesehen war. EU und
+  18 Mitgliedstaaten kaufen von den Betreibern Rechenzeit ein
+  (gemeinsame Beschaffung, darunter Deutschland); die Ausschreibung
+  verlangt von den Konsortien einen langfristig garantierten Anteil
+  dieser Rechenzeit für die EU und den Standortmitgliedstaat. Diese
+  Zeit kann laut Verordnung (EU) 2026/150 für kostenfreien Zugang
+  verwendet werden, also auch für Forschung; welcher Anteil davon der
+  Wissenschaft tatsächlich zufällt, ist offen und politisch zu
+  verhandeln. Die Gigafactories sind die Industrie-Ebene: Die
+  Wissenschaft hat mit JUPITER, GCS und den AI Factories einen
+  eigenen, vorgelagerten Zugang. Berichteter deutscher Bieterverbund
+  ist Telekom/Schwarz in Lübbenau (bis zu \num{100000} GPUs, ca.\
+  11~Mrd.\ EUR).  Das ist Presseberichterstattung, kein bestätigter
+  Stand.  SAP hat sich zurückgezogen.\footnote{Quellen in
+  Abschnitt~\ref{sec:quellen}, Stand 17.\,11.\,2026.}
+\item[GWDG und KISSKI.] Die GWDG, Rechenzentrum der Universität
+  Göttingen und der Max-Planck-Gesellschaft, betreibt mit dem
+  KI-Servicezentrum KISSKI (seit November 2022 vom BMFTR gefördert)
+  den Dienst Chat AI mit einer OpenAI-kompatiblen API. Zugang über die
+  Academic Cloud für Angehörige von Hochschulen und
+  Forschungseinrichtungen. Die offenen Modelle, darunter GLM-5.3-Flash,
+  DeepSeek~V4 Flash, Qwen3.5-397B und Qwen3.8-27B, laufen im eigenen
+  Rechenzentrum, sind kostenlos und speichern laut GWDG keine
+  Eingaben. Modelle von OpenAI und Anthropic werden über Microsoft
+  Azure vermittelt und sind nicht kostenlos. Dazu kommen RAG,
+  ein Coding-Assistent, Hosting und Feintuning eigener Modelle sowie
+  GPU-Rechenzeit. Damit gibt es für Horizont~1 bereits ein Angebot für
+  die deutsche Wissenschaft; zur Größe der dort betriebenen Modelle
+  siehe Abschnitt~\ref{sec:querschnitt}.
+\end{description}
+
+\subsection{Hosting und Werkzeuge}
+
+\begin{description}
+\item[EU-Inferenzanbieter.] Cortecs (\url{https://cortecs.ai/}),
+  Scaleway, OVHcloud, IONOS, STACKIT, Nebius (Finnland); Preise in
+  Abschnitt~\ref{sec:kosten}.
+\item[Agenten-Harnesses.] Claude Code, Codex (proprietär); OpenCode
+  (\url{https://opencode.ai}) als offene Alternative
+  (Abschnitt~\ref{sec:agenten}).
+\end{description}
+
+%=====================================================================
+\section{Glossar}
+\label{sec:glossar}
+
+\begin{description}[style=sameline, itemsep=0.15em]
+\item[Agent, agentisch] Ein LLM, das in einer Schleife Werkzeuge
+  aufruft (Dateien lesen, Code ausführen, suchen) und Zwischenergebnisse
+  weiterverarbeitet, statt nur eine Antwort zu erzeugen.
+\item[Aktive Parameter] Bei MoE-Modellen der Teil der Parameter, der
+  pro Token tatsächlich gerechnet wird. Bestimmt Geschwindigkeit und
+  Trainingsaufwand; die Gesamtzahl bestimmt den Speicherbedarf. Bei
+  dichten Modellen sind alle Parameter aktiv
+  (Abschnitt~\ref{sec:groessen}).
+\item[Autoformalisierung] Übersetzung informeller mathematischer
+  Aussagen und Beweise in eine formale Sprache wie Lean, so dass ein
+  Kernel sie prüfen kann. Die verbleibende Schwachstelle ist die
+  Entsprechung von formaler und informeller Aussage.
+\item[B, T] Milliarden (\emph{billion}) bzw.\ Billionen
+  (\emph{trillion}) Parameter oder Tokens.
+\item[Destillation] Ein kleineres Modell lernt aus den Ausgaben eines
+  größeren. Um Größenordnungen billiger als Reinforcement Learning.
+\item[FLOP, $6NT$] Gleitkommaoperationen. Der Trainingsaufwand ist
+  näherungsweise sechsmal (aktive) Parameter mal Tokens.
+\item[Frontiermodell] Die jeweils leistungsfähigsten Modelle der
+  großen US-Firmen, derzeit Claude Fable~5.2 (Anthropic), GPT-6.2
+  Astra (OpenAI) und Gemini~4 Carbon (Google), Stand 17.\,11.\,2026.
+\item[GPU-Stunde] Eine Stunde Rechenzeit auf einer GPU; Standardmaß
+  für Trainingskosten. H100: etwa 3~EUR Miete, 1,3~kWh Energie.
+\item[Harness] Die Software um das Modell herum: Prompts, Werkzeuge,
+  Kontextverwaltung, Schleifensteuerung. Entscheidet wesentlich über
+  die agentische Leistung.
+\item[HBM, NVLink] Schneller Speicher direkt auf der GPU bzw.\ die
+  schnelle Verbindung zwischen GPUs eines Knotens.
+\item[Hyperscaler] Betreiber sehr großer Rechenzentren, die Rechenzeit
+  oder Modellbetrieb als Dienstleistung anbieten.
+\item[Kernel (Lean)] Der kleine, vertrauenswürdige Prüfer, der formale
+  Beweise verifiziert. Ein vom Kernel akzeptierter Beweis ist korrekt;
+  ob die formale Aussage der gemeinten entspricht, prüft er nicht.
+\item[KV-Cache] Zwischenspeicher für den Kontext jedes Nutzers; wächst
+  linear mit der Kontextlänge und kann mehr Speicher brauchen als die
+  Gewichte.
+\item[MFU] Model FLOPs Utilization: Anteil der theoretischen
+  Rechenleistung, der im Training tatsächlich genutzt wird, typisch
+  30--45~Prozent.
+\item[MoE] Mixture of Experts: Architektur, bei der pro Token nur
+  einige von vielen Teilnetzen (Experten) aktiv sind.
+\item[Open Weights, Open Source] Open Weights: die Gewichte sind
+  herunterladbar. Open Source im engeren Sinn: auch Daten, Rezept und
+  Code sind offen. Die meisten \enquote{offenen} Modelle sind nur
+  Open Weights.
+\item[Post-Training, SFT, RL] Die Phasen nach dem Pretraining:
+  überwachtes Feintuning auf Beispielen (SFT) und Reinforcement
+  Learning mit Belohnungen, etwa durch verifizierbare Ergebnisse.
+\item[Pretraining] Das Grundtraining auf Billionen Tokens, der
+  teuerste Rechenschritt.
+\item[PUE] Power Usage Effectiveness: Gesamtstrom des Rechenzentrums
+  geteilt durch IT-Strom. 1,2 ist gut, deutscher Durchschnitt 1,55.
+\item[Quantisierung] Speichern der Gewichte mit weniger Bits (4 oder
+  8 statt 16). Halbiert bzw.\ viertelt den Speicherbedarf bei geringem
+  Qualitätsverlust.
+\item[RAG] Retrieval-Augmented Generation: Das Modell erhält passende
+  Dokumente aus einer Datenbank in den Kontext, statt sie auswendig zu
+  wissen.
+\item[Souveränität] Hier: Betrieb oder Training ohne Abhängigkeit von
+  US-Anbietern, mit Daten, die in der eigenen Organisation oder
+  zumindest in der EU bleiben.
+\item[TDM, \S\,60d UrhG] Text- und Data-Mining; die Schranke, die
+  Forschungseinrichtungen das Training auf urheberrechtlich
+  geschützten Texten erlaubt.
+\item[Token] Die Einheit, in der Modelle Text verarbeiten, grob drei
+  Viertel eines Wortes.
+\end{description}
+
+%=====================================================================
+\section{Quellen}
+\label{sec:quellen}
+
+Abgerufen im Oktober und November 2026. Rechenwege und der Prüfstatus
+einzelner Angaben (berichtet oder verifiziert) sind in den
+Recherchenotizen zu diesem Bericht festgehalten.
+
+{\small
+\subsection*{Modelle (Abschnitt~\ref{sec:groessen})}
+\begin{itemize}[itemsep=0.1em]
+  \item Qwen3.8-27B: \url{https://huggingface.co/Qwen/Qwen3.8-27B}
+  \item Nemotron~3 Super 120B-A12B:
+    \url{https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard}
+  \item GLM-5.3-Flash: \url{https://huggingface.co/zai-org/GLM-5.3-Flash}
+  \item GLM-5.3: \url{https://huggingface.co/zai-org/GLM-5.3}
+  \item DeepSeek-V4.1-Flash:
+    \url{https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash}
+  \item Kimi~K3: \url{https://huggingface.co/moonshotai/Kimi-K3}
+  \item Artificial Analysis, Intelligence Index v4.3.2 und agentische
+    Benchmarks (Terminal-Bench~4.0, GDPval-AA, AutomationBench-AA),
+    Stand 16.\,10.\,2026: GLM-5.3-Flash
+    \url{https://artificialanalysis.ai/models/glm-5-3-flash}, Claude
+    Opus~4.8 \url{https://artificialanalysis.ai/models/claude-opus-4-8},
+    Rangliste \url{https://artificialanalysis.ai/leaderboards/models}
+  \item Artificial Analysis, Intelligence Index v5.0.1, Stand
+    17.\,11.\,2026: Rangliste wie oben, Methodik
+    \url{https://artificialanalysis.ai/methodology/intelligence-benchmarking},
+    Kimi~K3.1 Pro
+    \url{https://artificialanalysis.ai/models/kimi-k3-1-pro}
+\end{itemize}
+
+\subsection*{Selbst hosten oder einkaufen (Abschnitt~\ref{sec:hosten}, Stand 17.\,11.\,2026)}
+\begin{itemize}[itemsep=0.1em]
+  \item Cortecs, Modellkatalog und Preisbildung:
+    \url{https://cortecs.ai/serverlessModels},
+    \url{https://cortecs.ai/pricing}
+  \item OpenRouter, Endpunkte für GLM-5.3-Flash:
+    \url{https://openrouter.ai/z-ai/glm-5.3-flash}
+  \item Server mit acht H200, Preis und Leistungsaufnahme (UpStation,
+    Stand 03.\,11.\,2026): \url{https://ai.upstation.io/gpu-servers}
+  \item vLLM-Rezept für GLM-5.3-Flash (Speicherbedarf, Hardware):
+    \url{https://recipes.vllm.ai/zai-org/GLM-5.3-Flash}
+  \item Durchsatzmessung auf acht H200 (Projekt Kiln):
+    \url{https://github.com/foxl-ai/kiln/blob/f5a7faf3bf/docs/price-performance.md}
+\end{itemize}
+
+\subsection*{Trainingskosten (Abschnitt~\ref{sec:kosten}, Tabelle~\ref{tab:kosten})}
+\begin{itemize}[itemsep=0.1em]
+  \item DeepSeek-V3 Technical Report, Dezember 2024:
+    \url{https://arxiv.org/html/2412.19437v1}
+  \item DeepSeek-R1, RL-Kosten (The Register, 19.\,09.\,2025):
+    \url{https://www.theregister.com/2025/09/19/deepseek_cost_train/}
+  \item Llama~3.1 405B, Modellkarte:
+    \url{https://huggingface.co/meta-llama/Llama-3.1-405B}
+  \item Llama~4 Maverick, Modellkarte:
+    \url{https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct}
+  \item Llama~3, Paper (MFU, Unterbrechungen):
+    \url{https://arxiv.org/abs/2407.21783}
+  \item gpt-oss, Modellkarte: \url{https://arxiv.org/html/2508.10925v1}
+  \item Olmo~3, Paper: \url{https://arxiv.org/html/2512.13961}
+  \item BLOOM, Paper: \url{https://arxiv.org/pdf/2211.05100}
+  \item Nemotron-4 340B, Report: \url{https://arxiv.org/pdf/2406.11704}
+  \item Nemotron~3 Super, Report: \url{https://arxiv.org/pdf/2604.12374}
+  \item Nemotron~3 Super, Pretraining-Dokumentation:
+    \url{https://docs.nvidia.com/nemotron/0.1.0/nemotron/super3/pretrain.html}
+  \item Qwen3 Technical Report: \url{https://arxiv.org/html/2505.09388v1}
+  \item Qwen2.5 Technical Report: \url{https://arxiv.org/html/2412.15115v1}
+  \item Apertus, Report: \url{https://arxiv.org/pdf/2509.14233}
+  \item Teuken-7B, Fraunhofer IAIS:
+    \url{https://www.iais.fraunhofer.de/en/press-events/press-releases/press-release-241126.html}
+  \item EuroLLM, Report: \url{https://arxiv.org/html/2506.04079v1}
+  \item Epoch AI, Grok~4 Training Resources:
+    \url{https://epoch.ai/data-insights/grok-4-training-resources}
+  \item Epoch AI, How much does it cost to train frontier AI models:
+    \url{https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models}
+  \item Cottier et al., Kostenanteile Personal und Energie:
+    \url{https://arxiv.org/abs/2405.21015}
+  \item Stanford AI Index 2026:
+    \url{https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report}
+\end{itemize}
+
+\subsection*{Daten und Recht}
+\begin{itemize}[itemsep=0.1em]
+  \item FineWeb, Paper: \url{https://arxiv.org/html/2406.17557}
+  \item FineWeb-2:
+    \url{https://huggingface.co/datasets/HuggingFaceFW/fineweb-2}
+  \item DCLM:
+    \url{https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0}
+  \item Nemotron-Pretraining-Dataset:
+    \url{https://huggingface.co/datasets/nvidia/Nemotron-Pretraining-Dataset-sample}
+  \item German Commons: \url{https://arxiv.org/abs/2510.13996}
+  \item \S\,60d und \S\,44b UrhG:
+    \url{https://www.gesetze-im-internet.de/urhg/__60d.html},
+    \url{https://www.gesetze-im-internet.de/urhg/__44b.html}
+  \item OLG Hamburg, LAION (Hogan Lovells, Dezember 2025):
+    \url{https://www.insidetechlaw.com/blog/2025/12/machine-readable-opt-outs-and-ai-training-hamburg-court-clarifies-copyright-exceptions}
+  \item LG München~I, GEMA gegen OpenAI, 42~O~14139/24 (LTO; Bird \& Bird):
+    \url{https://www.lto.de/recht/nachrichten/n/42o1413924-lg-muenchen-i-gema-openai-chatgpt-songtexte-ki},
+    \url{https://cm.twobirds.com/en/insights/2025/landmark-ruling-of-the-munich-regional-court-(gema-v-openai)-on-copyright-and-ai-training}
+  \item AI Act, Art.~2, 3 und 53, Anhang~XI:
+    \url{https://artificialintelligenceact.eu/article/2/},
+    \url{https://artificialintelligenceact.eu/article/3/},
+    \url{https://artificialintelligenceact.eu/article/53/},
+    \url{https://artificialintelligenceact.eu/annex/11/}
+  \item Europäische Kommission, Leitlinien zu den Pflichten der
+    Anbieter von Modellen mit allgemeinem Verwendungszweck
+    (18.\,07.\,2025), Rn.~17 und~51:
+    \url{https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act}
+  \item Open Athena, \emph{There Is No Post-Training Data Commons}
+    (15.\,10.\,2026):
+    \url{https://openathena.ai/blog/there-is-no-posttraining-data-commons/}
+  \item DSGVO, Art.~28 (Auftragsverarbeitung):
+    \url{https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679}
+  \item CLOUD Act, 18 U.S.C. \S\,2713:
+    \url{https://www.law.cornell.edu/uscode/text/18/2713}
+\end{itemize}
+
+\subsection*{Hardware, Rechenzeit und Strom}
+\begin{itemize}[itemsep=0.1em]
+  \item JUPITER (FZJ): \url{https://www.fz-juelich.de/en/jupiter}
+  \item GCS, JUPITER-Factsheet:
+    \url{https://jards.gauss-centre.eu/PublicFiles/FactSheets/FactSheet-GCS-NIC-JUPITER.pdf}
+  \item EuroHPC, Large-Scale Access AI Factories:
+    \url{https://www.eurohpc-ju.europa.eu/large-scale-access-ai-factories_en}
+  \item HammerHAI (HLRS):
+    \url{https://www.hlrs.de/news/detail/hammerhai-a-new-supercomputer-for-artificial-intelligence}
+  \item OpenEuroLLM, Rechenzeit (AI Sweden):
+    \url{https://www.ai.se/en/news/openeurollm-secures-strategic-access-multiple-supercomputers-milestone-european-language-models}
+  \item H100-Kaufpreise (CloudZero):
+    \url{https://www.cloudzero.com/blog/h100-gpu-cost/}
+  \item Europäische GPU-Clouds (Qovery):
+    \url{https://www.qovery.com/blog/european-gpu-cloud-alternatives-aws-azure-comparison}
+  \item Energie von OLMo~2 (Morrison et al., ICLR 2025):
+    \url{https://arxiv.org/pdf/2503.05804}
+  \item BDEW-Strompreisanalyse 08/2026:
+    \url{https://www.bdew.de/media/documents/BDEW_Strompreisanalyse_082026.pdf}
+  \item Eurostat, Strompreise:
+    \url{https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_price_statistics}
+  \item \S\,3, \S\,11 und \S\,12 EnEfG:
+    \url{https://www.gesetze-im-internet.de/enefg/__3.html},
+    \url{https://www.gesetze-im-internet.de/enefg/__11.html},
+    \url{https://www.gesetze-im-internet.de/enefg/__12.html}
+\end{itemize}
+
+\subsection*{AI Gigafactories (Stand 13.\,10.\,2026, Fristen 17.\,11.\,2026)}
+\begin{itemize}[itemsep=0.1em]
+  \item EuroHPC JU, Start der Ausschreibung:
+    \url{https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en}
+  \item EuroHPC JU, Ausschreibung (mit Fristverlängerung vom
+    05.\,11.\,2026):
+    \url{https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en}
+  \item Europäische Kommission, IP/26/1708:
+    \url{https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1708}
+  \item Verordnung (EU) 2026/150:
+    \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R0150}
+  \item Deutscher Bieterverbund, unbestätigt (heise, 01.\,12.\,2025):
+    \url{https://heise.de/-11098104}
+  \item SAP nicht beteiligt (dpa via Marketscreener):
+    \url{https://in.marketscreener.com/quote/stock/SAP-SE-436555/news/No-joint-German-bid-for-AI-gigafactory-50284021/}
+\end{itemize}
+
+\subsection*{Initiativen, Hosting und Werkzeuge (Abschnitt~\ref{sec:projekte})}
+\begin{itemize}[itemsep=0.1em]
+  \item SAIR Open Math Model Initiative (Tao, 18.\,09.\,2026):
+    \url{https://terrytao.wordpress.com/2026/09/18/sairs-open-math-model-initiative/},
+    \url{https://sair.foundation/open-math-model/}
+  \item Open Athena, Partner und Geldgeber:
+    \url{https://openathena.ai/about/}
+  \item Marin, Unterstützer und Abschluss des Pretrainings (Stand
+    17.\,11.\,2026):
+    \url{https://marin.community},
+    \url{https://github.com/marin-community/marin},
+    \url{https://marin.community/blog/2026/11/09/marin-535b-architecture/}
+  \item prove2.me: \url{https://prove2.me}
+  \item OpenEuroLLM, Prelude 9B (Stand 17.\,11.\,2026):
+    \url{https://openeurollm.eu/prelude},
+    \url{https://huggingface.co/openeurollm/prelude}; Projektstart und
+    Partner: \url{https://openeurollm.eu/blog/launch-press-release};
+    Budget (TechCrunch, 16.\,02.\,2025):
+    \url{https://techcrunch.com/2025/02/16/open-source-llms-hit-europes-digital-sovereignty-roadmap}
+  \item GWDG/KISSKI, Chat AI und Modellliste (Stand 16.\,10.\,2026):\newline
+    \url{https://docs.hpc.gwdg.de/services/ai-services/chat-ai/index.html},
+    \url{https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html},
+    \url{https://kisski.gwdg.de/leistungen/services/}
+  \item Cortecs: \url{https://cortecs.ai/}
+  \item OpenCode: \url{https://opencode.ai}
+  \item Epoch AI: \url{https://epoch.ai}
+\end{itemize}
+}
+
+\end{document}

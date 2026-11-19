@@ -6,6 +6,7 @@ import { TeachingPaper } from "../src/pages/education";
 import { Imprint } from "../src/pages/imprint";
 import { Privacy } from "../src/pages/privacy";
 import { Resources } from "../src/pages/resources";
+import { AIHorizons } from "../src/pages/horizons";
 import { titles, siteTitle } from "../src/site";
 import { homeTitles } from "../src/metadata.mjs";
 import type { PageRoute } from "../src/types";
@@ -15,6 +16,7 @@ const pages = {
   papers: PositionPaper,
   teaching: TeachingPaper,
   resources: Resources,
+  horizons: AIHorizons,
   imprint: Imprint,
   privacy: Privacy,
 };

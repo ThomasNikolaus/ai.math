@@ -6,7 +6,7 @@ import {
   type ReactNode,
   type MouseEvent,
 } from "react";
-import { navigation, titles } from "../site";
+import { navigation, navigationLabels } from "../site";
 import { languagePreferenceKey, siteLink } from "../routing.mjs";
 import type { Lang, PageRoute, View } from "../types";
 
@@ -105,7 +105,7 @@ export function Layout({ route, children }: { route: PageRoute; children: ReactN
         <nav className="section-nav" aria-label={de ? "Hauptnavigation" : "Main navigation"}>
           {navigation.map((page) => (
             <a href={link(lang, page)} key={page} aria-current={view === page ? "page" : undefined}>
-              {titles[lang][page]}
+              {navigationLabels[lang][page]}
             </a>
           ))}
           <div className="global-language" aria-label={de ? "Sprache wählen" : "Choose language"}>

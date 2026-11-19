@@ -25,6 +25,7 @@ const entries = {
   papers: ["research", "PositionPaper"],
   teaching: ["education", "TeachingPaper"],
   resources: ["resources", "Resources"],
+  horizons: ["horizons", "AIHorizons"],
   imprint: ["imprint", "Imprint"],
   privacy: ["privacy", "Privacy"],
 };
@@ -91,6 +92,7 @@ generated.set(redirectName, redirect.outputFiles[0].contents);
 const style = await fs.readFile(path.join(root, "src/styles.css"));
 const styleName = hashName("site", style, "css");
 generated.set(styleName, style);
+generated.set("assets/ki-horizonte-2026-11-17.pdf", await fs.readFile(path.join(root, "src/documents/ki-horizonte.pdf")));
 for (const name of ["favicon.svg", "favicon.png", "apple-touch-icon.png", "social-preview-de.png", "social-preview-en.png"]) {
   generated.set("assets/" + name, await fs.readFile(path.join(root, "src", name)));
 }

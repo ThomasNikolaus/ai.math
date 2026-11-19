@@ -13,6 +13,7 @@ const mime = {
   ".png": "image/png",
   ".xml": "application/xml; charset=utf-8",
   ".txt": "text/plain; charset=utf-8",
+  ".pdf": "application/pdf",
 };
 http
   .createServer(async (request, response) => {

@@ -6,6 +6,7 @@ export const navigation: View[] = [
   "home",
   "papers",
   "teaching",
+  "horizons",
   "resources",
 ];
 export const titles: Record<Lang, Record<View, string>> = {
@@ -14,6 +15,7 @@ export const titles: Record<Lang, Record<View, string>> = {
     papers: "Forschung",
     teaching: "Lehre",
     resources: "Materialien & Veranstaltungen",
+    horizons: "Horizonte für souveräne KI",
     imprint: "Impressum",
     privacy: "Datenschutz",
   },
@@ -22,9 +24,14 @@ export const titles: Record<Lang, Record<View, string>> = {
     papers: "Research",
     teaching: "Education",
     resources: "Resources & Events",
+    horizons: "Horizons for Sovereign AI",
     imprint: "Legal notice",
     privacy: "Privacy",
   },
+};
+export const navigationLabels: Record<Lang, Record<View, string>> = {
+  de: { ...titles.de, horizons: "Infrastruktur" },
+  en: { ...titles.en, horizons: "Infrastructure" },
 };
 export const initiators = [
   { name: "Claudia Alfes", homepage: "https://www.claudia-alfes.de/" },

@@ -1,6 +1,6 @@
 # AI.MATH
 
-Die Website besteht aus sechs Inhaltsseiten, einem Impressum und Datenschutzhinweisen pro Sprache. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
+Die Website bietet fünf Inhaltsseiten sowie Impressum und Datenschutzhinweise pro Sprache. Die HTML-Dateien enthalten den Seiteninhalt bereits beim Ausliefern; JavaScript ergänzt die aufklappbaren Antworten und die Padlet-Boards.
 
 ## Aufbau
 
@@ -9,8 +9,7 @@ Die Website besteht aus sechs Inhaltsseiten, einem Impressum und Datenschutzhinw
 | Startseite                | `de/index.html`            | `en/index.html`            |
 | Forschung                 | `de/forschung/index.html`  | `en/research/index.html`   |
 | Lehre                     | `de/lehre/index.html`      | `en/education/index.html`  |
-| Fragen und Perspektiven   | `de/fragen/index.html`     | `en/questions/index.html`  |
-| Diskussion                | `de/diskussion/index.html` | `en/discussion/index.html` |
+| Infrastruktur             | `de/ki-horizonte/index.html` | `en/ai-horizons/index.html` |
 | Links und Veranstaltungen | `de/links/index.html`      | `en/resources/index.html`  |
 | Impressum                 | `de/impressum/index.html`  | `en/legal-notice/index.html` |
 | Datenschutz               | `de/datenschutz/index.html` | `en/privacy/index.html` |
@@ -33,6 +32,14 @@ Impressum und Datenschutz sind im Fußbereich jeder Seite verlinkt. `404.html` e
 - `src/routing.mjs`: Seitenadressen und Kompatibilität mit alten Links.
 
 Die erzeugten HTML-Dateien und Dateien in `assets/` werden beim Bauen überschrieben. Dauerhafte Änderungen deshalb in `src/` vornehmen.
+
+### Artikel „Horizonte für souveräne KI“
+
+Die Website enthält unter dem Reiter „Infrastruktur“ / „Infrastructure“ den Artikel von Thomas Kahle (Stand 17. November 2026) unter `de/ki-horizonte/` und seine vollständige englische Übersetzung „Horizons for Sovereign AI“ unter `en/ai-horizons/`. Startseite und Materialseite verlinken den Beitrag in beiden Sprachen.
+
+`src/content/ki-horizonte.json` enthält den vollständigen, aus der LaTeX-Quelle übernommenen Text mit Abschnittskennungen, Tabellen, internen Verweisen und Fußnoten; `ki-horizonte.en.json` enthält die englische Übersetzung mit denselben Kennungen und Verweisen. Die unveränderten Originaldateien liegen in `src/documents/`. Das deutsche PDF wird beim Build als Quelldokument mitgeführt; die Artikelseite zeigt keinen Download-Link. Die TeX-Datei bleibt eine Quelldatei. Die Quelle wurde mit TeX4ht konvertiert und semantisch bereinigt. Alle 106 Quelllinks, 186 Tabellenzellen, vier Fußnoten und 24 Glossarbegriffe wurden mit der Vorlage abgeglichen.
+
+Die zuvor geteilten Vorschau-Adressen unter `preview/` bleiben als separate Momentaufnahme erreichbar. Die regulären Seiten verwenden die kanonischen Adressen ohne `preview/` und sind für Suchmaschinen freigegeben.
 
 Voraussetzungen: Node.js ab Version 22 und pnpm 11.
 
